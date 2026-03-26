@@ -9,8 +9,27 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <!-- PNG favicons (use clarity variants for small sizes) -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16-clarity.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32-clarity.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64x64.png">
+
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon-180x180.png">
+
+  <!-- Android / Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+
+  <!-- Optional: theme color -->
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
