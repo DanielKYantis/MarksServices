@@ -88,7 +88,7 @@ include 'includes/header.php';
 
                 <div class="col-lg-6">
                   <div class="quote-form-wrapper">
-                    <form action="forms/quote.php" method="post" class="php-email-form" data-aos="fade-left" data-aos-delay="200">
+                    <form action="forms/get-a-quote.php" method="post" class="php-email-form" data-aos="fade-left" data-aos-delay="200">
                       <div class="form-header">
                         <h4>Request Your Free Quote</h4>
                         <p>Fill out the form below and we'll get back to you with a detailed estimate.</p>

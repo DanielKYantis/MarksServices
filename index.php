@@ -301,7 +301,7 @@ include 'includes/header.php';
                   <span>New York, NY</span>
                 </div>
               </div>
-              <a href="project-details.html" class="project-link">
+              <a href="project-details.php" class="project-link">
                 <span>View Project</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -340,7 +340,7 @@ include 'includes/header.php';
                   <span>Portland, OR</span>
                 </div>
               </div>
-              <a href="project-details.html" class="project-link">
+              <a href="project-details.php" class="project-link">
                 <span>View Project</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -379,7 +379,7 @@ include 'includes/header.php';
                   <span>Dallas, TX</span>
                 </div>
               </div>
-              <a href="project-details.html" class="project-link">
+              <a href="project-details.php" class="project-link">
                 <span>View Project</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -418,7 +418,7 @@ include 'includes/header.php';
                   <span>Boston, MA</span>
                 </div>
               </div>
-              <a href="project-details.html" class="project-link">
+              <a href="project-details.php" class="project-link">
                 <span>View Project</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -457,7 +457,7 @@ include 'includes/header.php';
                   <span>San Francisco, CA</span>
                 </div>
               </div>
-              <a href="project-details.html" class="project-link">
+              <a href="project-details.php" class="project-link">
                 <span>View Project</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -496,7 +496,7 @@ include 'includes/header.php';
                   <span>Denver, CO</span>
                 </div>
               </div>
-              <a href="project-details.html" class="project-link">
+              <a href="project-details.php" class="project-link">
                 <span>View Project</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
