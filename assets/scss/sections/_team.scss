@@ -1,0 +1,148 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team {
+  .crew-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 12px 40px color-mix(in srgb, var(--default-color), transparent 88%);
+      border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+    }
+
+    .crew-portrait {
+      position: relative;
+      flex: 0 0 220px;
+      width: 220px;
+      height: 260px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      .crew-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: color-mix(in srgb, var(--accent-color), transparent 40%);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 20px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+        .crew-links {
+          display: flex;
+          gap: 10px;
+          transform: translateY(15px);
+          transition: transform 0.3s ease-in-out;
+
+          a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: var(--contrast-color);
+            color: var(--accent-color);
+            border-radius: 50%;
+            font-size: 15px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: var(--accent-color);
+              color: var(--contrast-color);
+              transform: scale(1.15);
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .crew-overlay {
+          opacity: 1;
+
+          .crew-links {
+            transform: translateY(0);
+          }
+        }
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .crew-details {
+      flex: 1;
+      padding: 30px 32px;
+
+      .crew-role {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--accent-color);
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        padding: 4px 14px;
+        border-radius: 20px;
+        margin-bottom: 14px;
+      }
+
+      h4 {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 0 12px 0;
+        color: var(--heading-color);
+        line-height: 1.3;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.75;
+        color: color-mix(in srgb, var(--default-color), transparent 25%);
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .crew-card {
+      flex-direction: column;
+
+      .crew-portrait {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 240px;
+      }
+
+      .crew-details {
+        padding: 24px 20px;
+        text-align: center;
+
+        .crew-role {
+          margin-bottom: 10px;
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
