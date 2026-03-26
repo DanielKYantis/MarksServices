@@ -51,7 +51,7 @@
     <div class="branding d-flex align-items-cente">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.php" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
           <h1 class="sitename">Constructo</h1>
@@ -59,19 +59,19 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" <?php if($active_page == 'index') echo 'class="active"'; ?>>Home</a></li>
-            <li><a href="about.html" <?php if($active_page == 'about') echo 'class="active"'; ?>>About</a></li>
-            <li><a href="services.html" <?php if($active_page == 'services') echo 'class="active"'; ?>>Services</a></li>
-            <li><a href="projects.html" <?php if($active_page == 'projects') echo 'class="active"'; ?>>Projects</a></li>
-            <li><a href="team.html" <?php if($active_page == 'team') echo 'class="active"'; ?>>Team</a></li>
+            <li><a href="index.php" <?php if($active_page == 'index') echo 'class="active"'; ?>>Home</a></li>
+            <li><a href="about.php" <?php if($active_page == 'about') echo 'class="active"'; ?>>About</a></li>
+            <li><a href="services.php" <?php if($active_page == 'services') echo 'class="active"'; ?>>Services</a></li>
+            <li><a href="projects.php" <?php if($active_page == 'projects') echo 'class="active"'; ?>>Projects</a></li>
+            <li><a href="team.php" <?php if($active_page == 'team') echo 'class="active"'; ?>>Team</a></li>
             <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="service-details.html">Service Details</a></li>
-                <li><a href="project-details.html">Project Details</a></li>
-                <li><a href="quote.html">Quote Form</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="404.html">404</a></li>
+                <li><a href="service-details.php" <?php if($active_page == 'service-details') echo 'class="active"'; ?>>Service Details</a></li>
+                <li><a href="project-details.php" <?php if($active_page == 'project-details') echo 'class="active"'; ?>>Project Details</a></li>
+                <li><a href="quote.php" <?php if($active_page == 'quote') echo 'class="active"'; ?>>Quote Form</a></li>
+                <li><a href="terms.php" <?php if($active_page == 'terms') echo 'class="active"'; ?>>Terms</a></li>
+                <li><a href="privacy.php" <?php if($active_page == 'privacy') echo 'class="active"'; ?>>Privacy</a></li>
+                <li><a href="404.php" <?php if($active_page == '404') echo 'class="active"'; ?>>404</a></li>
               </ul>
             </li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -91,7 +91,7 @@
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
             </li>
-            <li><a href="contact.html" <?php if($active_page == 'contact') echo 'class="active"'; ?>>Contact</a></li>
+            <li><a href="contact.php" <?php if($active_page == 'contact') echo 'class="active"'; ?>>Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

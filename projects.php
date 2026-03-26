@@ -13,7 +13,7 @@ include 'includes/header.php';
         <h1 class="mb-2 mb-lg-0">Projects</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="current">Projects</li>
           </ol>
         </nav>

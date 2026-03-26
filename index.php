@@ -120,7 +120,7 @@ include 'includes/header.php';
               </div>
 
               <div class="cta-container mt-5" data-aos="fade-up" data-aos-delay="800">
-                <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                <a href="about.php" class="btn btn-primary">Learn More About Us</a>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ include 'includes/header.php';
                 <span><i class="bi bi-check-circle"></i> Retail Spaces</span>
                 <span><i class="bi bi-check-circle"></i> Warehouses</span>
               </div>
-              <a href="service-details.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -184,7 +184,7 @@ include 'includes/header.php';
                 <span><i class="bi bi-check-circle"></i> Renovations</span>
                 <span><i class="bi bi-check-circle"></i> Additions</span>
               </div>
-              <a href="service-details.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -200,7 +200,7 @@ include 'includes/header.php';
                 <span><i class="bi bi-check-circle"></i> Processing Plants</span>
                 <span><i class="bi bi-check-circle"></i> Storage Facilities</span>
               </div>
-              <a href="service-details.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
         </div>

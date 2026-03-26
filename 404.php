@@ -18,7 +18,7 @@ include 'includes/header.php';
         <h1 class="mb-2 mb-lg-0">404</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="current">404</li>
           </ol>
         </nav>
@@ -55,7 +55,7 @@ include 'includes/header.php';
           </div>
 
           <div class="error-action" data-aos="fade-up" data-aos-delay="700">
-            <a href="/" class="btn btn-primary">Back to Home</a>
+            <a href="index.php" class="btn btn-primary">Back to Home</a>
           </div>
         </div>
 

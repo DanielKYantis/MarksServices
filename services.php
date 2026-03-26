@@ -13,7 +13,7 @@ include 'includes/header.php';
         <h1 class="mb-2 mb-lg-0">Services</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="current">Services</li>
           </ol>
         </nav>
@@ -38,7 +38,7 @@ include 'includes/header.php';
                 <span><i class="bi bi-check-circle"></i> Retail Spaces</span>
                 <span><i class="bi bi-check-circle"></i> Warehouses</span>
               </div>
-              <a href="service-details.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -55,7 +55,7 @@ include 'includes/header.php';
                 <span><i class="bi bi-check-circle"></i> Renovations</span>
                 <span><i class="bi bi-check-circle"></i> Additions</span>
               </div>
-              <a href="service-details.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -71,7 +71,7 @@ include 'includes/header.php';
                 <span><i class="bi bi-check-circle"></i> Processing Plants</span>
                 <span><i class="bi bi-check-circle"></i> Storage Facilities</span>
               </div>
-              <a href="service-details.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
         </div>

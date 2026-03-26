@@ -18,7 +18,7 @@ include 'includes/header.php';
         <h1 class="mb-2 mb-lg-0">Service Details</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="current">Service Details</li>
           </ol>
         </nav>
@@ -87,7 +87,7 @@ include 'includes/header.php';
                     <span>Email Us</span>
                   </a>
                 </div>
-                <a href="quote.html" class="btn btn-primary w-100 mt-3">Get Free Estimate</a>
+                <a href="quote.php" class="btn btn-primary w-100 mt-3">Get Free Estimate</a>
               </div>
 
             </div><!-- End Service Sidebar -->

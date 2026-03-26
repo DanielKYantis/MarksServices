@@ -18,7 +18,7 @@ include 'includes/header.php';
         <h1 class="mb-2 mb-lg-0">Team</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="current">Team</li>
           </ol>
         </nav>
