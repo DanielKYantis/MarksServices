@@ -4,6 +4,8 @@
   "prettier.default-config.tabWidth" : 2,
   "prettier.default-config.useTabs" : false,
   "python.interpreter" : "\/opt\/homebrew\/bin\/python3",
+  "workspace.art_style" : 1,
+  "workspace.color" : 14,
   "workspace.preview_root" : ".",
   "workspace.preview_type" : "custom",
   "workspace.preview_url" : "https:\/\/webtestkit.com\/mark\/"
