@@ -1,0 +1,155 @@
+name: Normalize config references
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/normalize-config-refs.yml'
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  normalize:
+    name: Normalize business constants in PHP files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Normalize references
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+
+          root = Path('.')
+          config = root / 'includes' / 'config.php'
+          text = config.read_text(encoding='utf-8')
+
+          old = """const BUSINESS_EMAIL = 'info@MarksServices.com';
+          const BUSINESS_PHONE_DISPLAY = '(512) 549-0322';
+          const BUSINESS_PHONE_TEL = '+15125490322';
+          const BUSINESS_CITY = 'Georgetown';
+          const BUSINESS_STATE = 'TX';
+          const BUSINESS_ZIP = '78626';
+          const ELECTRICAL_LICENSE = 'TECL 20547';
+          const PLUMBING_LICENSE = 'M-38601';"""
+
+          new = """const BUSINESS_EMAIL = 'info@MarksServices.com';
+          const BUSINESS_PHONE_DISPLAY = '(512) 549-0322';
+          const BUSINESS_PHONE_TEL = '+15125490322';
+          const BUSINESS_STREET = '25 Waters Edge Circle';
+          const BUSINESS_CITY = 'Georgetown';
+          const BUSINESS_STATE = 'TX';
+          const BUSINESS_ZIP = '78626';
+          const BUSINESS_ADDRESS_DISPLAY = BUSINESS_STREET . ', ' . BUSINESS_CITY . ', ' . BUSINESS_STATE . ' ' . BUSINESS_ZIP;
+          const BUSINESS_AREA = 'Georgetown & Sun City, Texas';
+          const ELECTRICAL_LICENSE = 'TECL 20547';
+          const PLUMBING_LICENSE = 'M-38601';"""
+
+          if old in text:
+              text = text.replace(old, new)
+          elif 'const BUSINESS_STREET' not in text:
+              marker = "const BUSINESS_PHONE_TEL = '+15125490322';\n"
+              text = text.replace(marker, marker + "const BUSINESS_STREET = '25 Waters Edge Circle';\n")
+              marker = "const BUSINESS_ZIP = '78626';\n"
+              text = text.replace(marker, marker + "const BUSINESS_ADDRESS_DISPLAY = BUSINESS_STREET . ', ' . BUSINESS_CITY . ', ' . BUSINESS_STATE . ' ' . BUSINESS_ZIP;\nconst BUSINESS_AREA = 'Georgetown & Sun City, Texas';\n")
+
+          config.write_text(text, encoding='utf-8')
+
+          replacements = [
+              ('mailto:info@MarksServices.com', 'mailto:<?= e(BUSINESS_EMAIL) ?>'),
+              ('mailto:info@marksservices.com', 'mailto:<?= e(BUSINESS_EMAIL) ?>'),
+              ('mailto:office@MarksServices.com', 'mailto:<?= e(BUSINESS_EMAIL) ?>'),
+              ('mailto:office@marksservices.com', 'mailto:<?= e(BUSINESS_EMAIL) ?>'),
+              ('tel:+15125490322', 'tel:<?= e(BUSINESS_PHONE_TEL) ?>'),
+              ('25 Waters Edge Circle, Georgetown, TX 78626', '<?= e(BUSINESS_ADDRESS_DISPLAY) ?>'),
+              ('Georgetown &amp; Sun City, Texas', '<?= e(BUSINESS_AREA) ?>'),
+              ('Georgetown & Sun City, Texas', '<?= e(BUSINESS_AREA) ?>'),
+              ('TECL&nbsp;20547', '<?= e(ELECTRICAL_LICENSE) ?>'),
+              ('TECL 20547', '<?= e(ELECTRICAL_LICENSE) ?>'),
+              ('M-38601', '<?= e(PLUMBING_LICENSE) ?>'),
+              ('(512) 549-0322', '<?= e(BUSINESS_PHONE_DISPLAY) ?>'),
+              ('info@MarksServices.com', '<?= e(BUSINESS_EMAIL) ?>'),
+              ('info@marksservices.com', '<?= e(BUSINESS_EMAIL) ?>'),
+              ('office@MarksServices.com', '<?= e(BUSINESS_EMAIL) ?>'),
+              ('office@marksservices.com', '<?= e(BUSINESS_EMAIL) ?>'),
+              ('25 Waters Edge Circle', '<?= e(BUSINESS_STREET) ?>'),
+          ]
+
+          comments_to_remove = [
+              '<!-- TODO: replace with real TECL number -->',
+              '<!-- TODO: replace with real license number -->',
+              '<!-- TODO: replace with real Master/RMP number -->',
+          ]
+
+          changed = []
+          for path in root.rglob('*.php'):
+              parts = set(path.parts)
+              if '.git' in parts:
+                  continue
+              if str(path) == 'includes/config.php':
+                  continue
+              if str(path) == 'assets/vendor/php-email-form/php-email-form.php':
+                  continue
+
+              content = path.read_text(encoding='utf-8')
+              original = content
+
+              for before, after in replacements:
+                  content = content.replace(before, after)
+
+              for comment in comments_to_remove:
+                  content = content.replace(comment, '')
+
+              if content != original:
+                  path.write_text(content, encoding='utf-8')
+                  changed.append(str(path))
+
+          print('Changed files:')
+          for item in changed:
+              print(f' - {item}')
+          PY
+
+      - name: Lint PHP
+        run: find . -name '*.php' -not -path './assets/vendor/*' -print0 | xargs -0 -n1 php -l
+
+      - name: Show remaining hard-coded references
+        run: |
+          set +e
+          grep -RIn "info@MarksServices.com\|info@marksservices.com\|office@MarksServices.com\|office@marksservices.com\|(512) 549-0322\|tel:+15125490322\|TECL&nbsp;20547\|TECL 20547\|M-38601\|25 Waters Edge Circle" \
+            --include='*.php' \
+            --exclude='config.php' \
+            --exclude-dir='.git' \
+            --exclude-dir='assets/vendor' \
+            .
+          status=$?
+          if [ "$status" -eq 0 ]; then
+            echo "Hard-coded references remain. Review output above."
+          else
+            echo "No hard-coded business references found outside config.php."
+          fi
+          exit 0
+
+      - name: Commit normalized references
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No normalization changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Normalize business references from config"
+          git push origin main
