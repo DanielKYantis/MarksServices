@@ -1,1 +1,14 @@
+.env
+*.log
+/logs/
+/cache/
+/tmp/
+/vendor/
 .DS_Store
+Thumbs.db
+
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride

@@ -3,144 +3,364 @@
 # Team Section
 --------------------------------------------------------------*/
 .team {
-  .crew-card {
-    display: flex;
-    align-items: center;
-    background-color: var(--surface-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .crew-member {
+    background: var(--surface-color);
     border-radius: 12px;
     overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease;
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    transition: all 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: 0 12px 40px color-mix(in srgb, var(--default-color), transparent 88%);
+      box-shadow: 0 12px 35px color-mix(in srgb, var(--default-color), transparent 88%);
       border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
     }
 
-    .crew-portrait {
-      position: relative;
-      flex: 0 0 220px;
-      width: 220px;
-      height: 260px;
-      overflow: hidden;
+    &.primary-member {
+      display: flex;
+      flex-direction: column;
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.4s ease-in-out;
+      .member-portrait {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 280px;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+        }
+
+        .years-tag {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          background: var(--accent-color);
+          color: var(--contrast-color);
+          font-size: 12px;
+          font-weight: 700;
+          padding: 6px 14px;
+          border-radius: 6px;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
       }
 
-      .crew-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: color-mix(in srgb, var(--accent-color), transparent 40%);
+      &:hover .member-portrait img {
+        transform: scale(1.06);
+      }
+
+      .member-body {
+        padding: 25px;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding-bottom: 20px;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
+        flex-direction: column;
+        flex: 1;
 
-        .crew-links {
+        h4 {
+          font-size: 22px;
+          font-weight: 700;
+          margin: 0 0 6px 0;
+          color: var(--heading-color);
+        }
+
+        .role {
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 600;
+          color: var(--accent-color);
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 14px;
+          padding-bottom: 14px;
+          border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+          width: 100%;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 1.7;
+          color: color-mix(in srgb, var(--default-color), transparent 20%);
+          margin-bottom: 16px;
+          flex: 1;
+        }
+
+        .badge-row {
           display: flex;
-          gap: 10px;
-          transform: translateY(15px);
-          transition: transform 0.3s ease-in-out;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-bottom: 20px;
 
-          a {
+          .cert-badge {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background-color: var(--contrast-color);
+            gap: 5px;
+            font-size: 12px;
+            font-weight: 500;
             color: var(--accent-color);
-            border-radius: 50%;
-            font-size: 15px;
-            transition: all 0.3s ease-in-out;
+            background: color-mix(in srgb, var(--accent-color), transparent 92%);
+            padding: 5px 12px;
+            border-radius: 6px;
+
+            i {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .member-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 16px;
+          border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+          .contact-row,
+          .social-row {
+            display: flex;
+            gap: 8px;
+
+            a {
+              width: 36px;
+              height: 36px;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 15px;
+              transition: all 0.3s ease;
+              text-decoration: none;
+            }
+          }
+
+          .contact-row a {
+            background: var(--accent-color);
+            color: var(--contrast-color);
 
             &:hover {
-              background-color: var(--accent-color);
+              background: color-mix(in srgb, var(--accent-color), var(--default-color) 15%);
+              transform: translateY(-2px);
+            }
+          }
+
+          .social-row a {
+            background: color-mix(in srgb, var(--default-color), transparent 92%);
+            color: var(--default-color);
+
+            &:hover {
+              background: var(--accent-color);
               color: var(--contrast-color);
-              transform: scale(1.15);
+              transform: translateY(-2px);
+            }
+          }
+        }
+      }
+    }
+
+    &.mini-member {
+      display: flex;
+      flex-direction: row;
+
+      .mini-top {
+        position: relative;
+        flex-shrink: 0;
+        width: 110px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease;
+        }
+
+        .mini-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: color-mix(in srgb, var(--accent-color), transparent 30%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+
+          a {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--contrast-color);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            transform: translateY(10px);
+
+            &:hover {
+              background: var(--accent-color);
+              color: var(--contrast-color);
             }
           }
         }
       }
 
       &:hover {
-        .crew-overlay {
-          opacity: 1;
+        .mini-top {
+          .mini-overlay {
+            opacity: 1;
 
-          .crew-links {
-            transform: translateY(0);
+            a {
+              transform: translateY(0);
+            }
+          }
+
+          img {
+            transform: scale(1.08);
           }
         }
+      }
 
-        img {
-          transform: scale(1.1);
+      .mini-info {
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        min-width: 0;
+
+        h5 {
+          font-size: 16px;
+          font-weight: 700;
+          color: var(--heading-color);
+          margin: 0 0 4px 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        >span {
+          font-size: 12px;
+          font-weight: 600;
+          color: var(--accent-color);
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          display: block;
+          margin-bottom: 12px;
+        }
+
+        .tag-group {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+
+          .mini-tag {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 3px 10px;
+            border-radius: 4px;
+            background: color-mix(in srgb, var(--accent-color), transparent 90%);
+            color: var(--accent-color);
+            border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+          }
         }
       }
     }
+  }
 
-    .crew-details {
-      flex: 1;
-      padding: 30px 32px;
-
-      .crew-role {
-        display: inline-block;
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        color: var(--accent-color);
-        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-        padding: 4px 14px;
-        border-radius: 20px;
-        margin-bottom: 14px;
+  @media (max-width: 992px) {
+    .crew-member.primary-member {
+      .member-portrait img {
+        height: 240px;
       }
 
-      h4 {
-        font-size: 22px;
-        font-weight: 700;
-        margin: 0 0 12px 0;
-        color: var(--heading-color);
-        line-height: 1.3;
-      }
+      .member-body {
+        padding: 20px;
 
-      p {
-        font-size: 14px;
-        line-height: 1.75;
-        color: color-mix(in srgb, var(--default-color), transparent 25%);
-        margin: 0;
+        h4 {
+          font-size: 20px;
+        }
       }
     }
   }
 
   @media (max-width: 768px) {
-    .crew-card {
-      flex-direction: column;
-
-      .crew-portrait {
-        flex: 0 0 auto;
-        width: 100%;
-        height: 240px;
-      }
-
-      .crew-details {
-        padding: 24px 20px;
-        text-align: center;
-
-        .crew-role {
-          margin-bottom: 10px;
+    .crew-member {
+      &.primary-member {
+        .member-portrait img {
+          height: 220px;
         }
 
-        h4 {
-          font-size: 20px;
+        .member-body {
+          padding: 18px;
+
+          h4 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 13px;
+          }
+
+          .badge-row .cert-badge {
+            font-size: 11px;
+            padding: 4px 10px;
+          }
+
+          .member-footer {
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-start;
+          }
+        }
+      }
+
+      &.mini-member {
+        .mini-top {
+          width: 90px;
+        }
+
+        .mini-info {
+          padding: 14px 16px;
+
+          h5 {
+            font-size: 15px;
+          }
+
+          .tag-group .mini-tag {
+            font-size: 10px;
+            padding: 2px 8px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .crew-member.mini-member {
+      flex-direction: column;
+
+      .mini-top {
+        width: 100%;
+        height: 180px;
+      }
+
+      .mini-info {
+        text-align: center;
+
+        h5 {
+          white-space: normal;
+        }
+
+        .tag-group {
+          justify-content: center;
         }
       }
     }

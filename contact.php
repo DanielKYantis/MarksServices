@@ -1,11 +1,10 @@
 <?php
-$page_title = "Contact - ConstructoPro";
-$body_class = "contact-page";
-$active_page = "contact";
-include 'includes/header.php';
+declare(strict_types=1);
+$pageKey = 'contact.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
-  <main class="main">
+<main class="main">
 
     <!-- Page Title -->
     <div class="page-title light-background">
@@ -133,4 +132,4 @@ include 'includes/header.php';
 
   </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

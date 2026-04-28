@@ -1,9 +1,23 @@
-# MarksServices
+# Mark's Services
 
-Website: https://webtestkit.com/mark
+PHP 8.4 website for Mark's Services in Georgetown, Texas.
 
-Project: ConstructoPro
+## Local development
 
-Exported on: 2026-03-14 18:49 with Bootstrap v5.3.8
+Run:
 
-Generated Using BootstrapMade Builder
+php -S localhost:8080
+
+Then open:
+
+http://localhost:8080
+
+## Environment
+
+Use .env.example as the template for private environment variables.
+
+Do not commit a real .env file.
+
+## Deployment
+
+GitHub main is the source branch for deployment.

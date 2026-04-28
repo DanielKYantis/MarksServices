@@ -1,16 +1,10 @@
 <?php
-
-$page_title = "404 - ConstructoPro";
-
-$body_class = "page-404";
-
-$active_page = "404";
-
-include 'includes/header.php';
-
+declare(strict_types=1);
+$pageKey = '404.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
-  <main class="main">
+<main class="main">
 
     <!-- Page Title -->
     <div class="page-title light-background">
@@ -55,7 +49,7 @@ include 'includes/header.php';
           </div>
 
           <div class="error-action" data-aos="fade-up" data-aos-delay="700">
-            <a href="index.php" class="btn btn-primary">Back to Home</a>
+            <a href="/" class="btn btn-primary">Back to Home</a>
           </div>
         </div>
 
@@ -65,4 +59,4 @@ include 'includes/header.php';
 
   </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

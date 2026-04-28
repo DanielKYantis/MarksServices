@@ -1,16 +1,10 @@
 <?php
-
-$page_title = "Quote - ConstructoPro";
-
-$body_class = "quote-page";
-
-$active_page = "quote";
-
-include 'includes/header.php';
-
+declare(strict_types=1);
+$pageKey = 'quote.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
-  <main class="main">
+<main class="main">
 
     <!-- Page Title -->
     <div class="page-title light-background">
@@ -88,7 +82,7 @@ include 'includes/header.php';
 
                 <div class="col-lg-6">
                   <div class="quote-form-wrapper">
-                    <form action="forms/get-a-quote.php" method="post" class="php-email-form" data-aos="fade-left" data-aos-delay="200">
+                    <form action="forms/quote.php" method="post" class="php-email-form" data-aos="fade-left" data-aos-delay="200">
                       <div class="form-header">
                         <h4>Request Your Free Quote</h4>
                         <p>Fill out the form below and we'll get back to you with a detailed estimate.</p>
@@ -173,4 +167,4 @@ include 'includes/header.php';
 
   </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

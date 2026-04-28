@@ -1,0 +1,11 @@
+{
+  "name": "danielkyantis/marksservices",
+  "description": "Mark's Services website",
+  "type": "project",
+  "require": {
+    "php": ">=8.4"
+  },
+  "scripts": {
+    "lint": "find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l"
+  }
+}
