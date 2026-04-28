@@ -1,0 +1,86 @@
+name: Deploy to IONOS
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+concurrency:
+  group: ionos-deploy-main
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy main to IONOS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+
+      - name: Lint PHP
+        run: find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+
+      - name: Build deploy directory
+        run: |
+          rm -rf deploy
+          mkdir -p deploy
+
+          find . -maxdepth 1 -type f -name '*.php' -exec cp -p {} deploy/ \;
+
+          cp -a assets deploy/assets
+          cp -a forms deploy/forms
+          cp -a includes deploy/includes
+
+          if [ -f .htaccess ]; then cp -p .htaccess deploy/.htaccess; fi
+          if [ -f robots.txt ]; then cp -p robots.txt deploy/robots.txt; fi
+          if [ -f sitemap.xml ]; then cp -p sitemap.xml deploy/sitemap.xml; fi
+
+          find deploy -name '.DS_Store' -delete
+          find deploy -type f -name '*.map' -delete
+
+      - name: Configure SSH key
+        env:
+          IONOS_SSH_PRIVATE_KEY: ${{ secrets.IONOS_SSH_PRIVATE_KEY }}
+          IONOS_SSH_HOST: ${{ secrets.IONOS_SSH_HOST }}
+          IONOS_SSH_PORT: ${{ secrets.IONOS_SSH_PORT }}
+        run: |
+          : "${IONOS_SSH_PRIVATE_KEY:?Missing IONOS_SSH_PRIVATE_KEY}"
+          : "${IONOS_SSH_HOST:?Missing IONOS_SSH_HOST}"
+
+          PORT="${IONOS_SSH_PORT:-22}"
+
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$IONOS_SSH_PRIVATE_KEY" > ~/.ssh/ionos_deploy_key
+          chmod 600 ~/.ssh/ionos_deploy_key
+          ssh-keyscan -p "$PORT" -H "$IONOS_SSH_HOST" >> ~/.ssh/known_hosts
+
+      - name: Deploy via rsync over SSH
+        env:
+          IONOS_SSH_HOST: ${{ secrets.IONOS_SSH_HOST }}
+          IONOS_SSH_PORT: ${{ secrets.IONOS_SSH_PORT }}
+          IONOS_SSH_USER: ${{ secrets.IONOS_SSH_USER }}
+          IONOS_REMOTE_PATH: ${{ secrets.IONOS_REMOTE_PATH }}
+        run: |
+          : "${IONOS_SSH_HOST:?Missing IONOS_SSH_HOST}"
+          : "${IONOS_SSH_USER:?Missing IONOS_SSH_USER}"
+          : "${IONOS_REMOTE_PATH:?Missing IONOS_REMOTE_PATH}"
+
+          PORT="${IONOS_SSH_PORT:-22}"
+
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/ionos_deploy_key -p $PORT -o IdentitiesOnly=yes" \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '.env' \
+            --exclude '.env.example' \
+            deploy/ "$IONOS_SSH_USER@$IONOS_SSH_HOST:$IONOS_REMOTE_PATH/"

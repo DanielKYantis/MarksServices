@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
-$pageKey = 'contact.php';
-require __DIR__ . '/includes/header.php';
+$pageKey = "contact.php";
+require __DIR__ . "/includes/header.php";
 ?>
 
 <main class="main">
@@ -37,7 +37,9 @@ require __DIR__ . '/includes/header.php';
                 </div>
                 <div class="card-content">
                   <h4>Our Location</h4>
-                  <p>4952 Hilltop Dr, Anytown, CA 90210</p>
+                  <p><?= e(BUSINESS_CITY) ?> (Sun City), <?= e(
+     BUSINESS_STATE
+ ) ?> <?= e(BUSINESS_ZIP) ?></p>
                 </div>
               </div>
 
@@ -47,7 +49,11 @@ require __DIR__ . '/includes/header.php';
                 </div>
                 <div class="card-content">
                   <h4>Email Us</h4>
-                  <p>info@example.com</p>
+                  <a href="mailto:<?= e(
+                      BUSINESS_EMAIL
+                  ) ?>" class="d-flex align-items-center ms-4"><i class="bi bi-envelope"></i><span class="ms-2"><?= e(
+    BUSINESS_EMAIL
+) ?></span></a>
                 </div>
               </div>
 
@@ -57,7 +63,11 @@ require __DIR__ . '/includes/header.php';
                 </div>
                 <div class="card-content">
                   <h4>Call Us</h4>
-                  <p>+1 (555) 123-4567</p>
+                  <a href="tel:<?= e(
+                      BUSINESS_PHONE_TEL
+                  ) ?>" class="d-flex align-items-center ms-4"><i class="bi bi-phone"></i><span class="ms-2"><?= e(
+    BUSINESS_PHONE_DISPLAY
+) ?></span></a>
                 </div>
               </div>
 
@@ -67,7 +77,7 @@ require __DIR__ . '/includes/header.php';
                 </div>
                 <div class="card-content">
                   <h4>Working Hours</h4>
-                  <p>Monday-Saturday: 9AM - 7PM</p>
+                  <p>Monday-Saturday: 9AM - 5PM</p>
                 </div>
               </div>
             </div>
@@ -132,4 +142,4 @@ require __DIR__ . '/includes/header.php';
 
   </main>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . "/includes/footer.php"; ?>
