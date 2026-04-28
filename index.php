@@ -799,7 +799,7 @@ require __DIR__ . '/includes/header.php';
     </section><!-- /Projects Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section" data-section="team" style="">
+    <section id="team" class="team section" data-section="team">
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Team</h2>
