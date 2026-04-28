@@ -14,7 +14,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-7">
             <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
               <span class="subtitle">Licensed Remodeling &amp; Home Services</span>
-              <h1>Georgetown &amp; Sun City, Texas</h1>
+              <h1><?= e(BUSINESS_AREA) ?></h1>
 
               <p>
                 Electrical • Plumbing • Remodeling<br>
@@ -38,13 +38,13 @@ require __DIR__ . '/includes/header.php';
                   <i class="bi bi-file-earmark-check"></i>
                   <div class="badge-text">
                     <span class="count">Licensed</span>
-                    <span class="label">Plumber M-38601<br>Electrician TECL 20547</span>
+                    <span class="label">Plumber <?= e(PLUMBING_LICENSE) ?><br>Electrician <?= e(ELECTRICAL_LICENSE) ?></span>
                   </div>
                 </div>
                 <div class="badge-item">
                   <i class="bi bi-telephone"></i>
                   <div class="badge-text">
-                    <span class="count">(512) 549-0322</span>
+                    <span class="count"><?= e(BUSINESS_PHONE_DISPLAY) ?></span>
                     <span class="label">Call or Text</span>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ require __DIR__ . '/includes/header.php';
                         <i class="bi bi-lightning-charge fs-4"></i>
                         <div>
                           <strong>Licensed Electrical</strong>
-                          <div class="small">Electrical Contractor: <span>TECL&nbsp;20547</span></div>
+                          <div class="small">Electrical Contractor: <span><?= e(ELECTRICAL_LICENSE) ?></span></div>
                         </div>
                       </div>
                     </div>
@@ -143,7 +143,7 @@ require __DIR__ . '/includes/header.php';
                         <i class="bi bi-droplet fs-4"></i>
                         <div>
                           <strong>Licensed Plumbing</strong>
-                          <div class="small">Responsible Master Plumber: <span>M-38601</span></div>
+                          <div class="small">Responsible Master Plumber: <span><?= e(PLUMBING_LICENSE) ?></span></div>
                         </div>
                       </div>
                     </div>
@@ -238,7 +238,7 @@ require __DIR__ . '/includes/header.php';
                 <h3>Licensed Electrical</h3>
                 <p>Service calls, lighting, ceiling fans, outlets, and troubleshooting—safety-first and code-compliant.</p>
                 <ul class="highlights">
-                  <li><i class="bi bi-shield-check"></i> License: <strong>TECL&nbsp;20547</strong> <!-- TODO: replace with real TECL number --></li>
+                  <li><i class="bi bi-shield-check"></i> License: <strong><?= e(ELECTRICAL_LICENSE) ?></strong> </li>
                   <li><i class="bi bi-shield-check"></i> Clear estimate before work begins</li>
                   <li><i class="bi bi-shield-check"></i> Senior-friendly lighting upgrades</li>
                 </ul>
@@ -258,7 +258,7 @@ require __DIR__ . '/includes/header.php';
                 <h3>Licensed Plumbing</h3>
                 <p>Leaks, fixtures, water heaters, shutoffs, and repairs—done neatly with durability in mind.</p>
                 <ul class="highlights">
-                  <li><i class="bi bi-shield-check"></i> RMP/Master: <strong>M-38601</strong> <!-- TODO: replace with real license number --></li>
+                  <li><i class="bi bi-shield-check"></i> RMP/Master: <strong><?= e(PLUMBING_LICENSE) ?></strong> </li>
                   <li><i class="bi bi-shield-check"></i> Water heater repair &amp; replacement</li>
                   <li><i class="bi bi-shield-check"></i> Fast response for active leaks</li>
                 </ul>
@@ -573,7 +573,7 @@ require __DIR__ . '/includes/header.php';
             <div class="cert-details">
               <h5>Texas Electrical Contractor</h5>
               <span class="cert-category">License Disclosure</span>
-              <p><strong>TECL&nbsp;20547</strong><!-- TODO: replace with real TECL number --></p>
+              <p><strong><?= e(ELECTRICAL_LICENSE) ?></strong></p>
             </div>
           </div>
 
@@ -584,7 +584,7 @@ require __DIR__ . '/includes/header.php';
             <div class="cert-details">
               <h5>Responsible Master Plumber</h5>
               <span class="cert-category">License Disclosure</span>
-              <p><strong>M-38601</strong><!-- TODO: replace with real Master/RMP number --></p>
+              <p><strong><?= e(PLUMBING_LICENSE) ?></strong></p>
             </div>
           </div>
 
@@ -831,8 +831,8 @@ require __DIR__ . '/includes/header.php';
                 </div>
 
                 <div class="contact-row">
-                  <a href="tel:+15125490322" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
-                  <a href="mailto:office@marksservices.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
+                  <a href="mailto:<?= e(BUSINESS_EMAIL) ?>" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -851,12 +851,12 @@ require __DIR__ . '/includes/header.php';
                 <p>Service calls and upgrades with a safety-first approach—lighting, ceiling fans, outlets, and troubleshooting.</p>
                 <div class="badge-row">
                   <span class="cert-badge"><i class="bi bi-lightning-charge"></i> Electrical</span>
-                  <span class="cert-badge"><i class="bi bi-file-earmark-check"></i> TECL 20547</span>
+                  <span class="cert-badge"><i class="bi bi-file-earmark-check"></i> <?= e(ELECTRICAL_LICENSE) ?></span>
                 </div>
 
                 <div class="contact-row">
-                  <a href="tel:+15125490322" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
-                  <a href="mailto:office@marksservices.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
+                  <a href="mailto:<?= e(BUSINESS_EMAIL) ?>" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -875,12 +875,12 @@ require __DIR__ . '/includes/header.php';
                 <p>Repairs, fixtures, and water heaters with clean execution and dependable results.</p>
                 <div class="badge-row">
                   <span class="cert-badge"><i class="bi bi-droplet"></i> Plumbing</span>
-                  <span class="cert-badge"><i class="bi bi-file-earmark-check"></i> M-38601<!-- TODO --></span>
+                  <span class="cert-badge"><i class="bi bi-file-earmark-check"></i> <?= e(PLUMBING_LICENSE) ?><!-- TODO --></span>
                 </div>
 
                 <div class="contact-row">
-                  <a href="tel:+15125490322" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
-                  <a href="mailto:office@marksservices.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
+                  <a href="mailto:<?= e(BUSINESS_EMAIL) ?>" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -932,7 +932,7 @@ require __DIR__ . '/includes/header.php';
                   <i class="bi bi-check-circle-fill"></i>
                   <div>
                     <h5>License disclosure</h5>
-                    <p class="mb-0">Electrical: TECL 20547 • Plumbing: M-38601<!-- TODO replace --></p>
+                    <p class="mb-0">Electrical: <?= e(ELECTRICAL_LICENSE) ?> • Plumbing: <?= e(PLUMBING_LICENSE) ?><!-- TODO replace --></p>
                   </div>
                 </div>
 
@@ -946,7 +946,7 @@ require __DIR__ . '/includes/header.php';
               </div>
 
               <div class="mt-4">
-                <a href="tel:+15125490322" class="btn btn-primary me-2">Call (512) 549-0322</a>
+                <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>" class="btn btn-primary me-2">Call <?= e(BUSINESS_PHONE_DISPLAY) ?></a>
                 <a href="projects.php" class="btn btn-outline-primary">View Projects</a>
               </div>
             </div>
@@ -1010,7 +1010,7 @@ require __DIR__ . '/includes/header.php';
                       <span>Service-area business • Appointments only • No walk-ins</span>
                       <a href="tel:+15558921567" class="phone-link">
                         <i class="bi bi-telephone-fill"></i>
-                        +1 (512) 549-0322
+                        +1 <?= e(BUSINESS_PHONE_DISPLAY) ?>
                       </a>
                     </div>
                   </div>
