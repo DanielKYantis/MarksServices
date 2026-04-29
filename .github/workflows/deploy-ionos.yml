@@ -47,6 +47,15 @@ jobs:
           find deploy -name '.DS_Store' -delete
           find deploy -type f -name '*.map' -delete
 
+      - name: Create deploy backup archive
+        run: |
+          SHORT_SHA="${GITHUB_SHA::12}"
+          TIMESTAMP="$(date -u '+%Y%m%dT%H%M%SZ')"
+          ARCHIVE="marksservices-${TIMESTAMP}-${SHORT_SHA}.tar.gz"
+
+          tar -czf "$ARCHIVE" -C deploy .
+          printf 'DEPLOY_BACKUP_ARCHIVE=%s\n' "$ARCHIVE" >> "$GITHUB_ENV"
+
       - name: Configure SSH key
         env:
           IONOS_SSH_PRIVATE_KEY: ${{ secrets.IONOS_SSH_PRIVATE_KEY }}
@@ -84,3 +93,34 @@ jobs:
             --exclude '.env' \
             --exclude '.env.example' \
             deploy/ "$IONOS_SSH_USER@$IONOS_SSH_HOST:$IONOS_REMOTE_PATH/"
+
+      - name: Store deploy backup and rotate
+        env:
+          IONOS_SSH_HOST: ${{ secrets.IONOS_SSH_HOST }}
+          IONOS_SSH_PORT: ${{ secrets.IONOS_SSH_PORT }}
+          IONOS_SSH_USER: ${{ secrets.IONOS_SSH_USER }}
+          IONOS_REMOTE_PATH: ${{ secrets.IONOS_REMOTE_PATH }}
+          DEPLOY_BACKUP_KEEP: 10
+        run: |
+          : "${IONOS_SSH_HOST:?Missing IONOS_SSH_HOST}"
+          : "${IONOS_SSH_USER:?Missing IONOS_SSH_USER}"
+          : "${IONOS_REMOTE_PATH:?Missing IONOS_REMOTE_PATH}"
+          : "${DEPLOY_BACKUP_ARCHIVE:?Missing DEPLOY_BACKUP_ARCHIVE}"
+
+          PORT="${IONOS_SSH_PORT:-22}"
+          KEEP="${DEPLOY_BACKUP_KEEP:-10}"
+          REMOTE_BASE="${IONOS_REMOTE_PATH%/}"
+          REMOTE_PARENT="$(dirname "$REMOTE_BASE")"
+          IONOS_BACKUP_PATH="$REMOTE_PARENT/.marksservices-deploy-backups"
+          IONOS_BACKUP_PATH_ESCAPED="$(printf '%q' "$IONOS_BACKUP_PATH")"
+
+          SSH_CMD=(ssh -i ~/.ssh/ionos_deploy_key -p "$PORT" -o IdentitiesOnly=yes)
+          RSYNC_SSH="ssh -i ~/.ssh/ionos_deploy_key -p $PORT -o IdentitiesOnly=yes"
+
+          "${SSH_CMD[@]}" "$IONOS_SSH_USER@$IONOS_SSH_HOST" "mkdir -p $IONOS_BACKUP_PATH_ESCAPED"
+          rsync -az -e "$RSYNC_SSH" \
+            "$DEPLOY_BACKUP_ARCHIVE" \
+            "$IONOS_SSH_USER@$IONOS_SSH_HOST:$IONOS_BACKUP_PATH/"
+
+          "${SSH_CMD[@]}" "$IONOS_SSH_USER@$IONOS_SSH_HOST" \
+            "cd $IONOS_BACKUP_PATH_ESCAPED && ls -1t marksservices-*.tar.gz 2>/dev/null | tail -n +$((KEEP + 1)) | xargs -r rm -f --"
