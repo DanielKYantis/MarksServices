@@ -16,8 +16,15 @@ $page = $pages[$pageKey] ?? $pages['index.php'];
   <meta name="description" content="<?= e($page['description']) ?>">
   <meta name="keywords" content="<?= e($page['keywords']) ?>">
 
-  <link href="assets/img/uploads/favicon-32x32-clarity.png" rel="icon">
-  <link href="assets/img/uploads/apple-touch-icon-180x180.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16-clarity.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32-clarity.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon/favicon-64x64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+  <meta name="theme-color" content="#ffffff">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
