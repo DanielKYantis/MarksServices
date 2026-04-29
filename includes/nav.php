@@ -1,5 +1,7 @@
 <?php
 declare(strict_types=1);
+
+$pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
 ?>
 <nav id="navmenu" class="navmenu">
   <ul>

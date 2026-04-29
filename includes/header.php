@@ -59,7 +59,7 @@ $page = $pages[$pageKey] ?? $pages['index.php'];
   <div class="branding d-flex align-items-center">
     <div class="container position-relative d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/uploads/logo_enhanced.png" alt="<?= e(SITE_NAME) ?> logo">
+        <img src="assets/img/favicon/logo_master_enhanced.png" alt="<?= e(SITE_NAME) ?> logo">
         <h1 class="sitename"><?= e(SITE_NAME) ?></h1>
       </a>
 
