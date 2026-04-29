@@ -1,0 +1,63 @@
+name: Assistant editor
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/assistant/edit_task.py'
+      - '.github/workflows/assistant-editor.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+concurrency:
+  group: assistant-editor-main
+  cancel-in-progress: false
+
+jobs:
+  edit:
+    name: Run assistant edit task
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+
+      - name: Run assistant edit script
+        run: |
+          if [ ! -f .github/assistant/edit_task.py ]; then
+            echo "Missing .github/assistant/edit_task.py"
+            exit 1
+          fi
+          python3 .github/assistant/edit_task.py
+
+      - name: Lint PHP
+        run: find . -name '*.php' -not -path './assets/vendor/*' -print0 | xargs -0 -n1 php -l
+
+      - name: Commit assistant edits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No assistant edit changes to commit."
+            exit 0
+          fi
+
+          MESSAGE="${ASSISTANT_COMMIT_MESSAGE:-Assistant automated edit}"
+          git commit -m "$MESSAGE"
+          git push origin main
