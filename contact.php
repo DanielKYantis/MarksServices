@@ -27,7 +27,7 @@ require __DIR__ . "/includes/header.php";
           <div class="contact-info-panel">
             <div class="contact-info-header">
               <h3>Contact Information</h3>
-              <p>Dignissimos deleniti accusamus rerum voluptate. Dignissimos rerum sit maiores reiciendis voluptate inventore ut.</p>
+              <p>Call, email, or send a message to discuss electrical, plumbing, remodeling, or maintenance work in the Georgetown and Sun City area.</p>
             </div>
 
             <div class="contact-info-cards">
@@ -82,26 +82,16 @@ require __DIR__ . "/includes/header.php";
               </div>
             </div>
 
-            <div class="social-links-panel">
-              <h5>Follow Us</h5>
-              <div class="social-icons">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-              </div>
-            </div>
           </div>
 
           <div class="contact-form-panel">
             <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps?q=Georgetown%2C%20TX%2078626&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="form-container">
               <h3>Send Us a Message</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mauris hendrerit faucibus imperdiet nec eget felis.</p>
+              <p>Share a few details and the team will respond with the best next step.</p>
 
               <form action="forms/contact.php" method="post" class="php-email-form">
                 <div class="form-floating mb-3">

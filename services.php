@@ -30,12 +30,12 @@ require __DIR__ . '/includes/header.php';
               <div class="service-icon">
                 <i class="bi bi-building"></i>
               </div>
-              <h3>Commercial Construction</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <h3>Electrical Service</h3>
+              <p>Licensed troubleshooting, repairs, fixture upgrades, panels, circuits, and punch-list electrical work for homes and small properties.</p>
               <div class="service-features">
-                <span><i class="bi bi-check-circle"></i> Office Buildings</span>
-                <span><i class="bi bi-check-circle"></i> Retail Spaces</span>
-                <span><i class="bi bi-check-circle"></i> Warehouses</span>
+                <span><i class="bi bi-check-circle"></i> Repairs &amp; diagnostics</span>
+                <span><i class="bi bi-check-circle"></i> Fixtures &amp; devices</span>
+                <span><i class="bi bi-check-circle"></i> <?= e(ELECTRICAL_LICENSE) ?></span>
               </div>
               <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -47,12 +47,12 @@ require __DIR__ . '/includes/header.php';
               <div class="service-icon">
                 <i class="bi bi-house"></i>
               </div>
-              <h3>Residential Construction</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+              <h3>Plumbing Service</h3>
+              <p>Licensed plumbing repairs, fixture replacements, shutoffs, water heater support, and leak response with clean work areas.</p>
               <div class="service-features">
-                <span><i class="bi bi-check-circle"></i> Custom Homes</span>
-                <span><i class="bi bi-check-circle"></i> Renovations</span>
-                <span><i class="bi bi-check-circle"></i> Additions</span>
+                <span><i class="bi bi-check-circle"></i> Leaks &amp; fixtures</span>
+                <span><i class="bi bi-check-circle"></i> Water heaters</span>
+                <span><i class="bi bi-check-circle"></i> <?= e(PLUMBING_LICENSE) ?></span>
               </div>
               <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -63,12 +63,12 @@ require __DIR__ . '/includes/header.php';
               <div class="service-icon">
                 <i class="bi bi-gear"></i>
               </div>
-              <h3>Industrial Construction</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id tellus quis risus vehicula vehicula ut turpis.</p>
+              <h3>Maintenance &amp; Make-Ready</h3>
+              <p>Scheduled repair visits for homeowners, property managers, and make-ready lists that need one reliable point of contact.</p>
               <div class="service-features">
-                <span><i class="bi bi-check-circle"></i> Manufacturing</span>
-                <span><i class="bi bi-check-circle"></i> Processing Plants</span>
-                <span><i class="bi bi-check-circle"></i> Storage Facilities</span>
+                <span><i class="bi bi-check-circle"></i> Punch lists</span>
+                <span><i class="bi bi-check-circle"></i> Tenant turns</span>
+                <span><i class="bi bi-check-circle"></i> Small repairs</span>
               </div>
               <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -85,7 +85,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-list-block">
               <h3>Additional Services</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+              <p>Mark's Services can combine trade work, repairs, and small remodel scopes into one organized visit or proposal.</p>
 
               <div class="service-list">
                 <div class="service-list-item" data-aos="fade-up" data-aos-delay="100">
@@ -93,8 +93,8 @@ require __DIR__ . '/includes/header.php';
                     <i class="bi bi-rulers"></i>
                   </div>
                   <div class="service-list-content">
-                    <h4>Architectural Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae imperdiet neque.</p>
+                    <h4>Remodeling &amp; Carpentry</h4>
+                    <p>Trim, doors, built-ins, small renovations, and finish work for practical home improvements.</p>
                   </div>
                 </div><!-- End Service List Item -->
 
@@ -103,8 +103,8 @@ require __DIR__ . '/includes/header.php';
                     <i class="bi bi-calendar-check"></i>
                   </div>
                   <div class="service-list-content">
-                    <h4>Project Management</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia dui lectus.</p>
+                    <h4>Scope Coordination</h4>
+                    <p>Clear estimates, scheduling, and communication when a job touches more than one trade.</p>
                   </div>
                 </div><!-- End Service List Item -->
 
@@ -113,8 +113,8 @@ require __DIR__ . '/includes/header.php';
                     <i class="bi bi-tools"></i>
                   </div>
                   <div class="service-list-content">
-                    <h4>Renovation &amp; Remodeling</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in nulla ut magna.</p>
+                    <h4>Repair Visits</h4>
+                    <p>Focused service calls for repairs, adjustments, replacements, and finish-the-list tasks.</p>
                   </div>
                 </div><!-- End Service List Item -->
               </div>
@@ -123,9 +123,9 @@ require __DIR__ . '/includes/header.php';
         </div>
 
         <div class="cta-container text-center mt-5" data-aos="fade-up" data-aos-delay="300">
-          <h3>Ready to Start Your Construction Project?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
-          <a href="#" class="btn btn-cta">Request a Free Quote</a>
+          <h3>Ready to Plan the Work?</h3>
+          <p>Send the details and Mark's Services will follow up with the best next step.</p>
+          <a href="quote.php" class="btn btn-cta">Request a Free Quote</a>
         </div>
 
       </div>

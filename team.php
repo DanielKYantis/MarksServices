@@ -34,20 +34,20 @@ require __DIR__ . '/includes/header.php';
                   <div class="experience-badge">15+ Years</div>
                 </div>
                 <div class="team-info">
-                  <h4>Marcus Thompson</h4>
-                  <span class="position">Project Manager</span>
+                  <h4>Electrical Service Lead</h4>
+                  <span class="position"><?= e(ELECTRICAL_LICENSE) ?></span>
                   <div class="contact-info">
-                    <a href="mailto:marcus@example.com"><i class="bi bi-envelope"></i> marcus@example.com</a>
-                    <a href="tel:+1555123456"><i class="bi bi-telephone"></i> +1 (555) 123-456</a>
+                    <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i> <?= e(BUSINESS_EMAIL) ?></a>
+                    <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i> <?= e(BUSINESS_PHONE_DISPLAY) ?></a>
                   </div>
                 </div>
               </div>
               <div class="team-details">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Electrical scopes are reviewed for safety, access, materials, and the right repair path before work begins.</p>
                 <div class="credentials">
                   <div class="cred-item">
                     <i class="bi bi-award"></i>
-                    <span>PMP Certified</span>
+                    <span>Licensed Electrical</span>
                   </div>
                   <div class="cred-item">
                     <i class="bi bi-shield-check"></i>
@@ -55,9 +55,9 @@ require __DIR__ . '/includes/header.php';
                   </div>
                 </div>
                 <div class="social-links">
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="contact.php"><i class="bi bi-envelope"></i></a>
+                  <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                  <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                 </div>
               </div>
             </div>
@@ -71,30 +71,30 @@ require __DIR__ . '/includes/header.php';
                   <div class="experience-badge">12+ Years</div>
                 </div>
                 <div class="team-info">
-                  <h4>Sarah Rodriguez</h4>
-                  <span class="position">Site Supervisor</span>
+                  <h4>Plumbing Service Lead</h4>
+                  <span class="position"><?= e(PLUMBING_LICENSE) ?></span>
                   <div class="contact-info">
-                    <a href="mailto:sarah@example.com"><i class="bi bi-envelope"></i> sarah@example.com</a>
-                    <a href="tel:+1555123457"><i class="bi bi-telephone"></i> +1 (555) 123-457</a>
+                    <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i> <?= e(BUSINESS_EMAIL) ?></a>
+                    <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i> <?= e(BUSINESS_PHONE_DISPLAY) ?></a>
                   </div>
                 </div>
               </div>
               <div class="team-details">
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Plumbing work is scoped around the active issue, fixture needs, shutoffs, cleanup, and long-term durability.</p>
                 <div class="credentials">
                   <div class="cred-item">
                     <i class="bi bi-person-badge"></i>
-                    <span>Licensed Contractor</span>
+                    <span>Licensed Plumbing</span>
                   </div>
                   <div class="cred-item">
                     <i class="bi bi-tools"></i>
-                    <span>Site Management</span>
+                    <span>Repair Planning</span>
                   </div>
                 </div>
                 <div class="social-links">
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="contact.php"><i class="bi bi-envelope"></i></a>
+                  <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                  <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                 </div>
               </div>
             </div>
@@ -106,22 +106,22 @@ require __DIR__ . '/includes/header.php';
                 <img src="assets/img/construction/team-3.webp" class="img-fluid" alt="">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>David Chen</h5>
-                    <span>Lead Engineer</span>
+                    <h5>Remodeling</h5>
+                    <span>Carpentry &amp; finish work</span>
                     <div class="quick-contact">
-                      <a href="#"><i class="bi bi-envelope"></i></a>
-                      <a href="#"><i class="bi bi-telephone"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
+                      <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                      <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="member-summary">
-                <h5>David Chen</h5>
-                <span>Lead Engineer</span>
+                <h5>Remodeling</h5>
+                <span>Carpentry &amp; finish work</span>
                 <div class="skills">
-                  <span class="skill-tag">PE License</span>
-                  <span class="skill-tag">LEED AP</span>
+                  <span class="skill-tag">Trim</span>
+                  <span class="skill-tag">Repairs</span>
                 </div>
               </div>
             </div>
@@ -133,22 +133,22 @@ require __DIR__ . '/includes/header.php';
                 <img src="assets/img/construction/team-4.webp" class="img-fluid" alt="">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>Lisa Johnson</h5>
-                    <span>Safety Coordinator</span>
+                    <h5>Maintenance</h5>
+                    <span>Punch lists &amp; make-ready</span>
                     <div class="quick-contact">
-                      <a href="#"><i class="bi bi-envelope"></i></a>
-                      <a href="#"><i class="bi bi-telephone"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
+                      <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                      <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="member-summary">
-                <h5>Lisa Johnson</h5>
-                <span>Safety Coordinator</span>
+                <h5>Maintenance</h5>
+                <span>Punch lists &amp; make-ready</span>
                 <div class="skills">
-                  <span class="skill-tag">CSP Certified</span>
-                  <span class="skill-tag">Safety Expert</span>
+                  <span class="skill-tag">Scheduling</span>
+                  <span class="skill-tag">Repairs</span>
                 </div>
               </div>
             </div>
@@ -160,22 +160,22 @@ require __DIR__ . '/includes/header.php';
                 <img src="assets/img/construction/team-5.webp" class="img-fluid" alt="">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>Robert Martinez</h5>
-                    <span>Equipment Operator</span>
+                    <h5>Make-Ready</h5>
+                    <span>Turnover support</span>
                     <div class="quick-contact">
-                      <a href="#"><i class="bi bi-envelope"></i></a>
-                      <a href="#"><i class="bi bi-telephone"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
+                      <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                      <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="member-summary">
-                <h5>Robert Martinez</h5>
-                <span>Equipment Operator</span>
+                <h5>Make-Ready</h5>
+                <span>Turnover support</span>
                 <div class="skills">
-                  <span class="skill-tag">Heavy Equipment</span>
-                  <span class="skill-tag">10+ Years</span>
+                  <span class="skill-tag">Punch Lists</span>
+                  <span class="skill-tag">Repairs</span>
                 </div>
               </div>
             </div>
@@ -187,22 +187,22 @@ require __DIR__ . '/includes/header.php';
                 <img src="assets/img/construction/team-6.webp" class="img-fluid" alt="">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>Emily Davis</h5>
-                    <span>Quality Control Specialist</span>
+                    <h5>Fixture Updates</h5>
+                    <span>Electrical &amp; plumbing</span>
                     <div class="quick-contact">
-                      <a href="#"><i class="bi bi-envelope"></i></a>
-                      <a href="#"><i class="bi bi-telephone"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
+                      <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                      <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="member-summary">
-                <h5>Emily Davis</h5>
-                <span>Quality Control Specialist</span>
+                <h5>Fixture Updates</h5>
+                <span>Electrical &amp; plumbing</span>
                 <div class="skills">
-                  <span class="skill-tag">Quality Assurance</span>
-                  <span class="skill-tag">Certified</span>
+                  <span class="skill-tag">Lighting</span>
+                  <span class="skill-tag">Fixtures</span>
                 </div>
               </div>
             </div>
@@ -214,22 +214,22 @@ require __DIR__ . '/includes/header.php';
                 <img src="assets/img/construction/team-7.webp" class="img-fluid" alt="">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>James Wilson</h5>
-                    <span>Foreman</span>
+                    <h5>Small Repairs</h5>
+                    <span>Finish-the-list visits</span>
                     <div class="quick-contact">
-                      <a href="#"><i class="bi bi-envelope"></i></a>
-                      <a href="#"><i class="bi bi-telephone"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
+                      <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                      <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="member-summary">
-                <h5>James Wilson</h5>
-                <span>Foreman</span>
+                <h5>Small Repairs</h5>
+                <span>Finish-the-list visits</span>
                 <div class="skills">
-                  <span class="skill-tag">Supervisor</span>
-                  <span class="skill-tag">Leadership</span>
+                  <span class="skill-tag">Repairs</span>
+                  <span class="skill-tag">Adjustments</span>
                 </div>
               </div>
             </div>
@@ -241,22 +241,22 @@ require __DIR__ . '/includes/header.php';
                 <img src="assets/img/construction/team-8.webp" class="img-fluid" alt="">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>Amanda Taylor</h5>
-                    <span>Estimator</span>
+                    <h5>Scope Review</h5>
+                    <span>Estimates &amp; scheduling</span>
                     <div class="quick-contact">
-                      <a href="#"><i class="bi bi-envelope"></i></a>
-                      <a href="#"><i class="bi bi-telephone"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
+                      <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
+                      <a href="quote.php"><i class="bi bi-clipboard-check"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="member-summary">
-                <h5>Amanda Taylor</h5>
-                <span>Estimator</span>
+                <h5>Scope Review</h5>
+                <span>Estimates &amp; scheduling</span>
                 <div class="skills">
-                  <span class="skill-tag">Cost Professional</span>
-                  <span class="skill-tag">Analytics</span>
+                  <span class="skill-tag">Quotes</span>
+                  <span class="skill-tag">Planning</span>
                 </div>
               </div>
             </div>

@@ -316,59 +316,6 @@ require __DIR__ . '/includes/header.php';
 
         <div class="row">
           <div class="col-12">
-            <!-- <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="critic-review">
-                <div class="review-quote">"</div>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-                <div class="critic-info">
-                  <div class="critic-name">The New York Times</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="critic-review">
-                <div class="review-quote">"</div>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                </div>
-                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
-                <div class="critic-info">
-                  <div class="critic-name">Washington Post</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="critic-review">
-                <div class="review-quote">"</div>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                <div class="critic-info">
-                  <div class="critic-name">The Guardian</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
             <div class="testimonials-container">
               <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
                 <script type="application/json" class="swiper-config">
@@ -407,13 +354,13 @@ require __DIR__ . '/includes/header.php';
                         <i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
+                        Clear scope comes first: the team confirms what needs attention, what can be handled in one visit, and what needs a quoted follow-up.
                       </p>
                       <div class="testimonial-profile">
                         <img src="assets/img/person/person-f-1.webp" alt="Reviewer" class="img-fluid rounded-circle">
                         <div>
-                          <h3>Jane Smith</h3>
-                          <h4>Book Enthusiast</h4>
+                          <h3>Scope Review</h3>
+                          <h4>Before the visit</h4>
                         </div>
                       </div>
                     </div>
@@ -429,13 +376,13 @@ require __DIR__ . '/includes/header.php';
                         <i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.
+                        Electrical and plumbing requests are routed through the licensed trade path so repairs and replacements are handled appropriately.
                       </p>
                       <div class="testimonial-profile">
                         <img src="assets/img/person/person-m-2.webp" alt="Reviewer" class="img-fluid rounded-circle">
                         <div>
-                          <h3>Michael Johnson</h3>
-                          <h4>Sci-Fi Blogger</h4>
+                          <h3>Licensed Trades</h3>
+                          <h4>Electrical &amp; plumbing</h4>
                         </div>
                       </div>
                     </div>
@@ -451,13 +398,13 @@ require __DIR__ . '/includes/header.php';
                         <i class="bi bi-star-half"></i>
                       </div>
                       <p>
-                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.
+                        Work areas are treated with care, and the plan is communicated before materials, access, or scheduling affects the job.
                       </p>
                       <div class="testimonial-profile">
                         <img src="assets/img/person/person-f-3.webp" alt="Reviewer" class="img-fluid rounded-circle">
                         <div>
-                          <h3>Emily Davis</h3>
-                          <h4>Book Club President</h4>
+                          <h3>Clean Work</h3>
+                          <h4>Respect for the home</h4>
                         </div>
                       </div>
                     </div>
@@ -473,13 +420,13 @@ require __DIR__ . '/includes/header.php';
                         <i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur.
+                        For punch lists and make-ready work, the priority is an organized visit with practical next steps and clear follow-up.
                       </p>
                       <div class="testimonial-profile">
                         <img src="assets/img/person/person-m-4.webp" alt="Reviewer" class="img-fluid rounded-circle">
                         <div>
-                          <h3>Robert Wilson</h3>
-                          <h4>Literary Reviewer</h4>
+                          <h3>Follow-Up</h3>
+                          <h4>Scheduling &amp; notes</h4>
                         </div>
                       </div>
                     </div>
@@ -492,26 +439,6 @@ require __DIR__ . '/includes/header.php';
           </div>
         </div>
 
-        <!-- <div class="row">
-      <div class="col-12 text-center" data-aos="fade-up">
-        <div class="overall-rating">
-          <div class="rating-number">4.8</div>
-          <div class="rating-stars">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-half"></i>
-          </div>
-          <p>Based on 230+ reviews</p>
-          <div class="rating-platforms">
-            <span>Goodreads</span>
-            <span>Amazon</span>
-            <span>Barnes &amp; Noble</span>
-          </div>
-        </div>
-      </div>
-    </div> -->
       </div>
     </section><!-- /Testimonials Section -->
 
@@ -960,7 +887,7 @@ require __DIR__ . '/includes/header.php';
                   <p>Get started with your next construction project today</p>
                 </div>
 
-                <form action="forms/get-a-quote.php" method="post" class="php-email-form">
+                <form action="forms/quote.php" method="post" class="php-email-form">
                   <div class="row g-3">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -1008,9 +935,9 @@ require __DIR__ . '/includes/header.php';
 
                     <div class="contact-alternative">
                       <span>Service-area business • Appointments only • No walk-ins</span>
-                      <a href="tel:+15558921567" class="phone-link">
+                      <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>" class="phone-link">
                         <i class="bi bi-telephone-fill"></i>
-                        +1 <?= e(BUSINESS_PHONE_DISPLAY) ?>
+                        <?= e(BUSINESS_PHONE_DISPLAY) ?>
                       </a>
                     </div>
                   </div>

@@ -32,16 +32,16 @@ require __DIR__ . '/includes/header.php';
                 <div class="service-icon">
                   <i class="bi bi-building"></i>
                 </div>
-                <h3>Commercial Construction</h3>
-                <p>Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.</p>
+                <h3>Home Service Work</h3>
+                <p>Electrical, plumbing, remodeling, and maintenance support for Georgetown and Sun City properties.</p>
                 <div class="service-stats">
                   <div class="stat-item">
-                    <span class="stat-number">150+</span>
-                    <span class="stat-label">Projects Completed</span>
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Licensed Trades</span>
                   </div>
                   <div class="stat-item">
-                    <span class="stat-number">25</span>
-                    <span class="stat-label">Years Experience</span>
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Service Areas</span>
                   </div>
                 </div>
               </div>
@@ -51,32 +51,32 @@ require __DIR__ . '/includes/header.php';
                 <div class="info-grid">
                   <div class="info-row">
                     <span class="label">Duration:</span>
-                    <span class="value">6-18 months</span>
+                    <span class="value">By scope</span>
                   </div>
                   <div class="info-row">
                     <span class="label">Investment:</span>
-                    <span class="value">$50k - $2M+</span>
+                    <span class="value">Quoted</span>
                   </div>
                   <div class="info-row">
                     <span class="label">Permit Support:</span>
-                    <span class="value">Included</span>
+                    <span class="value">As needed</span>
                   </div>
                   <div class="info-row">
                     <span class="label">Warranty:</span>
-                    <span class="value">10 years</span>
+                    <span class="value">Scope-based</span>
                   </div>
                 </div>
               </div>
 
               <div class="contact-action-card">
                 <h4>Ready to Start?</h4>
-                <p class="contact-text">Mauris blandit aliquet elit eget tincidunt nibh pulvinar a proin gravida hendrerit.</p>
+                <p class="contact-text">Talk through the scope, timing, and next step for your repair or improvement project.</p>
                 <div class="contact-methods">
-                  <a href="tel:+15551234567" class="contact-btn">
+                  <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>" class="contact-btn">
                     <i class="bi bi-telephone-fill"></i>
                     <span>Call Now</span>
                   </a>
-                  <a href="mailto:projects@example.com" class="contact-btn">
+                  <a href="mailto:<?= e(BUSINESS_EMAIL) ?>" class="contact-btn">
                     <i class="bi bi-envelope-fill"></i>
                     <span>Email Us</span>
                   </a>
@@ -91,7 +91,7 @@ require __DIR__ . '/includes/header.php';
             <div class="service-main-content">
 
               <div class="hero-section" data-aos="zoom-in" data-aos-delay="150">
-                <img src="assets/img/construction/project-5.webp" alt="Commercial Construction Services" class="img-fluid">
+                <img src="assets/img/construction/project-5.webp" alt="Home service and repair work" class="img-fluid">
                 <div class="hero-overlay">
                   <div class="hero-badge">
                     <i class="bi bi-award"></i>
@@ -101,10 +101,10 @@ require __DIR__ . '/includes/header.php';
               </div>
 
               <div class="content-section" data-aos="fade-up" data-aos-delay="200">
-                <h1>Professional Commercial Construction Services</h1>
+                <h1>Professional Home Service Support</h1>
                 <div class="content-intro">
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                  <p>Mark's Services handles the kinds of home and property tasks that need a licensed trade, a careful repair, or a coordinated punch-list visit.</p>
+                  <p>Use this page as a starting point for electrical service, plumbing repairs, remodeling, carpentry, maintenance, and make-ready work in the local service area.</p>
                 </div>
               </div>
 
@@ -116,8 +116,8 @@ require __DIR__ . '/includes/header.php';
                       <div class="capability-icon">
                         <i class="bi bi-building-gear"></i>
                       </div>
-                      <h4>New Construction</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
+                      <h4>Electrical Service</h4>
+                      <p>Troubleshooting, fixture changes, devices, circuits, and practical repairs backed by <?= e(ELECTRICAL_LICENSE) ?>.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -125,8 +125,8 @@ require __DIR__ . '/includes/header.php';
                       <div class="capability-icon">
                         <i class="bi bi-tools"></i>
                       </div>
-                      <h4>Renovations</h4>
-                      <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                      <h4>Plumbing Repairs</h4>
+                      <p>Leak response, fixture replacements, shutoffs, and water heater support backed by <?= e(PLUMBING_LICENSE) ?>.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -134,8 +134,8 @@ require __DIR__ . '/includes/header.php';
                       <div class="capability-icon">
                         <i class="bi bi-clipboard-check"></i>
                       </div>
-                      <h4>Project Management</h4>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                      <h4>Remodeling &amp; Carpentry</h4>
+                      <p>Small remodel scopes, trim, doors, repairs, and finish work with clear scheduling and scope.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -143,8 +143,8 @@ require __DIR__ . '/includes/header.php';
                       <div class="capability-icon">
                         <i class="bi bi-shield-check"></i>
                       </div>
-                      <h4>Quality Assurance</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                      <h4>Maintenance Visits</h4>
+                      <p>Punch lists, make-ready work, and multi-trade tasks organized around one point of contact.</p>
                     </div>
                   </div>
                 </div>
@@ -158,12 +158,12 @@ require __DIR__ . '/includes/header.php';
                       <span class="phase-number">1</span>
                     </div>
                     <div class="timeline-content">
-                      <h4>Planning &amp; Design</h4>
-                      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                      <h4>Scope Review</h4>
+                      <p>We start by reviewing the issue, access, measurements, photos when useful, and any code or permit considerations.</p>
                       <ul class="phase-features">
-                        <li>Site analysis and assessment</li>
-                        <li>Architectural drawings</li>
-                        <li>Permit acquisition</li>
+                        <li>Scope review and assessment</li>
+                        <li>Material and access planning</li>
+                        <li>Permit guidance when needed</li>
                       </ul>
                     </div>
                   </div>
@@ -173,12 +173,12 @@ require __DIR__ . '/includes/header.php';
                       <span class="phase-number">2</span>
                     </div>
                     <div class="timeline-content">
-                      <h4>Foundation &amp; Structure</h4>
-                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.</p>
+                      <h4>Repair &amp; Installation</h4>
+                      <p>Work is scheduled around the agreed scope, with attention to clean work areas, durable repairs, and clear communication.</p>
                       <ul class="phase-features">
-                        <li>Site preparation and excavation</li>
-                        <li>Foundation construction</li>
-                        <li>Structural framework</li>
+                        <li>Work-area preparation</li>
+                        <li>Repair or installation</li>
+                        <li>Clean work-area practices</li>
                       </ul>
                     </div>
                   </div>
@@ -188,12 +188,12 @@ require __DIR__ . '/includes/header.php';
                       <span class="phase-number">3</span>
                     </div>
                     <div class="timeline-content">
-                      <h4>Construction &amp; Installation</h4>
-                      <p>Et harum quidem rerum facilis est et expedita distinctio nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+                      <h4>Trade Coordination</h4>
+                      <p>When a job touches more than one discipline, the order of work is planned so the visit stays practical and efficient.</p>
                       <ul class="phase-features">
-                        <li>Mechanical and electrical systems</li>
-                        <li>Interior and exterior finishing</li>
-                        <li>Quality control inspections</li>
+                        <li>Electrical and plumbing sequencing</li>
+                        <li>Interior and exterior finish details</li>
+                        <li>Progress checks as work is completed</li>
                       </ul>
                     </div>
                   </div>
@@ -203,12 +203,12 @@ require __DIR__ . '/includes/header.php';
                       <span class="phase-number">4</span>
                     </div>
                     <div class="timeline-content">
-                      <h4>Completion &amp; Handover</h4>
-                      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                      <h4>Completion &amp; Follow-Up</h4>
+                      <p>Before wrapping up, the completed work is reviewed and any remaining recommendations are communicated clearly.</p>
                       <ul class="phase-features">
-                        <li>Final inspections and testing</li>
-                        <li>Documentation and warranties</li>
-                        <li>Project handover and training</li>
+                        <li>Final checks and cleanup</li>
+                        <li>Photos or notes when useful</li>
+                        <li>Next-step recommendations</li>
                       </ul>
                     </div>
                   </div>
@@ -221,18 +221,18 @@ require __DIR__ . '/includes/header.php';
 
         <div class="portfolio-showcase mt-5" data-aos="fade-up" data-aos-delay="350">
           <div class="showcase-header text-center">
-            <h2>Recent Commercial Projects</h2>
-            <p>Explore our portfolio of successfully completed commercial construction projects</p>
+            <h2>Typical Service Work</h2>
+            <p>Examples of the repair, maintenance, and improvement categories supported by Mark's Services.</p>
           </div>
           <div class="row g-4 mt-3">
             <div class="col-lg-6">
               <div class="project-showcase-item">
                 <div class="project-image">
-                  <img src="assets/img/construction/project-6.webp" alt="Office Building Construction" class="img-fluid">
+                  <img src="assets/img/construction/project-6.webp" alt="Interior repair and improvement work" class="img-fluid">
                   <div class="project-overlay">
                     <div class="project-info">
-                      <h4>Downtown Office Complex</h4>
-                      <p>12-story commercial building with modern amenities</p>
+                      <h4>Interior Repairs</h4>
+                      <p>Small remodel, finish, and repair scopes for local homes and properties.</p>
                       <a href="assets/img/construction/project-6.webp" class="view-btn glightbox">
                         <i class="bi bi-eye"></i>
                       </a>
@@ -246,11 +246,11 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-12">
                   <div class="project-showcase-item">
                     <div class="project-image">
-                      <img src="assets/img/construction/project-7.webp" alt="Retail Space Construction" class="img-fluid">
+                      <img src="assets/img/construction/project-7.webp" alt="Maintenance and make-ready work" class="img-fluid">
                       <div class="project-overlay">
                         <div class="project-info">
-                          <h4>Shopping Center Renovation</h4>
-                          <p>Complete modernization of existing retail space</p>
+                          <h4>Maintenance Visits</h4>
+                          <p>Punch lists, make-ready tasks, and repairs grouped into organized visits.</p>
                           <a href="assets/img/construction/project-7.webp" class="view-btn glightbox">
                             <i class="bi bi-eye"></i>
                           </a>
@@ -262,11 +262,11 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-12">
                   <div class="project-showcase-item">
                     <div class="project-image">
-                      <img src="assets/img/construction/project-8.webp" alt="Warehouse Construction" class="img-fluid">
+                      <img src="assets/img/construction/project-8.webp" alt="Licensed trade service work" class="img-fluid">
                       <div class="project-overlay">
                         <div class="project-info">
-                          <h4>Industrial Warehouse</h4>
-                          <p>50,000 sq ft distribution facility</p>
+                          <h4>Licensed Trade Work</h4>
+                          <p>Electrical and plumbing requests handled through the correct licensed path.</p>
                           <a href="assets/img/construction/project-8.webp" class="view-btn glightbox">
                             <i class="bi bi-eye"></i>
                           </a>

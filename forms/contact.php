@@ -1,42 +1,37 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+declare(strict_types=1);
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/form-helpers.php';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+$php_email_form = __DIR__ . '/../assets/vendor/php-email-form/php-email-form.php';
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+if (file_exists($php_email_form)) {
+    include $php_email_form;
+} else {
+    form_fail('Unable to load the email form library.');
+}
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+$name = required_form_value('name', 'your name');
+$email = required_email_value('email', 'email address');
+$subject = one_line_value(required_form_value('subject', 'a subject'));
+$message = required_form_value('message', 'a message');
+$phone = optional_form_value('phone');
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  isset($_POST['phone']) && $contact->add_message($_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+$contact = new PHP_Email_Form();
+$contact->ajax = true;
+$contact->to = BUSINESS_EMAIL;
+$contact->from_name = $name;
+$contact->from_email = $email;
+$contact->subject = $subject;
 
-  echo $contact->send();
-?>
+$contact->add_message($name, 'From');
+$contact->add_message($email, 'Email');
+
+if ($phone !== '') {
+    $contact->add_message($phone, 'Phone');
+}
+
+$contact->add_message($message, 'Message', 10);
+
+echo $contact->send();

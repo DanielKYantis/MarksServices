@@ -2,6 +2,7 @@
   "name": "danielkyantis/marksservices",
   "description": "Mark's Services website",
   "type": "project",
+  "license": "proprietary",
   "require": {
     "php": ">=8.4"
   },

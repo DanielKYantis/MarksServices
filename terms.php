@@ -127,7 +127,7 @@ require __DIR__ . '/includes/header.php';
           <!-- Governing Law -->
           <div id="governing-law" class="content-section">
             <h3>9. Governing Law</h3>
-            <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions.</p>
+            <p>These Terms shall be governed by and construed in accordance with the laws of Texas, without regard to its conflict of law provisions.</p>
           </div>
 
           <!-- Changes -->
@@ -150,7 +150,7 @@ require __DIR__ . '/includes/header.php';
             <div class="contact-content">
               <h4>Questions About Terms?</h4>
               <p>If you have any questions about these Terms, please contact us.</p>
-              <a href="#" class="contact-link">Contact Support</a>
+              <a href="mailto:<?= e(BUSINESS_EMAIL) ?>" class="contact-link">Contact Support</a>
             </div>
           </div>
         </div>

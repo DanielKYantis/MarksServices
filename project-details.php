@@ -28,7 +28,7 @@ require __DIR__ . '/includes/header.php';
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="project-banner">
-                <img src="assets/img/construction/project-4.webp" alt="Modern Residential Complex" class="img-fluid">
+                <img src="assets/img/construction/project-4.webp" alt="Residential repair and remodel work" class="img-fluid">
                 <div class="banner-badge">
                   <span class="status-indicator">In Progress</span>
                 </div>
@@ -38,30 +38,30 @@ require __DIR__ . '/includes/header.php';
               <div class="project-summary">
                 <div class="project-tags">
                   <span class="tag">Residential</span>
-                  <span class="tag">Green Valley District</span>
+                  <span class="tag"><?= e(BUSINESS_AREA) ?></span>
                 </div>
-                <h1 class="main-title">Modern Residential Complex</h1>
-                <p class="summary-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                <h1 class="main-title">Repair, Remodel &amp; Service Work</h1>
+                <p class="summary-text">This portfolio page highlights the kind of coordinated home-service work Mark's Services supports: repairs, finish work, licensed trade tasks, and make-ready improvements.</p>
 
                 <div class="key-metrics">
                   <div class="metric-row">
                     <div class="metric">
                       <span class="metric-title">Timeline</span>
-                      <span class="metric-data">24 months</span>
+                      <span class="metric-data">By scope</span>
                     </div>
                     <div class="metric">
-                      <span class="metric-title">Total Area</span>
-                      <span class="metric-data">65,000 sq ft</span>
+                      <span class="metric-title">Service Area</span>
+                      <span class="metric-data">Local</span>
                     </div>
                   </div>
                   <div class="metric-row">
                     <div class="metric">
                       <span class="metric-title">Budget</span>
-                      <span class="metric-data">$8.5M</span>
+                      <span class="metric-data">Quoted</span>
                     </div>
                     <div class="metric">
-                      <span class="metric-title">Units</span>
-                      <span class="metric-data">42 apartments</span>
+                      <span class="metric-title">Work Types</span>
+                      <span class="metric-data">Multi-trade</span>
                     </div>
                   </div>
                 </div>
@@ -73,27 +73,27 @@ require __DIR__ . '/includes/header.php';
         <div class="visual-showcase" data-aos="fade-up" data-aos-delay="300">
           <div class="showcase-grid">
             <div class="showcase-item large">
-              <img src="assets/img/construction/project-10.webp" alt="Building Progress" class="img-fluid" loading="lazy">
+              <img src="assets/img/construction/project-10.webp" alt="Work in progress" class="img-fluid" loading="lazy">
               <div class="item-overlay">
-                <span class="overlay-label">Construction Phase</span>
+                <span class="overlay-label">Work in Progress</span>
               </div>
             </div>
             <div class="showcase-item">
-              <img src="assets/img/construction/project-2.webp" alt="Foundation Work" class="img-fluid" loading="lazy">
+              <img src="assets/img/construction/project-2.webp" alt="Repair preparation" class="img-fluid" loading="lazy">
               <div class="item-overlay">
-                <span class="overlay-label">Foundation</span>
+                <span class="overlay-label">Preparation</span>
               </div>
             </div>
             <div class="showcase-item">
               <img src="assets/img/construction/project-6.webp" alt="Interior Planning" class="img-fluid" loading="lazy">
               <div class="item-overlay">
-                <span class="overlay-label">Interior Design</span>
+                <span class="overlay-label">Interior Work</span>
               </div>
             </div>
             <div class="showcase-item tall">
-              <img src="assets/img/construction/project-1.webp" alt="Architectural Detail" class="img-fluid" loading="lazy">
+              <img src="assets/img/construction/project-1.webp" alt="Finish detail" class="img-fluid" loading="lazy">
               <div class="item-overlay">
-                <span class="overlay-label">Architecture</span>
+                <span class="overlay-label">Finish Detail</span>
               </div>
             </div>
           </div>
@@ -104,8 +104,8 @@ require __DIR__ . '/includes/header.php';
             <div class="col-lg-7">
               <div class="breakdown-content">
                 <h3>Project Execution</h3>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-                <p>Id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                <p>Service work starts with understanding the issue, confirming the right trade path, and setting expectations for access, materials, and timing.</p>
+                <p>For multi-trade scopes, Mark's Services keeps the estimate and scheduling conversation in one place so homeowners and property managers know what happens next.</p>
 
                 <h3>Key Achievements</h3>
                 <div class="achievement-list">
@@ -114,8 +114,8 @@ require __DIR__ . '/includes/header.php';
                       <i class="bi bi-award"></i>
                     </div>
                     <div class="achievement-details">
-                      <h5>Innovative Design</h5>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                      <h5>Clear Scope</h5>
+                      <p>Work is discussed up front so priorities, exclusions, and next steps are understood before the visit.</p>
                     </div>
                   </div>
                   <div class="achievement-point">
@@ -123,8 +123,8 @@ require __DIR__ . '/includes/header.php';
                       <i class="bi bi-shield-check"></i>
                     </div>
                     <div class="achievement-details">
-                      <h5>Safety Excellence</h5>
-                      <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                      <h5>Licensed Trade Support</h5>
+                      <p>Electrical and plumbing scopes are backed by the licenses listed across the site.</p>
                     </div>
                   </div>
                   <div class="achievement-point">
@@ -132,8 +132,8 @@ require __DIR__ . '/includes/header.php';
                       <i class="bi bi-clock"></i>
                     </div>
                     <div class="achievement-details">
-                      <h5>On-Time Delivery</h5>
-                      <p>Dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                      <h5>Practical Scheduling</h5>
+                      <p>Appointments are planned around the access and sequencing needed for the work.</p>
                     </div>
                   </div>
                 </div>
@@ -144,42 +144,42 @@ require __DIR__ . '/includes/header.php';
                 <h4>Project Specifications</h4>
                 <div class="spec-table">
                   <div class="spec-row">
-                    <span class="spec-name">Building Type</span>
-                    <span class="spec-detail">Multi-Story Residential</span>
+                    <span class="spec-name">Property Type</span>
+                    <span class="spec-detail">Residential / Small Property</span>
                   </div>
                   <div class="spec-row">
-                    <span class="spec-name">Construction Method</span>
-                    <span class="spec-detail">Steel Frame</span>
+                    <span class="spec-name">Electrical</span>
+                    <span class="spec-detail"><?= e(ELECTRICAL_LICENSE) ?></span>
                   </div>
                   <div class="spec-row">
-                    <span class="spec-name">Exterior Finish</span>
-                    <span class="spec-detail">Brick &amp; Glass</span>
+                    <span class="spec-name">Plumbing</span>
+                    <span class="spec-detail"><?= e(PLUMBING_LICENSE) ?></span>
                   </div>
                   <div class="spec-row">
-                    <span class="spec-name">Floors</span>
-                    <span class="spec-detail">8 levels</span>
+                    <span class="spec-name">Remodeling</span>
+                    <span class="spec-detail">Scope-based</span>
                   </div>
                   <div class="spec-row">
-                    <span class="spec-name">Sustainability</span>
-                    <span class="spec-detail">LEED Silver</span>
+                    <span class="spec-name">Maintenance</span>
+                    <span class="spec-detail">Punch-list support</span>
                   </div>
                   <div class="spec-row">
-                    <span class="spec-name">Start Date</span>
-                    <span class="spec-detail">January 2024</span>
+                    <span class="spec-name">Scheduling</span>
+                    <span class="spec-detail">By appointment</span>
                   </div>
                   <div class="spec-row">
-                    <span class="spec-name">Expected Completion</span>
-                    <span class="spec-detail">December 2025</span>
+                    <span class="spec-name">Estimate</span>
+                    <span class="spec-detail">After scope review</span>
                   </div>
                 </div>
 
                 <div class="progress-indicator">
                   <div class="progress-header">
-                    <span class="progress-label">Project Progress</span>
-                    <span class="progress-percentage">68%</span>
+                    <span class="progress-label">Scope Review</span>
+                    <span class="progress-percentage">Start here</span>
                   </div>
                   <div class="progress-bar-container">
-                    <div class="progress-bar" style="width: 68%"></div>
+                    <div class="progress-bar" style="width: 100%"></div>
                   </div>
                 </div>
               </div>
@@ -189,26 +189,26 @@ require __DIR__ . '/includes/header.php';
 
         <div class="technical-gallery" data-aos="fade-up" data-aos-delay="500">
           <div class="gallery-header">
-            <h3>Technical Documentation</h3>
-            <p>Comprehensive visual documentation of construction phases and technical implementations</p>
+            <h3>Work Documentation</h3>
+            <p>Photos and notes can be used to document scope, progress, and completion when helpful.</p>
           </div>
           <div class="row g-3">
             <div class="col-md-4">
               <div class="tech-item">
                 <img src="assets/img/construction/project-12.webp" alt="Blueprint Review" class="img-fluid" loading="lazy">
-                <div class="tech-caption">Blueprint Analysis</div>
+                <div class="tech-caption">Scope Review</div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="tech-item">
                 <img src="assets/img/construction/project-3.webp" alt="Quality Control" class="img-fluid" loading="lazy">
-                <div class="tech-caption">Quality Inspection</div>
+                <div class="tech-caption">Quality Check</div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="tech-item">
                 <img src="assets/img/construction/project-7.webp" alt="Final Installation" class="img-fluid" loading="lazy">
-                <div class="tech-caption">System Installation</div>
+                <div class="tech-caption">Final Walkthrough</div>
               </div>
             </div>
           </div>

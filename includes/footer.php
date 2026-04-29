@@ -16,12 +16,6 @@ declare(strict_types=1);
           <p class="mb-1"><strong>Electrical:</strong> <?= e(ELECTRICAL_LICENSE) ?></p>
           <p class="mb-0"><strong>Plumbing (RMP/Master):</strong> <?= e(PLUMBING_LICENSE) ?></p>
         </div>
-        <div class="social-links d-flex mt-4">
-          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" aria-label="Nextdoor"><i class="bi bi-house-heart"></i></a>
-          <a href="#" aria-label="Google Business Profile"><i class="bi bi-google"></i></a>
-        </div>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">

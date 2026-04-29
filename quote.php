@@ -31,8 +31,8 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-lg-6">
                   <div class="quote-info">
                     <div class="quote-content">
-                      <h3>Ready to Build Your Dream Project?</h3>
-                      <p>Get a detailed quote from our expert construction team. We provide transparent pricing and professional consultation for all your construction needs.</p>
+                      <h3>Ready to Schedule Your Project?</h3>
+                      <p>Tell us what you need done and Mark's Services will follow up with a clear next step for your Georgetown or Sun City project.</p>
 
                       <div class="contact-items">
                         <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
@@ -41,7 +41,7 @@ require __DIR__ . '/includes/header.php';
                           </div>
                           <div class="contact-details">
                             <h4>Call Us Directly</h4>
-                            <p>+1 (555) 789-0123</p>
+                            <p><a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><?= e(BUSINESS_PHONE_DISPLAY) ?></a></p>
                           </div>
                         </div>
 
@@ -51,7 +51,7 @@ require __DIR__ . '/includes/header.php';
                           </div>
                           <div class="contact-details">
                             <h4>Email Us</h4>
-                            <p>quotes@buildcorp.com</p>
+                            <p><a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><?= e(BUSINESS_EMAIL) ?></a></p>
                           </div>
                         </div>
 
@@ -85,7 +85,7 @@ require __DIR__ . '/includes/header.php';
                     <form action="forms/quote.php" method="post" class="php-email-form" data-aos="fade-left" data-aos-delay="200">
                       <div class="form-header">
                         <h4>Request Your Free Quote</h4>
-                        <p>Fill out the form below and we'll get back to you with a detailed estimate.</p>
+                        <p>Fill out the form below and we'll get back to you with a practical estimate or scheduling option.</p>
                       </div>
 
                       <div class="row">
@@ -110,12 +110,11 @@ require __DIR__ . '/includes/header.php';
                         <div class="col-md-6">
                           <div class="form-group">
                             <select name="type" class="form-control" required="">
-                              <option value="">Select Project Type</option>
-                              <option value="residential">Residential Construction</option>
-                              <option value="commercial">Commercial Building</option>
-                              <option value="renovation">Renovation &amp; Remodeling</option>
-                              <option value="extension">Home Extension</option>
-                              <option value="infrastructure">Infrastructure</option>
+                              <option value="">Select Service Type</option>
+                              <option value="electrical">Electrical Service Call</option>
+                              <option value="plumbing">Plumbing Service Call</option>
+                              <option value="remodel">Remodeling / Carpentry</option>
+                              <option value="maintenance">Maintenance / Punch List</option>
                               <option value="other">Other</option>
                             </select>
                           </div>
@@ -128,6 +127,7 @@ require __DIR__ . '/includes/header.php';
                             <select name="timeline" class="form-control" required="">
                               <option value="">Project Timeline</option>
                               <option value="asap">ASAP</option>
+                              <option value="1-2weeks">1-2 Weeks</option>
                               <option value="1-3months">1-3 Months</option>
                               <option value="3-6months">3-6 Months</option>
                               <option value="6-12months">6-12 Months</option>
@@ -137,13 +137,13 @@ require __DIR__ . '/includes/header.php';
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <input type="text" name="budget" class="form-control" id="budget" placeholder="Estimated Budget (Optional)">
+                            <input type="text" name="budget" class="form-control" id="budget" placeholder="Budget or scope notes (Optional)">
                           </div>
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Project Details - Tell us about your construction project, specific requirements, and any other details..." required=""></textarea>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Project details - tell us what needs repair, replacement, or improvement." required=""></textarea>
                       </div>
 
                       <div class="loading">Loading</div>
