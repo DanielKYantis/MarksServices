@@ -33,7 +33,7 @@
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active') && !navmenu.classList.contains('toggle-dropdown')) {
+      if (document.querySelector('.mobile-nav-active') && !navmenu.classList.contains('toggle-dropdown') && !navmenu.querySelector('.toggle-dropdown')) {
         mobileNavToogle();
       }
     });
