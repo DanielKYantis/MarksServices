@@ -27,7 +27,7 @@ require __DIR__ . "/includes/header.php";
           <div class="contact-info-panel">
             <div class="contact-info-header">
               <h3>Contact Information</h3>
-              <p>Call, email, or send a message to discuss electrical, plumbing, remodeling, or maintenance work in the Georgetown and Sun City area.</p>
+              <p>Call, email, or send a message to discuss electrical, plumbing, remodeling, or maintenance work at client locations in Berry Creek and Sun City.</p>
             </div>
 
             <div class="contact-info-cards">
@@ -36,10 +36,9 @@ require __DIR__ . "/includes/header.php";
                   <i class="bi bi-pin-map-fill"></i>
                 </div>
                 <div class="card-content">
-                  <h4>Our Location</h4>
-                  <p><?= e(BUSINESS_CITY) ?> (Sun City), <?= e(
-     BUSINESS_STATE
- ) ?> <?= e(BUSINESS_ZIP) ?></p>
+                  <h4>Service Area</h4>
+                  <p><?= e(BUSINESS_AREA_DETAIL) ?></p>
+                  <p class="small mb-0"><?= e(BUSINESS_SERVICE_NOTE) ?></p>
                 </div>
               </div>
 
@@ -86,7 +85,7 @@ require __DIR__ . "/includes/header.php";
 
           <div class="contact-form-panel">
             <div class="map-container">
-              <iframe src="https://www.google.com/maps?q=Georgetown%2C%20TX%2078626&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps?q=Berry%20Creek%2C%20TX%2078628&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="form-container">

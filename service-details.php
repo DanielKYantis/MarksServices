@@ -33,14 +33,14 @@ require __DIR__ . '/includes/header.php';
                   <i class="bi bi-building"></i>
                 </div>
                 <h3>Home Service Work</h3>
-                <p>Electrical, plumbing, remodeling, and maintenance support for Georgetown and Sun City properties.</p>
+                <p>Electrical, plumbing, remodeling, and maintenance support for Berry Creek and Sun City properties.</p>
                 <div class="service-stats">
                   <div class="stat-item">
                     <span class="stat-number">2</span>
                     <span class="stat-label">Licensed Trades</span>
                   </div>
                   <div class="stat-item">
-                    <span class="stat-number">4</span>
+                    <span class="stat-number">2</span>
                     <span class="stat-label">Service Areas</span>
                   </div>
                 </div>

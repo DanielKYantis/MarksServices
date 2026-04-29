@@ -1,6 +1,6 @@
 # Mark's Services
 
-PHP 8.4 website for Mark's Services in Georgetown, Texas.
+PHP 8.4 website for Mark's Services, serving Berry Creek and Sun City, Texas.
 
 ## Local development
 

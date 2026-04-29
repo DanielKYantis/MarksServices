@@ -27,7 +27,7 @@ require __DIR__ . '/includes/header.php';
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <div class="about-content" data-aos="fade-right" data-aos-delay="200">
-              <h2>Local Home Services for Georgetown and Sun City</h2>
+              <h2>Local Home Services for Berry Creek and Sun City</h2>
               <p class="lead">Mark's Services handles practical repair, remodel, maintenance, electrical, and plumbing work for homeowners and small properties.</p>
               <p>Every project starts with a clear scope and a real conversation about timing, access, materials, and the result you need. The goal is straightforward work done cleanly and communicated plainly.</p>
 

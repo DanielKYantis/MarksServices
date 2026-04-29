@@ -15,6 +15,17 @@ $page = $pages[$pageKey] ?? $pages['index.php'];
   <title><?= e($page['title']) ?></title>
   <meta name="description" content="<?= e($page['description']) ?>">
   <meta name="keywords" content="<?= e($page['keywords']) ?>">
+  <link rel="canonical" href="<?= e(page_url($pageKey)) ?>">
+  <meta property="og:site_name" content="<?= e(SITE_NAME) ?>">
+  <meta property="og:title" content="<?= e($page['title']) ?>">
+  <meta property="og:description" content="<?= e($page['description']) ?>">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?= e(page_url($pageKey)) ?>">
+  <meta property="og:image" content="<?= e(absolute_url('assets/img/construction/showcase-3.webp')) ?>">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+<?= json_encode(structured_data_for_page($pageKey, $page), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>
+  </script>
 
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16-clarity.png">

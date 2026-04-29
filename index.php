@@ -31,7 +31,7 @@ require __DIR__ . '/includes/header.php';
                   <i class="bi bi-geo-alt"></i>
                   <div class="badge-text">
                     <span class="count">Local</span>
-                    <span class="label">Georgetown<br>Sun City</span>
+                    <span class="label">Berry Creek<br>Sun City</span>
                   </div>
                 </div>
                 <div class="badge-item">
@@ -54,7 +54,7 @@ require __DIR__ . '/includes/header.php';
 
           <div class="col-lg-5" data-aos="fade-left" data-aos-delay="300">
             <div class="hero-image">
-              <img src="assets/img/construction/showcase-3.webp" alt="Georgetown &amp; Sun City home services team" class="img-fluid">
+              <img src="assets/img/construction/showcase-3.webp" alt="Berry Creek &amp; Sun City home services team" class="img-fluid">
               <div class="image-badge">
                 <span>Clean Work</span>
                 <p>Reliable Scheduling</p>
@@ -75,7 +75,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-6">
             <div class="about-content" data-aos="fade-right" data-aos-delay="200">
 
-              <h2>Local Home Services for Georgetown &amp; Sun City, TX</h2>
+              <h2>Local Home Services for Berry Creek &amp; Sun City, TX</h2>
 
               <p class="lead">
                 Mark’s Services delivers dependable remodeling, repairs, and licensed trade work with clear communication
@@ -85,14 +85,14 @@ require __DIR__ . '/includes/header.php';
               <p>
                 Whether you need a quick service call, a punch list knocked out, or a planned upgrade, we bring the right
                 specialist to the job and keep you informed from estimate to final walkthrough. Sun City homeowners and
-                Georgetown property owners count on us for reliable scheduling and quality workmanship.
+                Berry Creek property owners count on us for reliable scheduling and quality workmanship.
               </p>
 
               <div class="achievement-boxes row g-4 mt-4">
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
                   <div class="achievement-box">
                     <h3 class="">Local</h3>
-                    <p class="">Georgetown<br>Sun City<br>Central Texas</p>
+                    <p class="">Berry Creek 78628<br>Sun City<br>Client locations</p>
                   </div>
                 </div>
 
@@ -172,15 +172,15 @@ require __DIR__ . '/includes/header.php';
 
           <div class="col-lg-6">
             <div class="about-image position-relative" data-aos="fade-left" data-aos-delay="200">
-              <img src="assets/img/construction/project-3.webp" alt="Georgetown and Sun City home service team" class="img-fluid main-image rounded">
+              <img src="assets/img/construction/project-3.webp" alt="Berry Creek and Sun City home service team" class="img-fluid main-image rounded">
 
               <div class="image-overlay">
-                <img src="assets/img/construction/project-7.webp" alt="Home repair and remodel project in Georgetown Texas" class="img-fluid rounded">
+                <img src="assets/img/construction/project-7.webp" alt="Home repair and remodel project in Berry Creek Texas" class="img-fluid rounded">
               </div>
 
               <div class="experience-badge" data-aos="zoom-in" data-aos-delay="500">
                 <span>Local</span>
-                <p>Georgetown<br>Sun City<br>Central Texas</p>
+                <p>Berry Creek 78628<br>Sun City<br>Client locations</p>
               </div>
             </div>
           </div>
@@ -196,13 +196,12 @@ require __DIR__ . '/includes/header.php';
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Services</h2>
-        <p>Licensed electrical and plumbing, plus remodeling and maintenance for Georgetown and Sun City homeowners.</p>
+        <p>Licensed electrical and plumbing, plus remodeling and maintenance for Berry Creek and Sun City homeowners.</p>
       </div>
       <!-- End Section Title -->
 
       <!-- Schema note:
-       Keep the homepage as an overview. Add detailed Service schema (schema.org/Service)
-       on the individual service pages later. Do NOT mark up services you don't actually offer. -->
+       Site-wide JSON-LD is rendered in <head>. Keep visible service text aligned with the schema. -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
@@ -211,12 +210,12 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="150">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-3.webp" class="img-fluid" alt="Remodeling and home repair service in Georgetown and Sun City, Texas">
+                <img src="assets/img/construction/project-3.webp" class="img-fluid" alt="Remodeling and home repair service in Berry Creek and Sun City, Texas">
                 <div class="icon-badge"><i class="bi bi-hammer"></i></div>
               </div>
               <div class="card-body-content">
                 <h3>Remodeling &amp; Carpentry</h3>
-                <p>Bathrooms, kitchens, trim, doors, drywall repair, and practical upgrades designed for Sun City and Georgetown homes.</p>
+                <p>Bathrooms, kitchens, trim, doors, drywall repair, and practical upgrades designed for Sun City and Berry Creek homes.</p>
                 <ul class="highlights">
                   <li><i class="bi bi-shield-check"></i> Written scope and clean work areas</li>
                   <li><i class="bi bi-shield-check"></i> Aging-in-place friendly options</li>
@@ -231,7 +230,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Licensed electrician services in Georgetown and Sun City, Texas">
+                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Licensed electrician services in Berry Creek and Sun City, Texas">
                 <div class="icon-badge"><i class="bi bi-lightning-charge"></i></div>
               </div>
               <div class="card-body-content">
@@ -251,7 +250,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="250">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-7.webp" class="img-fluid" alt="Licensed plumbing services in Georgetown and Sun City, Texas">
+                <img src="assets/img/construction/project-7.webp" class="img-fluid" alt="Licensed plumbing services in Berry Creek and Sun City, Texas">
                 <div class="icon-badge"><i class="bi bi-droplet"></i></div>
               </div>
               <div class="card-body-content">
@@ -271,7 +270,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Maintenance, punch lists, and make-ready services in Georgetown, Texas">
+                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Maintenance, punch lists, and make-ready services in Berry Creek, Texas">
                 <div class="icon-badge"><i class="bi bi-house-gear"></i></div>
               </div>
               <div class="card-body-content">
@@ -293,7 +292,7 @@ require __DIR__ . '/includes/header.php';
         <div class="bottom-banner" data-aos="fade-up" data-aos-delay="400">
           <div class="row align-items-center">
             <div class="col-lg-8">
-              <h4>Need help in Sun City or Georgetown?</h4>
+              <h4>Need help in Sun City or Berry Creek?</h4>
               <p>Request a quote for service calls, upgrades, or small remodels. Clear scope, clean work, and reliable scheduling.</p>
             </div>
             <div class="col-lg-4">
@@ -452,7 +451,7 @@ require __DIR__ . '/includes/header.php';
       <!-- End Section Title -->
 
       <!-- JSON-LD placement note:
-       Place the LocalBusiness/GeneralContractor JSON-LD once site-wide (in <head>).
+       Place the business/service-area JSON-LD once site-wide (in <head>).
        The hasCredential entries MUST match the visible license text shown below. -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -482,7 +481,7 @@ require __DIR__ . '/includes/header.php';
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="badge-highlight">
-              <img src="assets/img/construction/badge-5.webp" class="img-fluid" alt="Licensed and insured home services in Georgetown and Sun City">
+              <img src="assets/img/construction/badge-5.webp" class="img-fluid" alt="Licensed and insured home services in Berry Creek and Sun City">
               <div class="badge-content">
                 <h4>Credential-first service</h4>
                 <p class="mb-0">Clear license disclosure, clean work, and written scope—built for homeowner confidence.</p>
@@ -528,12 +527,12 @@ require __DIR__ . '/includes/header.php';
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="250">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-2.webp" class="img-fluid" alt="Sun City and Georgetown service area">
+              <img src="assets/img/construction/badge-2.webp" class="img-fluid" alt="Sun City and Berry Creek service area">
             </div>
             <div class="cert-details">
               <h5>Local Service Area</h5>
-              <span class="cert-category">Georgetown • Sun City</span>
-              <p>Focused scheduling and communication for homeowners in the 78626 / 78628 / 78633 area.</p>
+              <span class="cert-category">Berry Creek • Sun City</span>
+              <p>Focused scheduling and communication for Berry Creek 78628 and Sun City homeowners only.</p>
             </div>
           </div>
 
@@ -568,7 +567,7 @@ require __DIR__ . '/includes/header.php';
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Projects</h2>
-        <p>Recent work in Georgetown and Sun City—repairs, upgrades, and remodels completed with clean execution and clear communication.</p>
+        <p>Recent work in Berry Creek and Sun City—repairs, upgrades, and remodels completed with clean execution and clear communication.</p>
       </div>
       <!-- End Section Title -->
 
@@ -595,7 +594,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Sun City Bathroom Safety Refresh</h4>
                 <p class="project-description">Targeted upgrades for safer daily use: fixtures, lighting, and practical improvements that reduce slip and fall risk.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Sun City (Georgetown), TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Sun City, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> 1–2 days</span>
                 </div>
               </div>
@@ -605,7 +604,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Ceiling fan and lighting upgrade in Georgetown Texas">
+                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Ceiling fan and lighting upgrade in Berry Creek Texas">
                 <div class="project-overlay">
                   <div class="project-status completed">Completed</div>
                   <div class="project-actions">
@@ -618,7 +617,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Lighting &amp; Ceiling Fan Upgrade</h4>
                 <p class="project-description">Improved comfort and visibility with safe installs and clean finishes.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Georgetown, TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> Same day</span>
                 </div>
               </div>
@@ -628,7 +627,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/img/construction/project-7.webp" class="img-fluid" alt="Water heater replacement project in Sun City Georgetown TX">
+                <img src="assets/img/construction/project-7.webp" class="img-fluid" alt="Water heater replacement project in Sun City, Texas">
                 <div class="project-overlay">
                   <div class="project-status completed">Completed</div>
                   <div class="project-actions">
@@ -641,7 +640,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Water Heater Replacement + Shutoff Upgrade</h4>
                 <p class="project-description">Replacement with tidy piping, improved shutoff reliability, and a clean jobsite handoff.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Sun City (Georgetown), TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Sun City, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> Same day</span>
                 </div>
               </div>
@@ -651,7 +650,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Door, trim, and hardware update in Georgetown TX">
+                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Door, trim, and hardware update in Berry Creek TX">
                 <div class="project-overlay">
                   <div class="project-status completed">Completed</div>
                   <div class="project-actions">
@@ -664,7 +663,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Doors, Trim &amp; Hardware Refresh</h4>
                 <p class="project-description">Fit, finish, and function improvements—small changes that make daily living smoother.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Georgetown, TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> 1–2 days</span>
                 </div>
               </div>
@@ -674,7 +673,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/img/construction/project-6.webp" class="img-fluid" alt="Make-ready punch list project in Georgetown Texas">
+                <img src="assets/img/construction/project-6.webp" class="img-fluid" alt="Make-ready punch list project in Berry Creek Texas">
                 <div class="project-overlay">
                   <div class="project-status completed">Completed</div>
                   <div class="project-actions">
@@ -687,7 +686,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Tenant Turn Punch List</h4>
                 <p class="project-description">Coordinated multi-trade fixes (minor repairs, replacements, adjustments) to get a property ready fast.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Georgetown, TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> 1–3 days</span>
                 </div>
               </div>
@@ -710,7 +709,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Sun City Comfort &amp; Safety Upgrades</h4>
                 <p class="project-description">Practical improvements prioritized for comfort, safety, and low-disruption installation.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Sun City (Georgetown), TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Sun City, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> Varies</span>
                 </div>
               </div>
@@ -730,7 +729,7 @@ require __DIR__ . '/includes/header.php';
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Team</h2>
-        <p>Local pros serving Georgetown and Sun City with licensed trade work and clean, respectful job sites.</p>
+        <p>Local pros serving Berry Creek and Sun City with licensed trade work and clean, respectful job sites.</p>
       </div>
       <!-- End Section Title -->
 
@@ -745,7 +744,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="150">
             <div class="crew-member primary-member">
               <div class="member-portrait">
-                <img src="assets/img/construction/team-5.webp" class="img-fluid" alt="Contractor serving Georgetown and Sun City Texas">
+                <img src="assets/img/construction/team-5.webp" class="img-fluid" alt="Contractor serving Berry Creek and Sun City Texas">
                 <div class="years-tag">Expert</div>
               </div>
               <div class="member-body">
@@ -769,7 +768,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="crew-member primary-member">
               <div class="member-portrait">
-                <img src="assets/img/construction/team-2.webp" class="img-fluid" alt="Lead electrician serving Georgetown and Sun City Texas">
+                <img src="assets/img/construction/team-2.webp" class="img-fluid" alt="Lead electrician serving Berry Creek and Sun City Texas">
                 <div class="years-tag">Licensed</div>
               </div>
               <div class="member-body">
@@ -793,7 +792,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="250">
             <div class="crew-member primary-member">
               <div class="member-portrait">
-                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="Licensed plumber serving Georgetown and Sun City Texas">
+                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="Licensed plumber serving Berry Creek and Sun City Texas">
                 <div class="years-tag">Licensed</div>
               </div>
               <div class="member-body">
@@ -835,7 +834,7 @@ require __DIR__ . '/includes/header.php';
               <div class="badge-wrapper">
                 <span class="cta-badge">
                   <i class="bi bi-geo-alt"></i>
-                  Georgetown &amp; Sun City Service Area
+                  Berry Creek &amp; Sun City Service Area
                 </span>
               </div>
 

@@ -133,7 +133,7 @@ require __DIR__ . '/includes/header.php';
           <p>If you have any questions about this Privacy Policy or our practices, please contact us:</p>
           <div class="contact-details">
             <p><strong>Email:</strong> <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><?= e(BUSINESS_EMAIL) ?></a></p>
-            <p><strong>Address:</strong> <?= e(BUSINESS_ADDRESS_DISPLAY) ?></p>
+            <p><strong>Service area:</strong> <?= e(BUSINESS_ADDRESS_DISPLAY) ?></p>
           </div>
         </div>
 

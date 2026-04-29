@@ -147,7 +147,7 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
                 <div class="banner-icon"><i class="bi bi-shield-check"></i></div>
                 <div class="banner-info">
                   <h5>Licensed electrical and plumbing support</h5>
-                  <p>Clear scope, practical scheduling, and one local point of contact for Georgetown and Sun City work.</p>
+                  <p>Clear scope, practical scheduling, and one local point of contact for Berry Creek and Sun City work.</p>
                   <a href="quote.php" class="cta-btn">Start a quote <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
