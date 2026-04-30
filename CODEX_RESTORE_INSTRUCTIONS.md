@@ -142,35 +142,37 @@ gh run view <ci-run-id> --json status,conclusion,url,jobs
 Basic homepage check:
 
 ```bash
-curl -fsSL https://webtestkit.com/mark/ | rg -n "Berry Creek|Sun City|Georgetown|78626|areaServed|application/ld\\+json|canonical"
+curl -fsSL https://webtestkit.com/mark/ | rg -n "Sun City|78633|Berry Creek Estates|78628|78626|areaServed|application/ld\\+json|canonical"
 ```
 
 Expected:
 
-- Berry Creek and Sun City appear.
+- Sun City 78633 and Berry Creek Estates 78628 appear.
 - `areaServed` appears in JSON-LD.
-- `Georgetown` should not appear.
 - `78626` should not appear.
+- `Georgetown` should appear only when needed as accurate ZIP/map context for Sun City 78633.
 
 Contact page check:
 
 ```bash
-curl -fsSL https://webtestkit.com/mark/contact.php | rg -n "Service Area|Berry Creek|78628|Client-location|Georgetown|78626|maps\\?q="
+curl -fsSL https://webtestkit.com/mark/contact.php | rg -n "Service Area|Sun City|78633|Berry Creek Estates|78628|Client-location|78626|maps\\?q="
 ```
 
 Expected:
 
 - Service Area appears.
-- Berry Creek and 78628 appear.
+- Sun City 78633 and Berry Creek Estates 78628 appear.
 - Client-location language appears.
-- Georgetown and 78626 do not appear.
+- 78626 does not appear.
 
 ## Current Project Rules
 
-- Do not market the business as working in Georgetown.
+- Do not market the business broadly as working in Georgetown. It is OK to identify Sun City `78633` as Sun City, Georgetown, TX / Williamson County when needed for accurate ZIP or map context.
 - Do not use `78626`.
-- Service area is Berry Creek `78628` and Sun City only.
+- Primary SEO focus is Sun City, TX `78633`.
+- Secondary service-area focus is Berry Creek Estates `78628`.
 - Mark lives in Georgetown, but the site should describe work at the client location.
+- Mark does not do full remodeling, heater / AC / HVAC, or roofing work.
 - Avoid broad service-area language:
   - Do not use "Central Texas".
   - Do not use "nearby communities".

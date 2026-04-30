@@ -28,7 +28,7 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
               <div class="menu-icon"><i class="bi bi-droplet"></i></div>
               <div class="menu-text">
                 <span class="menu-title">Plumbing Service</span>
-                <span class="menu-description">Leaks, fixtures, shutoffs, and water heaters</span>
+                <span class="menu-description">Leaks, fixtures, water heaters, and softeners</span>
               </div>
             </div>
             <div class="menu-badge hot">RMP</div>
@@ -39,8 +39,8 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
             <div class="menu-item-content">
               <div class="menu-icon"><i class="bi bi-hammer"></i></div>
               <div class="menu-text">
-                <span class="menu-title">Remodeling &amp; Carpentry</span>
-                <span class="menu-description">Trim, doors, small remodels, and finish work</span>
+                <span class="menu-title">Handyman &amp; Home Repair</span>
+                <span class="menu-description">Doors, trim, drywall, fixtures, and punch lists</span>
               </div>
             </div>
           </a>
@@ -114,7 +114,7 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
                   </a>
                   <a href="services.php" class="product-link">
                     <i class="bi bi-droplet"></i>
-                    <div><span>Plumbing Service</span><small><?= e(PLUMBING_LICENSE) ?> for leaks, fixtures, and water heaters</small></div>
+                    <div><span>Plumbing Service</span><small><?= e(PLUMBING_LICENSE) ?> for leaks, fixtures, water heaters, and softeners</small></div>
                   </a>
                   <a href="quote.php" class="product-link">
                     <i class="bi bi-clipboard-check"></i>
@@ -124,11 +124,11 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
               </div>
 
               <div class="product-section">
-                <h4>Home Improvements</h4>
+                <h4>Home Repair</h4>
                 <div class="product-list">
                   <a href="services.php" class="product-link">
                     <i class="bi bi-hammer"></i>
-                    <div><span>Remodeling &amp; Carpentry</span><small>Trim, doors, finish work, and small remodel scopes</small></div>
+                    <div><span>Handyman &amp; Home Repair</span><small>Doors, trim, drywall, fixtures, and punch lists</small></div>
                   </a>
                   <a href="services.php" class="product-link">
                     <i class="bi bi-list-check"></i>
@@ -147,7 +147,7 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
                 <div class="banner-icon"><i class="bi bi-shield-check"></i></div>
                 <div class="banner-info">
                   <h5>Licensed electrical and plumbing support</h5>
-                  <p>Clear scope, practical scheduling, and one local point of contact for Berry Creek and Sun City work.</p>
+                  <p>Clear scope, practical scheduling, and one local point of contact for Sun City and Berry Creek Estates work.</p>
                   <a href="quote.php" class="cta-btn">Start a quote <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
@@ -165,7 +165,7 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
                   </a>
                   <a href="projects.php" class="product-link">
                     <i class="bi bi-grid"></i>
-                    <div><span>Projects</span><small>Browse repair, remodel, and service examples</small></div>
+                    <div><span>Projects</span><small>Browse repair, service, and maintenance examples</small></div>
                   </a>
                   <a href="service-details.php" class="product-link">
                     <i class="bi bi-diagram-3"></i>
@@ -229,6 +229,44 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
     </li>
 
     <li><a href="contact.php" class="<?= is_active($pageKey, 'contact.php') ?>">Contact</a></li>
+    <li class="dropdown extended-dropdown-2 theme-dropdown">
+      <a href="#" class="theme-toggle"><span><i class="bi bi-circle-half"></i> Theme</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li>
+          <a href="#" data-theme-option="system" aria-current="true">
+            <div class="menu-item-content">
+              <div class="menu-icon"><i class="bi bi-display"></i></div>
+              <div class="menu-text">
+                <span class="menu-title">Follow System</span>
+                <span class="menu-description">Match this device automatically</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-theme-option="dark">
+            <div class="menu-item-content">
+              <div class="menu-icon"><i class="bi bi-moon-stars"></i></div>
+              <div class="menu-text">
+                <span class="menu-title">Dark</span>
+                <span class="menu-description">Use the darker site palette</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-theme-option="light">
+            <div class="menu-item-content">
+              <div class="menu-icon"><i class="bi bi-sun"></i></div>
+              <div class="menu-text">
+                <span class="menu-title">Light</span>
+                <span class="menu-description">Use the brighter site palette</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </li>
   </ul>
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>

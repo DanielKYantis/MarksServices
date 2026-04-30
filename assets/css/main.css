@@ -902,6 +902,25 @@ h6 {
   .extended-dropdown-2 ul a:hover .menu-badge {
     transform: scale(1.05);
   }
+
+  .navmenu .theme-dropdown>ul {
+    left: auto;
+    min-width: 300px;
+    right: 0;
+    width: 300px;
+  }
+
+  .theme-dropdown .theme-toggle span {
+    align-items: center;
+    display: flex;
+    gap: 6px;
+  }
+
+  .navmenu .theme-dropdown.theme-dropdown-open>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1079,6 +1098,16 @@ h6 {
   .extended-dropdown-2 ul a:active .menu-text .menu-title,
   .extended-dropdown-2 ul .active .menu-title {
     color: var(--nav-dropdown-hover-color);
+  }
+
+  .theme-dropdown .theme-toggle span {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+  }
+
+  .navmenu .theme-dropdown.theme-dropdown-open>ul {
+    display: block;
   }
 }
 
@@ -6434,4 +6463,141 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --background-color: #0f172a;
+    --default-color: #d7dee9;
+    --heading-color: #f4f7fb;
+    --accent-color: #6da8f7;
+    --surface-color: #182235;
+    --contrast-color: #08111f;
+    --nav-color: #e8eef7;
+    --nav-hover-color: #8bbdff;
+    --nav-mobile-background-color: #111c2e;
+    --nav-dropdown-background-color: #132033;
+    --nav-dropdown-color: #e2e8f0;
+    --nav-dropdown-hover-color: #8bbdff;
+  }
+
+  .light-background {
+    --background-color: #111c2e;
+    --surface-color: #182235;
+  }
+
+  .dark-background {
+    --background-color: #0d3f7e;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --accent-color: #ffffff;
+    --surface-color: #132033;
+    --contrast-color: #ffffff;
+  }
+
+  .header {
+    --background-color: #0f172a;
+    border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  }
+
+  .scrolled .header {
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.35);
+  }
+
+  input,
+  textarea,
+  select {
+    color-scheme: dark;
+  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background-color: #0f172a;
+  --default-color: #d7dee9;
+  --heading-color: #f4f7fb;
+  --accent-color: #6da8f7;
+  --surface-color: #182235;
+  --contrast-color: #08111f;
+  --nav-color: #e8eef7;
+  --nav-hover-color: #8bbdff;
+  --nav-mobile-background-color: #111c2e;
+  --nav-dropdown-background-color: #132033;
+  --nav-dropdown-color: #e2e8f0;
+  --nav-dropdown-hover-color: #8bbdff;
+}
+
+html[data-theme="dark"] .light-background {
+  --background-color: #111c2e;
+  --surface-color: #182235;
+}
+
+html[data-theme="dark"] .dark-background {
+  --background-color: #0d3f7e;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #ffffff;
+  --surface-color: #132033;
+  --contrast-color: #ffffff;
+}
+
+html[data-theme="dark"] .header {
+  --background-color: #0f172a;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+html[data-theme="dark"] .scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --background-color: #f9fafb;
+  --default-color: #333333;
+  --heading-color: #102a49;
+  --accent-color: #14529d;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+  --nav-color: #333333;
+  --nav-hover-color: #14529d;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #333333;
+  --nav-dropdown-hover-color: #14529d;
+}
+
+html[data-theme="light"] .light-background {
+  --background-color: #eff1f3;
+  --surface-color: #ffffff;
+}
+
+html[data-theme="light"] .dark-background {
+  --background-color: #14529d;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+html[data-theme="light"] .header {
+  --background-color: #ffffff;
+  border-bottom: 0;
+}
+
+html[data-theme="light"] .scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="light"] input,
+html[data-theme="light"] textarea,
+html[data-theme="light"] select {
+  color-scheme: light;
 }

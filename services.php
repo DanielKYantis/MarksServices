@@ -48,10 +48,10 @@ require __DIR__ . '/includes/header.php';
                 <i class="bi bi-house"></i>
               </div>
               <h3>Plumbing Service</h3>
-              <p>Licensed plumbing repairs, fixture replacements, shutoffs, water heater support, and leak response with clean work areas.</p>
+              <p>Licensed plumbing repairs, fixture replacements, shutoffs, water heater support, water softener installation, and leak response with clean work areas.</p>
               <div class="service-features">
                 <span><i class="bi bi-check-circle"></i> Leaks &amp; fixtures</span>
-                <span><i class="bi bi-check-circle"></i> Water heaters</span>
+                <span><i class="bi bi-check-circle"></i> Water heaters &amp; softeners</span>
                 <span><i class="bi bi-check-circle"></i> <?= e(PLUMBING_LICENSE) ?></span>
               </div>
               <a href="service-details.php" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
@@ -85,7 +85,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-list-block">
               <h3>Additional Services</h3>
-              <p>Mark's Services can combine trade work, repairs, and small remodel scopes into one organized visit or proposal.</p>
+              <p>Mark's Services can combine trade work, home repairs, and punch-list tasks into one organized visit or proposal.</p>
 
               <div class="service-list">
                 <div class="service-list-item" data-aos="fade-up" data-aos-delay="100">
@@ -93,8 +93,8 @@ require __DIR__ . '/includes/header.php';
                     <i class="bi bi-rulers"></i>
                   </div>
                   <div class="service-list-content">
-                    <h4>Remodeling &amp; Carpentry</h4>
-                    <p>Trim, doors, built-ins, small renovations, and finish work for practical home improvements.</p>
+                    <h4>Handyman &amp; Carpentry</h4>
+                    <p>Trim, doors, drywall, fixtures, and finish work for practical home repairs.</p>
                   </div>
                 </div><!-- End Service List Item -->
 

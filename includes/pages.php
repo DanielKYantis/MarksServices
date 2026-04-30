@@ -12,25 +12,25 @@ return array (
   ),
   'about.php' => 
   array (
-    'title' => 'About Mark’s Services | Berry Creek & Sun City Home Services',
-    'description' => 'Learn about Mark’s Services, a client-location home services team for Berry Creek 78628 and Sun City homeowners.',
-    'keywords' => 'Mark’s Services Berry Creek, Sun City home services, Berry Creek handyman, licensed electrical Berry Creek, licensed plumbing Sun City',
+    'title' => 'About Mark’s Services | Sun City & Berry Creek Estates Home Services',
+    'description' => 'Learn about Mark’s Services, a client-location home services team for Sun City 78633 and Berry Creek Estates 78628 homeowners.',
+    'keywords' => 'Mark’s Services Sun City, Sun City home services, Berry Creek Estates handyman, licensed electrical Sun City, licensed plumbing Sun City',
     'body_class' => 'about-page',
     'label' => 'About',
   ),
   'contact.php' => 
   array (
-    'title' => 'Contact Mark’s Services | Berry Creek 78628 & Sun City',
-    'description' => 'Contact Mark’s Services for electrical, plumbing, remodeling, carpentry, maintenance, and punch-list work in Berry Creek 78628 and Sun City.',
-    'keywords' => 'contact Mark’s Services, Berry Creek electrician, Berry Creek plumber, Sun City repairs, home services 78628',
+    'title' => 'Contact Mark’s Services | Sun City 78633 & Berry Creek Estates 78628',
+    'description' => 'Contact Mark’s Services for electrical, plumbing, handyman, home repair, water softener, maintenance, and punch-list work in Sun City 78633 and Berry Creek Estates 78628.',
+    'keywords' => 'contact Mark’s Services, Sun City electrician, Sun City plumber, Sun City handyman, Berry Creek Estates repairs, home services 78633',
     'body_class' => 'contact-page',
     'label' => 'Contact',
   ),
   'index.php' => 
   array (
-    'title' => 'Berry Creek 78628 & Sun City Home Services | Mark’s Services',
-    'description' => 'Licensed electrical, plumbing, remodeling, carpentry, maintenance, and punch-list service at client locations in Berry Creek 78628 and Sun City.',
-    'keywords' => 'Berry Creek electrician, Berry Creek plumber, Sun City electrician, Sun City plumber, Berry Creek remodeling, licensed electrician 78628, licensed plumber 78628, home repairs Sun City, punch list Sun City, Mark’s Services',
+    'title' => 'Sun City 78633 Home Services | Mark’s Services',
+    'description' => 'Licensed electrical, plumbing, handyman, home repair, water softener installation, maintenance, and punch-list service at client locations in Sun City 78633 and Berry Creek Estates 78628.',
+    'keywords' => 'Sun City electrician, Sun City plumber, Sun City handyman, Sun City home repair, plumbing near me Sun City TX, electrician near me Sun City TX, handyman near me Sun City TX, water softener install Sun City, Berry Creek Estates electrician, Berry Creek Estates plumber, Mark’s Services',
     'body_class' => 'index-page',
     'label' => 'Home',
   ),
@@ -44,41 +44,41 @@ return array (
   ),
   'project-details.php' => 
   array (
-    'title' => 'Project Details | Berry Creek & Sun City Home Services',
-    'description' => 'Project examples for repair, remodel, electrical, plumbing, and maintenance work at client locations in Berry Creek and Sun City.',
-    'keywords' => 'Berry Creek home projects, Sun City repair projects, Berry Creek remodeling, Sun City electrical repairs',
+    'title' => 'Project Details | Sun City & Berry Creek Estates Home Services',
+    'description' => 'Project examples for repair, electrical, plumbing, handyman, and maintenance work at client locations in Sun City and Berry Creek Estates.',
+    'keywords' => 'Sun City home projects, Sun City repair projects, Berry Creek Estates repairs, Sun City electrical repairs',
     'body_class' => 'project-details-page',
     'label' => 'Project Details',
   ),
   'projects.php' => 
   array (
-    'title' => 'Projects | Berry Creek & Sun City Repairs and Remodels',
-    'description' => 'Browse examples of home repair, remodel, electrical, plumbing, and maintenance projects for Berry Creek and Sun City homes.',
-    'keywords' => 'Berry Creek projects, Sun City remodeling, Berry Creek repairs, Sun City electrical projects, Sun City plumbing projects',
+    'title' => 'Projects | Sun City & Berry Creek Estates Repairs',
+    'description' => 'Browse examples of home repair, electrical, plumbing, handyman, and maintenance projects for Sun City and Berry Creek Estates homes.',
+    'keywords' => 'Sun City projects, Sun City home repair, Berry Creek Estates repairs, Sun City electrical projects, Sun City plumbing projects',
     'body_class' => 'projects-page',
     'label' => 'Projects',
   ),
   'quote.php' => 
   array (
-    'title' => 'Request a Quote | Berry Creek 78628 & Sun City',
-    'description' => 'Request a quote for client-location electrical, plumbing, remodeling, carpentry, maintenance, or punch-list service in Berry Creek 78628 and Sun City.',
-    'keywords' => 'Berry Creek quote, Sun City quote, home repair quote 78628, electrical quote Berry Creek, plumbing quote Sun City',
+    'title' => 'Request a Quote | Sun City 78633 & Berry Creek Estates',
+    'description' => 'Request a quote for client-location electrical, plumbing, handyman, home repair, water softener, maintenance, or punch-list service in Sun City 78633 and Berry Creek Estates 78628.',
+    'keywords' => 'Sun City quote, Berry Creek Estates quote, home repair quote 78633, electrical quote Sun City, plumbing quote Sun City',
     'body_class' => 'quote-page',
     'label' => 'Quote',
   ),
   'service-details.php' => 
   array (
-    'title' => 'Service Details | Berry Creek & Sun City Home Services',
-    'description' => 'Details for licensed electrical, plumbing, remodeling, carpentry, maintenance, and make-ready work in Berry Creek and Sun City.',
-    'keywords' => 'Berry Creek electrical service, Berry Creek plumbing service, Sun City home maintenance, Sun City remodeling',
+    'title' => 'Service Details | Sun City & Berry Creek Estates Home Services',
+    'description' => 'Details for licensed electrical, plumbing, handyman, home repair, water softener installation, maintenance, and make-ready work in Sun City and Berry Creek Estates.',
+    'keywords' => 'Sun City electrical service, Sun City plumbing service, Sun City home maintenance, Sun City handyman, Berry Creek Estates repairs',
     'body_class' => 'service-details-page',
     'label' => 'Service Details',
   ),
   'services.php' => 
   array (
-    'title' => 'Services | Berry Creek 78628 & Sun City',
-    'description' => 'Electrical, plumbing, remodeling, carpentry, maintenance, and make-ready services for Berry Creek 78628 and Sun City homes.',
-    'keywords' => 'Berry Creek home services, Sun City home services, electrician 78628, plumber 78628, Berry Creek remodeling, Sun City repairs',
+    'title' => 'Services | Sun City 78633 & Berry Creek Estates',
+    'description' => 'Electrical, plumbing, handyman, home repair, water softener installation, maintenance, and make-ready services for Sun City 78633 and Berry Creek Estates 78628 homes.',
+    'keywords' => 'Sun City home services, electrician 78633, plumber 78633, handyman 78633, water softener installation Sun City, Berry Creek Estates home repair',
     'body_class' => 'services-page',
     'label' => 'Services',
   ),
@@ -92,9 +92,9 @@ return array (
   ),
   'team.php' => 
   array (
-    'title' => 'Team | Mark’s Services Berry Creek & Sun City',
-    'description' => 'Meet the Mark’s Services team supporting Berry Creek and Sun City client-location electrical, plumbing, remodeling, and repair work.',
-    'keywords' => 'Mark’s Services team, Berry Creek contractor, Sun City licensed electrician, Sun City licensed plumber',
+    'title' => 'Team | Mark’s Services Sun City & Berry Creek Estates',
+    'description' => 'Meet the Mark’s Services team supporting Sun City and Berry Creek Estates client-location electrical, plumbing, handyman, and repair work.',
+    'keywords' => 'Mark’s Services team, Sun City contractor, Sun City licensed electrician, Sun City licensed plumber',
     'body_class' => 'team-page',
     'label' => 'Team',
   ),

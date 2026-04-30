@@ -32,7 +32,7 @@ require __DIR__ . '/includes/header.php';
                   <div class="quote-info">
                     <div class="quote-content">
                       <h3>Ready to Schedule Your Project?</h3>
-                      <p>Tell us what you need done and Mark's Services will follow up with a clear next step for your Berry Creek or Sun City project.</p>
+                      <p>Tell us what you need done and Mark's Services will follow up with a clear next step for your Sun City or Berry Creek Estates project.</p>
 
                       <div class="contact-items">
                         <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
@@ -113,7 +113,7 @@ require __DIR__ . '/includes/header.php';
                               <option value="">Select Service Type</option>
                               <option value="electrical">Electrical Service Call</option>
                               <option value="plumbing">Plumbing Service Call</option>
-                              <option value="remodel">Remodeling / Carpentry</option>
+                              <option value="home-repair">Handyman / Home Repair</option>
                               <option value="maintenance">Maintenance / Punch List</option>
                               <option value="other">Other</option>
                             </select>

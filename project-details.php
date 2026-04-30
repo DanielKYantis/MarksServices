@@ -28,7 +28,7 @@ require __DIR__ . '/includes/header.php';
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="project-banner">
-                <img src="assets/img/construction/project-4.webp" alt="Residential repair and remodel work" class="img-fluid">
+                <img src="assets/img/construction/project-4.webp" alt="Residential repair and service work" class="img-fluid">
                 <div class="banner-badge">
                   <span class="status-indicator">In Progress</span>
                 </div>
@@ -40,7 +40,7 @@ require __DIR__ . '/includes/header.php';
                   <span class="tag">Residential</span>
                   <span class="tag"><?= e(BUSINESS_AREA) ?></span>
                 </div>
-                <h1 class="main-title">Repair, Remodel &amp; Service Work</h1>
+                <h1 class="main-title">Repair, Maintenance &amp; Service Work</h1>
                 <p class="summary-text">This portfolio page highlights the kind of coordinated home-service work Mark's Services supports: repairs, finish work, licensed trade tasks, and make-ready improvements.</p>
 
                 <div class="key-metrics">
@@ -156,7 +156,7 @@ require __DIR__ . '/includes/header.php';
                     <span class="spec-detail"><?= e(PLUMBING_LICENSE) ?></span>
                   </div>
                   <div class="spec-row">
-                    <span class="spec-name">Remodeling</span>
+                    <span class="spec-name">Home Repair</span>
                     <span class="spec-detail">Scope-based</span>
                   </div>
                   <div class="spec-row">

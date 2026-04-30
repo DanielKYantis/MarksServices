@@ -13,12 +13,12 @@ require __DIR__ . '/includes/header.php';
 
           <div class="col-lg-7">
             <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
-              <span class="subtitle">Licensed Remodeling &amp; Home Services</span>
+              <span class="subtitle">Licensed Plumbing, Electrical &amp; Handyman Services</span>
               <h1><?= e(BUSINESS_AREA) ?></h1>
 
               <p>
-                Electrical • Plumbing • Remodeling<br>
-                Maintenance • Punch Lists • Tenant Turns • Make-Ready
+                Plumbing • Electrical • Handyman Repairs<br>
+                Water Softeners • Maintenance • Punch Lists • Make-Ready
               </p>
 
               <div class="hero-buttons">
@@ -31,7 +31,7 @@ require __DIR__ . '/includes/header.php';
                   <i class="bi bi-geo-alt"></i>
                   <div class="badge-text">
                     <span class="count">Local</span>
-                    <span class="label">Berry Creek<br>Sun City</span>
+                    <span class="label">Sun City 78633<br>Berry Creek Estates 78628</span>
                   </div>
                 </div>
                 <div class="badge-item">
@@ -54,7 +54,7 @@ require __DIR__ . '/includes/header.php';
 
           <div class="col-lg-5" data-aos="fade-left" data-aos-delay="300">
             <div class="hero-image">
-              <img src="assets/img/construction/showcase-3.webp" alt="Berry Creek &amp; Sun City home services team" class="img-fluid">
+              <img src="assets/img/construction/showcase-3.webp" alt="Sun City and Berry Creek Estates home services team" class="img-fluid">
               <div class="image-badge">
                 <span>Clean Work</span>
                 <p>Reliable Scheduling</p>
@@ -75,24 +75,24 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-6">
             <div class="about-content" data-aos="fade-right" data-aos-delay="200">
 
-              <h2>Local Home Services for Berry Creek &amp; Sun City, TX</h2>
+              <h2>Sun City Home Services Near Berry Creek Estates</h2>
 
               <p class="lead">
-                Mark’s Services delivers dependable remodeling, repairs, and licensed trade work with clear communication
+                Mark’s Services delivers dependable repairs, handyman help, and licensed trade work with clear communication
                 and clean, respectful job sites.
               </p>
 
               <p>
                 Whether you need a quick service call, a punch list knocked out, or a planned upgrade, we bring the right
                 specialist to the job and keep you informed from estimate to final walkthrough. Sun City homeowners and
-                Berry Creek property owners count on us for reliable scheduling and quality workmanship.
+                Berry Creek Estates property owners count on us for reliable scheduling and quality workmanship.
               </p>
 
               <div class="achievement-boxes row g-4 mt-4">
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
                   <div class="achievement-box">
                     <h3 class="">Local</h3>
-                    <p class="">Berry Creek 78628<br>Sun City<br>Client locations</p>
+                    <p class="">Sun City 78633<br>Berry Creek Estates 78628<br>Client locations</p>
                   </div>
                 </div>
 
@@ -172,15 +172,15 @@ require __DIR__ . '/includes/header.php';
 
           <div class="col-lg-6">
             <div class="about-image position-relative" data-aos="fade-left" data-aos-delay="200">
-              <img src="assets/img/construction/project-3.webp" alt="Berry Creek and Sun City home service team" class="img-fluid main-image rounded">
+              <img src="assets/img/construction/project-3.webp" alt="Sun City and Berry Creek Estates home service team" class="img-fluid main-image rounded">
 
               <div class="image-overlay">
-                <img src="assets/img/construction/project-7.webp" alt="Home repair and remodel project in Berry Creek Texas" class="img-fluid rounded">
+                <img src="assets/img/construction/project-7.webp" alt="Home repair project in Berry Creek Estates Texas" class="img-fluid rounded">
               </div>
 
               <div class="experience-badge" data-aos="zoom-in" data-aos-delay="500">
                 <span>Local</span>
-                <p>Berry Creek 78628<br>Sun City<br>Client locations</p>
+                <p>Sun City 78633<br>Berry Creek Estates 78628<br>Client locations</p>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@ require __DIR__ . '/includes/header.php';
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Services</h2>
-        <p>Licensed electrical and plumbing, plus remodeling and maintenance for Berry Creek and Sun City homeowners.</p>
+        <p>Licensed electrical and plumbing, plus handyman repairs, water softener installation, and maintenance for Sun City and Berry Creek Estates homeowners.</p>
       </div>
       <!-- End Section Title -->
 
@@ -210,15 +210,15 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="150">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-3.webp" class="img-fluid" alt="Remodeling and home repair service in Berry Creek and Sun City, Texas">
+                <img src="assets/img/construction/project-3.webp" class="img-fluid" alt="Handyman and home repair service in Sun City and Berry Creek Estates, Texas">
                 <div class="icon-badge"><i class="bi bi-hammer"></i></div>
               </div>
               <div class="card-body-content">
-                <h3>Remodeling &amp; Carpentry</h3>
-                <p>Bathrooms, kitchens, trim, doors, drywall repair, and practical upgrades designed for Sun City and Berry Creek homes.</p>
+                <h3>Handyman &amp; Home Repair</h3>
+                <p>Doors, trim, drywall repair, fixtures, and practical punch-list help designed for Sun City and Berry Creek Estates homes.</p>
                 <ul class="highlights">
                   <li><i class="bi bi-shield-check"></i> Written scope and clean work areas</li>
-                  <li><i class="bi bi-shield-check"></i> Aging-in-place friendly options</li>
+                  <li><i class="bi bi-shield-check"></i> Aging-in-place friendly repairs</li>
                   <li><i class="bi bi-shield-check"></i> Punch lists and small jobs welcome</li>
                 </ul>
                 <a class="explore-link" href="services.php">Explore Details <i class="bi bi-chevron-right"></i></a>
@@ -230,7 +230,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Licensed electrician services in Berry Creek and Sun City, Texas">
+                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Licensed electrician services in Sun City and Berry Creek Estates, Texas">
                 <div class="icon-badge"><i class="bi bi-lightning-charge"></i></div>
               </div>
               <div class="card-body-content">
@@ -250,15 +250,15 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="250">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-7.webp" class="img-fluid" alt="Licensed plumbing services in Berry Creek and Sun City, Texas">
+                <img src="assets/img/construction/project-7.webp" class="img-fluid" alt="Licensed plumbing services in Sun City and Berry Creek Estates, Texas">
                 <div class="icon-badge"><i class="bi bi-droplet"></i></div>
               </div>
               <div class="card-body-content">
                 <h3>Licensed Plumbing</h3>
-                <p>Leaks, fixtures, water heaters, shutoffs, and repairs—done neatly with durability in mind.</p>
+                <p>Leaks, fixtures, water heaters, water softeners, shutoffs, and repairs—done neatly with durability in mind.</p>
                 <ul class="highlights">
                   <li><i class="bi bi-shield-check"></i> RMP/Master: <strong><?= e(PLUMBING_LICENSE) ?></strong> </li>
-                  <li><i class="bi bi-shield-check"></i> Water heater repair &amp; replacement</li>
+                  <li><i class="bi bi-shield-check"></i> Water heater and softener installation</li>
                   <li><i class="bi bi-shield-check"></i> Fast response for active leaks</li>
                 </ul>
                 <a class="explore-link" href="services.php">Explore Details <i class="bi bi-chevron-right"></i></a>
@@ -270,7 +270,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="offering-card h-100">
               <div class="card-top">
-                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Maintenance, punch lists, and make-ready services in Berry Creek, Texas">
+                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Maintenance, punch lists, and make-ready services in Sun City and Berry Creek Estates, Texas">
                 <div class="icon-badge"><i class="bi bi-house-gear"></i></div>
               </div>
               <div class="card-body-content">
@@ -292,8 +292,8 @@ require __DIR__ . '/includes/header.php';
         <div class="bottom-banner" data-aos="fade-up" data-aos-delay="400">
           <div class="row align-items-center">
             <div class="col-lg-8">
-              <h4>Need help in Sun City or Berry Creek?</h4>
-              <p>Request a quote for service calls, upgrades, or small remodels. Clear scope, clean work, and reliable scheduling.</p>
+              <h4>Need help in Sun City or Berry Creek Estates?</h4>
+              <p>Request a quote for service calls, repairs, water softener work, or punch lists. Clear scope, clean work, and reliable scheduling.</p>
             </div>
             <div class="col-lg-4">
               <div class="banner-actions">
@@ -481,7 +481,7 @@ require __DIR__ . '/includes/header.php';
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="badge-highlight">
-              <img src="assets/img/construction/badge-5.webp" class="img-fluid" alt="Licensed and insured home services in Berry Creek and Sun City">
+              <img src="assets/img/construction/badge-5.webp" class="img-fluid" alt="Licensed and insured home services in Sun City and Berry Creek Estates">
               <div class="badge-content">
                 <h4>Credential-first service</h4>
                 <p class="mb-0">Clear license disclosure, clean work, and written scope—built for homeowner confidence.</p>
@@ -527,12 +527,12 @@ require __DIR__ . '/includes/header.php';
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="250">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-2.webp" class="img-fluid" alt="Sun City and Berry Creek service area">
+              <img src="assets/img/construction/badge-2.webp" class="img-fluid" alt="Sun City and Berry Creek Estates service area">
             </div>
             <div class="cert-details">
               <h5>Local Service Area</h5>
-              <span class="cert-category">Berry Creek • Sun City</span>
-              <p>Focused scheduling and communication for Berry Creek 78628 and Sun City homeowners only.</p>
+              <span class="cert-category">Sun City • Berry Creek Estates</span>
+              <p>Focused scheduling and communication for Sun City 78633 and Berry Creek Estates 78628 homeowners.</p>
             </div>
           </div>
 
@@ -567,7 +567,7 @@ require __DIR__ . '/includes/header.php';
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Projects</h2>
-        <p>Recent work in Berry Creek and Sun City—repairs, upgrades, and remodels completed with clean execution and clear communication.</p>
+        <p>Recent work in Sun City and Berry Creek Estates—repairs, upgrades, and service calls completed with clean execution and clear communication.</p>
       </div>
       <!-- End Section Title -->
 
@@ -604,7 +604,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Ceiling fan and lighting upgrade in Berry Creek Texas">
+                <img src="assets/img/construction/project-1.webp" class="img-fluid" alt="Ceiling fan and lighting upgrade in Berry Creek Estates Texas">
                 <div class="project-overlay">
                   <div class="project-status completed">Completed</div>
                   <div class="project-actions">
@@ -617,7 +617,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Lighting &amp; Ceiling Fan Upgrade</h4>
                 <p class="project-description">Improved comfort and visibility with safe installs and clean finishes.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek, TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek Estates, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> Same day</span>
                 </div>
               </div>
@@ -650,7 +650,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Door, trim, and hardware update in Berry Creek TX">
+                <img src="assets/img/construction/project-5.webp" class="img-fluid" alt="Door, trim, and hardware update in Berry Creek Estates TX">
                 <div class="project-overlay">
                   <div class="project-status completed">Completed</div>
                   <div class="project-actions">
@@ -663,7 +663,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Doors, Trim &amp; Hardware Refresh</h4>
                 <p class="project-description">Fit, finish, and function improvements—small changes that make daily living smoother.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek, TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek Estates, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> 1–2 days</span>
                 </div>
               </div>
@@ -673,7 +673,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/img/construction/project-6.webp" class="img-fluid" alt="Make-ready punch list project in Berry Creek Texas">
+                <img src="assets/img/construction/project-6.webp" class="img-fluid" alt="Make-ready punch list project in Berry Creek Estates Texas">
                 <div class="project-overlay">
                   <div class="project-status completed">Completed</div>
                   <div class="project-actions">
@@ -686,7 +686,7 @@ require __DIR__ . '/includes/header.php';
                 <h4 class="project-title">Tenant Turn Punch List</h4>
                 <p class="project-description">Coordinated multi-trade fixes (minor repairs, replacements, adjustments) to get a property ready fast.</p>
                 <div class="project-meta">
-                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek, TX</span>
+                  <span class="location"><i class="bi bi-geo-alt"></i> Berry Creek Estates, TX</span>
                   <span class="timeline"><i class="bi bi-calendar"></i> 1–3 days</span>
                 </div>
               </div>
@@ -729,7 +729,7 @@ require __DIR__ . '/includes/header.php';
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Team</h2>
-        <p>Local pros serving Berry Creek and Sun City with licensed trade work and clean, respectful job sites.</p>
+        <p>Local pros serving Sun City and Berry Creek Estates with licensed trade work and clean, respectful job sites.</p>
       </div>
       <!-- End Section Title -->
 
@@ -744,13 +744,13 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="150">
             <div class="crew-member primary-member">
               <div class="member-portrait">
-                <img src="assets/img/construction/team-5.webp" class="img-fluid" alt="Contractor serving Berry Creek and Sun City Texas">
+                <img src="assets/img/construction/team-5.webp" class="img-fluid" alt="Contractor serving Sun City and Berry Creek Estates Texas">
                 <div class="years-tag">Expert</div>
               </div>
               <div class="member-body">
                 <h4>Mark Walbert</h4>
-                <span class="role">Remodeling &amp; Carpentry Expert</span>
-                <p>Detail-first repairs and remodel work: bathrooms, kitchens, trim, doors, drywall, and practical upgrades.</p>
+                <span class="role">Handyman &amp; Home Repair Expert</span>
+                <p>Detail-first repairs: doors, trim, drywall, fixtures, punch lists, and practical upgrades.</p>
                 <div class="badge-row">
                   <span class="cert-badge"><i class="bi bi-hammer"></i> Carpentry</span>
                   <span class="cert-badge"><i class="bi bi-house-gear"></i>Expert</span>
@@ -768,7 +768,7 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="crew-member primary-member">
               <div class="member-portrait">
-                <img src="assets/img/construction/team-2.webp" class="img-fluid" alt="Lead electrician serving Berry Creek and Sun City Texas">
+                <img src="assets/img/construction/team-2.webp" class="img-fluid" alt="Lead electrician serving Sun City and Berry Creek Estates Texas">
                 <div class="years-tag">Licensed</div>
               </div>
               <div class="member-body">
@@ -792,13 +792,13 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="250">
             <div class="crew-member primary-member">
               <div class="member-portrait">
-                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="Licensed plumber serving Berry Creek and Sun City Texas">
+                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="Licensed plumber serving Sun City and Berry Creek Estates Texas">
                 <div class="years-tag">Licensed</div>
               </div>
               <div class="member-body">
                 <h4>James Pote (Jim) Bradford</h4>
                 <span class="role">Responsible Master Plumber</span>
-                <p>Repairs, fixtures, and water heaters with clean execution and dependable results.</p>
+                <p>Repairs, fixtures, water heaters, and water softeners with clean execution and dependable results.</p>
                 <div class="badge-row">
                   <span class="cert-badge"><i class="bi bi-droplet"></i> Plumbing</span>
                   <span class="cert-badge"><i class="bi bi-file-earmark-check"></i> <?= e(PLUMBING_LICENSE) ?><!-- TODO --></span>
@@ -834,7 +834,7 @@ require __DIR__ . '/includes/header.php';
               <div class="badge-wrapper">
                 <span class="cta-badge">
                   <i class="bi bi-geo-alt"></i>
-                  Berry Creek &amp; Sun City Service Area
+                  Sun City &amp; Berry Creek Estates Service Area
                 </span>
               </div>
 
@@ -909,7 +909,7 @@ require __DIR__ . '/includes/header.php';
                           <option value="">Select Service Type</option>
                           <option value="electrical">Electrical Service Call</option>
                           <option value="plumbing">Plumbing Service Call</option>
-                          <option value="remodel">Remodeling / Carpentry</option>
+                          <option value="home-repair">Handyman / Home Repair</option>
                           <option value="maintenance">Maintenance / Punch List</option>
                           <option value="other">Other</option>
                         </select>

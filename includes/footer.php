@@ -9,7 +9,7 @@ declare(strict_types=1);
           <span class="sitename"><?= e(SITE_NAME) ?></span>
         </a>
         <p>
-          Local home services for Berry Creek and Sun City: remodeling, maintenance, and licensed electrical and plumbing.
+          Local home services for Sun City and Berry Creek Estates: handyman repairs, maintenance, and licensed electrical and plumbing.
           Clean work, clear scope, reliable scheduling.
         </p>
         <div class="mt-3">
@@ -45,7 +45,7 @@ declare(strict_types=1);
         <p class="mb-2">Client-location appointments only</p>
         <p class="mt-3 mb-1"><strong>Phone:</strong> <span><a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><?= e(BUSINESS_PHONE_DISPLAY) ?></a></span></p>
         <p class="mb-0"><strong>Email:</strong> <span><a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><?= e(BUSINESS_EMAIL) ?></a></span></p>
-        <div class="mt-3 small"><strong>Serving:</strong> Berry Creek 78628 • Sun City only</div>
+        <div class="mt-3 small"><strong>Serving:</strong> Sun City 78633 • Berry Creek Estates 78628</div>
       </div>
     </div>
   </div>

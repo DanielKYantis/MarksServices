@@ -106,7 +106,7 @@ require __DIR__ . '/includes/header.php';
                 <img src="assets/img/construction/team-3.webp" class="img-fluid" alt="">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>Remodeling</h5>
+                    <h5>Home Repair</h5>
                     <span>Carpentry &amp; finish work</span>
                     <div class="quick-contact">
                       <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
@@ -117,7 +117,7 @@ require __DIR__ . '/includes/header.php';
                 </div>
               </div>
               <div class="member-summary">
-                <h5>Remodeling</h5>
+                <h5>Home Repair</h5>
                 <span>Carpentry &amp; finish work</span>
                 <div class="skills">
                   <span class="skill-tag">Trim</span>

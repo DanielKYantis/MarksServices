@@ -27,7 +27,7 @@ require __DIR__ . "/includes/header.php";
           <div class="contact-info-panel">
             <div class="contact-info-header">
               <h3>Contact Information</h3>
-              <p>Call, email, or send a message to discuss electrical, plumbing, remodeling, or maintenance work at client locations in Berry Creek and Sun City.</p>
+              <p>Call, email, or send a message to discuss electrical, plumbing, handyman, home repair, water softener, or maintenance work at client locations in Sun City and Berry Creek Estates.</p>
             </div>
 
             <div class="contact-info-cards">
@@ -85,7 +85,7 @@ require __DIR__ . "/includes/header.php";
 
           <div class="contact-form-panel">
             <div class="map-container">
-              <iframe src="https://www.google.com/maps?q=Berry%20Creek%2C%20TX%2078628&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps?q=Sun%20City%2C%20Georgetown%2C%20TX%2078633&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="form-container">

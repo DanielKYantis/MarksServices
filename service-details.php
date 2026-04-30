@@ -33,7 +33,7 @@ require __DIR__ . '/includes/header.php';
                   <i class="bi bi-building"></i>
                 </div>
                 <h3>Home Service Work</h3>
-                <p>Electrical, plumbing, remodeling, and maintenance support for Berry Creek and Sun City properties.</p>
+                <p>Electrical, plumbing, handyman, home repair, and maintenance support for Sun City and Berry Creek Estates properties.</p>
                 <div class="service-stats">
                   <div class="stat-item">
                     <span class="stat-number">2</span>
@@ -104,7 +104,7 @@ require __DIR__ . '/includes/header.php';
                 <h1>Professional Home Service Support</h1>
                 <div class="content-intro">
                   <p>Mark's Services handles the kinds of home and property tasks that need a licensed trade, a careful repair, or a coordinated punch-list visit.</p>
-                  <p>Use this page as a starting point for electrical service, plumbing repairs, remodeling, carpentry, maintenance, and make-ready work in the local service area.</p>
+                  <p>Use this page as a starting point for electrical service, plumbing repairs, handyman work, home repair, water softener installation, maintenance, and make-ready work in the local service area.</p>
                 </div>
               </div>
 
@@ -126,7 +126,7 @@ require __DIR__ . '/includes/header.php';
                         <i class="bi bi-tools"></i>
                       </div>
                       <h4>Plumbing Repairs</h4>
-                      <p>Leak response, fixture replacements, shutoffs, and water heater support backed by <?= e(PLUMBING_LICENSE) ?>.</p>
+                      <p>Leak response, fixture replacements, shutoffs, water heaters, and water softener installation backed by <?= e(PLUMBING_LICENSE) ?>.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -134,8 +134,8 @@ require __DIR__ . '/includes/header.php';
                       <div class="capability-icon">
                         <i class="bi bi-clipboard-check"></i>
                       </div>
-                      <h4>Remodeling &amp; Carpentry</h4>
-                      <p>Small remodel scopes, trim, doors, repairs, and finish work with clear scheduling and scope.</p>
+                      <h4>Handyman &amp; Home Repair</h4>
+                      <p>Doors, trim, drywall, fixtures, repairs, and finish work with clear scheduling and scope.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -232,7 +232,7 @@ require __DIR__ . '/includes/header.php';
                   <div class="project-overlay">
                     <div class="project-info">
                       <h4>Interior Repairs</h4>
-                      <p>Small remodel, finish, and repair scopes for local homes and properties.</p>
+                      <p>Finish work and repair scopes for local homes and properties.</p>
                       <a href="assets/img/construction/project-6.webp" class="view-btn glightbox">
                         <i class="bi bi-eye"></i>
                       </a>

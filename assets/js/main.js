@@ -29,6 +29,97 @@
   }
 
   /**
+   * Theme preference menu
+   */
+  const themeStorageKey = 'marks-theme';
+  const themeDropdown = document.querySelector('.theme-dropdown');
+  const themeOptions = document.querySelectorAll('[data-theme-option]');
+  const themeToggle = document.querySelector('.theme-toggle');
+  const themeColorMeta = document.querySelector('#theme-color-meta');
+  const systemThemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function getStoredTheme() {
+    try {
+      const theme = localStorage.getItem(themeStorageKey);
+      return theme === 'dark' || theme === 'light' ? theme : 'system';
+    } catch (error) {
+      return 'system';
+    }
+  }
+
+  function getResolvedTheme(theme) {
+    return theme === 'system' ? (systemThemeQuery.matches ? 'dark' : 'light') : theme;
+  }
+
+  function applyTheme(theme) {
+    const resolvedTheme = getResolvedTheme(theme);
+
+    if (theme === 'system') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.dataset.theme = theme;
+    }
+
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', resolvedTheme === 'dark' ? '#0f172a' : '#ffffff');
+    }
+
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-label', `Theme preference: ${theme}`);
+    }
+
+    themeOptions.forEach(option => {
+      const isActive = option.dataset.themeOption === theme;
+      option.classList.toggle('active', isActive);
+      option.setAttribute('aria-current', isActive ? 'true' : 'false');
+    });
+  }
+
+  themeOptions.forEach(option => {
+    option.addEventListener('click', function(e) {
+      e.preventDefault();
+      const theme = this.dataset.themeOption;
+
+      try {
+        theme === 'system' ? localStorage.removeItem(themeStorageKey) : localStorage.setItem(themeStorageKey, theme);
+      } catch (error) {
+        document.documentElement.removeAttribute('data-theme');
+      }
+
+      applyTheme(theme);
+
+      if (themeDropdown) {
+        themeDropdown.classList.remove('theme-dropdown-open');
+      }
+
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    });
+  });
+
+  if (themeToggle && themeDropdown) {
+    themeToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      themeDropdown.classList.toggle('theme-dropdown-open');
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!themeDropdown.contains(e.target)) {
+        themeDropdown.classList.remove('theme-dropdown-open');
+      }
+    });
+  }
+
+  systemThemeQuery.addEventListener('change', () => {
+    if (getStoredTheme() === 'system') {
+      applyTheme('system');
+    }
+  });
+
+  applyTheme(getStoredTheme());
+
+  /**
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {

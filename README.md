@@ -1,6 +1,6 @@
 # Mark's Services
 
-PHP 8.4 website for Mark's Services, serving Berry Creek and Sun City, Texas.
+PHP 8.4 website for Mark's Services, serving Sun City 78633 and Berry Creek Estates 78628, Texas.
 
 ## Local development
 

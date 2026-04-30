@@ -6,13 +6,13 @@ const BUSINESS_NAME = 'Mark’s Services LLC';
 const BUSINESS_EMAIL = 'info@MarksServices.com';
 const BUSINESS_PHONE_DISPLAY = '(512) 549-0322';
 const BUSINESS_PHONE_TEL = '+15125490322';
-const BUSINESS_CITY = 'Berry Creek';
+const BUSINESS_CITY = 'Sun City';
 const BUSINESS_STATE = 'TX';
-const BUSINESS_ZIP = '78628';
-const BUSINESS_AREA = 'Berry Creek & Sun City, Texas';
-const BUSINESS_AREA_DETAIL = 'Berry Creek (78628) and Sun City, Texas';
+const BUSINESS_ZIP = '78633';
+const BUSINESS_AREA = 'Sun City & Berry Creek Estates, Texas';
+const BUSINESS_AREA_DETAIL = 'Sun City, TX 78633 and Berry Creek Estates 78628';
 const BUSINESS_ADDRESS_DISPLAY = 'Client-location service in ' . BUSINESS_AREA_DETAIL;
-const BUSINESS_SERVICE_NOTE = 'Client-location service only in Berry Creek and Sun City.';
+const BUSINESS_SERVICE_NOTE = 'Client-location service in Sun City 78633 and Berry Creek Estates 78628.';
 const ELECTRICAL_LICENSE = 'TECL 20547';
 const PLUMBING_LICENSE = 'M-38601';
 
@@ -63,10 +63,10 @@ function business_area_schema(): array
     return [
         [
             '@type' => 'Place',
-            'name' => 'Berry Creek',
+            'name' => 'Sun City, TX 78633',
             'address' => [
                 '@type' => 'PostalAddress',
-                'addressLocality' => 'Berry Creek',
+                'addressLocality' => 'Sun City',
                 'addressRegion' => BUSINESS_STATE,
                 'postalCode' => BUSINESS_ZIP,
                 'addressCountry' => 'US',
@@ -74,11 +74,12 @@ function business_area_schema(): array
         ],
         [
             '@type' => 'Place',
-            'name' => 'Sun City',
+            'name' => 'Berry Creek Estates 78628',
             'address' => [
                 '@type' => 'PostalAddress',
-                'addressLocality' => 'Sun City',
+                'addressLocality' => 'Berry Creek Estates',
                 'addressRegion' => BUSINESS_STATE,
+                'postalCode' => '78628',
                 'addressCountry' => 'US',
             ],
         ],
@@ -128,7 +129,7 @@ function structured_data_for_page(string $pageKey, array $page): array
                     'addressCountry' => 'US',
                 ],
                 'priceRange' => '$$',
-                'description' => 'Licensed electrical, plumbing, remodeling, carpentry, maintenance, and punch-list service at client locations in ' . BUSINESS_AREA_DETAIL . '.',
+                'description' => 'Licensed electrical and plumbing, handyman repairs, home repair, water softener installation, maintenance, and punch-list service at client locations in ' . BUSINESS_AREA_DETAIL . '.',
                 'areaServed' => business_area_schema(),
                 'contactPoint' => [
                     [
@@ -143,8 +144,14 @@ function structured_data_for_page(string $pageKey, array $page): array
                 'knowsAbout' => [
                     'Electrical service',
                     'Plumbing service',
-                    'Remodeling',
-                    'Carpentry',
+                    'Handyman service',
+                    'Home repair',
+                    'Water softener installation',
+                    'Fixture replacement',
+                    'Ceiling fans',
+                    'Lighting',
+                    'Doors and trim repair',
+                    'Drywall repair',
                     'Home maintenance',
                     'Punch lists',
                     'Make-ready work',
@@ -154,9 +161,9 @@ function structured_data_for_page(string $pageKey, array $page): array
                     'name' => 'Home services in ' . BUSINESS_AREA,
                     'itemListElement' => [
                         service_offer('Licensed Electrical Service', 'Troubleshooting, fixtures, devices, circuits, and electrical repairs.'),
-                        service_offer('Licensed Plumbing Service', 'Leaks, fixtures, shutoffs, water heaters, and plumbing repairs.'),
-                        service_offer('Remodeling and Carpentry', 'Bathrooms, kitchens, trim, doors, finish work, and small remodel scopes.'),
-                        service_offer('Maintenance and Punch Lists', 'Client-location repair visits, make-ready work, and finish-the-list tasks.'),
+                        service_offer('Licensed Plumbing Service', 'Leaks, fixtures, shutoffs, water heaters, water softener installation, and plumbing repairs.'),
+                        service_offer('Handyman and Home Repair', 'Doors, trim, drywall, fixtures, repairs, and finish-the-list tasks.'),
+                        service_offer('Maintenance and Punch Lists', 'Client-location repair visits, make-ready work, and punch-list tasks.'),
                     ],
                 ],
             ],
