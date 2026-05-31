@@ -5,10 +5,10 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
 ?>
 <nav id="navmenu" class="navmenu">
   <ul>
-    <li><a href="index.php" class="<?= is_active($pageKey, 'index.php') ?>">Home</a></li>
-    <li><a href="about.php" class="<?= is_active($pageKey, 'about.php') ?>">About</a></li>
+    <li><a href="index.php" class="<?= is_active($pageKey, 'index.php') ?>"><span class="nav-link-label"><i class="bi bi-house-door nav-link-icon" aria-hidden="true"></i>Home</span></a></li>
+    <li><a href="about.php" class="<?= is_active($pageKey, 'about.php') ?>"><span class="nav-link-label"><i class="bi bi-info-circle nav-link-icon" aria-hidden="true"></i>About</span></a></li>
     <li class="dropdown extended-dropdown-2">
-      <a href="services.php" class="<?= is_active($pageKey, ['services.php', 'service-details.php']) ?>"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <a href="services.php" class="<?= is_active($pageKey, ['services.php', 'service-details.php']) ?>"><span class="nav-link-label"><i class="bi bi-tools nav-link-icon" aria-hidden="true"></i>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>
         <li>
           <a href="services.php">
@@ -59,11 +59,11 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
         </li>
       </ul>
     </li>
-    <li><a href="projects.php" class="<?= is_active($pageKey, ['projects.php', 'project-details.php']) ?>">Projects</a></li>
-    <li><a href="team.php" class="<?= is_active($pageKey, 'team.php') ?>">Team</a></li>
+    <li><a href="projects.php" class="<?= is_active($pageKey, ['projects.php', 'project-details.php']) ?>"><span class="nav-link-label"><i class="bi bi-kanban nav-link-icon" aria-hidden="true"></i>Projects</span></a></li>
+    <li><a href="team.php" class="<?= is_active($pageKey, 'team.php') ?>"><span class="nav-link-label"><i class="bi bi-people nav-link-icon" aria-hidden="true"></i>Team</span></a></li>
 
     <li class="megamenu-2">
-      <a href="#" class="<?= is_active($pageKey, ['service-details.php', 'project-details.php', 'quote.php', 'terms.php', 'privacy.php', '404.php', 'starter-page.php']) ?>"><span>Explore</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <a href="#" class="<?= is_active($pageKey, ['service-details.php', 'project-details.php', 'quote.php', 'terms.php', 'privacy.php', '404.php', 'starter-page.php']) ?>"><span class="nav-link-label"><i class="bi bi-compass nav-link-icon" aria-hidden="true"></i>Explore</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
 
       <ul class="mobile-megamenu">
         <li><a href="service-details.php">Service Details</a></li>

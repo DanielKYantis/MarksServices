@@ -267,6 +267,19 @@ h6 {
     transition: 0.3s;
   }
 
+  .navmenu > ul > li > a .nav-link-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .navmenu > ul > li > a i.nav-link-icon,
+  .navmenu > ul > li > a:focus i.nav-link-icon {
+    font-size: 15px;
+    line-height: 1;
+    margin-left: 0;
+  }
+
   .navmenu li:last-child a {
     padding-right: 0;
   }
@@ -394,6 +407,24 @@ h6 {
     background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   }
 
+  .navmenu > ul > li > a .nav-link-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navmenu > ul > li > a i.nav-link-icon,
+  .navmenu > ul > li > a:focus i.nav-link-icon {
+    font-size: 16px;
+    line-height: 1;
+    margin-left: 0;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
     background-color: var(--accent-color);
@@ -411,6 +442,15 @@ h6 {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
+  }
+
+  .navmenu > ul > li > a i.nav-link-icon:hover,
+  .navmenu > ul > li > a:focus i.nav-link-icon:hover,
+  .navmenu > ul > li > a.active i.nav-link-icon,
+  .navmenu > ul > li > a.active:focus i.nav-link-icon {
+    background-color: transparent;
+    color: inherit;
+    transform: none;
   }
 
   .navmenu .dropdown ul {
