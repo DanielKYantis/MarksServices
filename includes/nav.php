@@ -228,16 +228,16 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
       </div>
     </li>
 
-    <li><a href="contact.php" class="<?= is_active($pageKey, 'contact.php') ?>">Contact</a></li>
+    <li><a href="contact.php" class="<?= is_active($pageKey, 'contact.php') ?>"><span><i class="bi bi-envelope-at"></i>  </span> </a></li>
     <li class="dropdown extended-dropdown-2 theme-dropdown">
-      <a href="#" class="theme-toggle"><span><i class="bi bi-circle-half"></i> Theme</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <a href="#" class="theme-toggle"><span><i class="bi bi-circle-half"></i> </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>
         <li>
           <a href="#" data-theme-option="system" aria-current="true">
             <div class="menu-item-content">
               <div class="menu-icon"><i class="bi bi-display"></i></div>
               <div class="menu-text">
-                <span class="menu-title">Follow System</span>
+                <span class="menu-title">System</span>
                 <span class="menu-description">Match this device automatically</span>
               </div>
             </div>
