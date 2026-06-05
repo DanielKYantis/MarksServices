@@ -40,6 +40,21 @@
       }
     }
 
+    >ul>li>a {
+      .nav-link-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      i.nav-link-icon,
+      &:focus i.nav-link-icon {
+        font-size: 18px;
+        line-height: 1;
+        margin-left: 0;
+      }
+    }
+
     li:last-child a {
       padding-right: 0;
     }
@@ -175,6 +190,26 @@
       }
     }
 
+    >ul>li>a {
+      .nav-link-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      i.nav-link-icon,
+      &:focus i.nav-link-icon {
+        font-size: 18px;
+        line-height: 1;
+        margin-left: 0;
+        width: auto;
+        height: auto;
+        display: inline-flex;
+        border-radius: 0;
+        background-color: transparent;
+      }
+    }
+
     a:hover,
     .active,
     .active:focus {
@@ -186,6 +221,17 @@
       background-color: var(--accent-color);
       color: var(--contrast-color);
       transform: rotate(180deg);
+    }
+
+    >ul>li>a {
+      i.nav-link-icon:hover,
+      &:focus i.nav-link-icon:hover,
+      &.active i.nav-link-icon,
+      &.active:focus i.nav-link-icon {
+        background-color: transparent;
+        color: inherit;
+        transform: none;
+      }
     }
 
     .dropdown {
