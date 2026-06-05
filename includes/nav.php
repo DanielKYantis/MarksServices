@@ -1,14 +1,23 @@
 <?php
 declare(strict_types=1);
 
-$pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
+$pageKey = $pageKey ?? basename($_SERVER["SCRIPT_NAME"]);
 ?>
 <nav id="navmenu" class="navmenu">
   <ul>
-    <li><a href="index.php" class="<?= is_active($pageKey, 'index.php') ?>"><span class="nav-link-label"><i class="bi bi-house-door nav-link-icon" aria-hidden="true"></i>Home</span></a></li>
-    <li><a href="about.php" class="<?= is_active($pageKey, 'about.php') ?>"><span class="nav-link-label"><i class="bi bi-info-circle nav-link-icon" aria-hidden="true"></i>About</span></a></li>
+    <li><a href="index.php" class="<?= is_active(
+        $pageKey,
+        "index.php"
+    ) ?>"><span class="nav-link-label"><i class="bi bi-house-door nav-link-icon" aria-hidden="true"></i>Home</span></a></li>
+    <li><a href="about.php" class="<?= is_active(
+        $pageKey,
+        "about.php"
+    ) ?>"><span class="nav-link-label"><i class="bi bi-info-circle nav-link-icon" aria-hidden="true"></i>About</span></a></li>
     <li class="dropdown extended-dropdown-2">
-      <a href="services.php" class="<?= is_active($pageKey, ['services.php', 'service-details.php']) ?>"><span class="nav-link-label"><i class="bi bi-tools nav-link-icon" aria-hidden="true"></i>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <a href="services.php" class="<?= is_active($pageKey, [
+          "services.php",
+          "service-details.php",
+      ]) ?>"><span class="nav-link-label"><i class="bi bi-tools nav-link-icon" aria-hidden="true"></i>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>
         <li>
           <a href="services.php">
@@ -59,11 +68,25 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
         </li>
       </ul>
     </li>
-    <li><a href="projects.php" class="<?= is_active($pageKey, ['projects.php', 'project-details.php']) ?>"><span class="nav-link-label"><i class="bi bi-kanban nav-link-icon" aria-hidden="true"></i>Projects</span></a></li>
-    <li><a href="team.php" class="<?= is_active($pageKey, 'team.php') ?>"><span class="nav-link-label"><i class="bi bi-people nav-link-icon" aria-hidden="true"></i>Team</span></a></li>
+    <li><a href="projects.php" class="<?= is_active($pageKey, [
+        "projects.php",
+        "project-details.php",
+    ]) ?>"><span class="nav-link-label"><i class="bi bi-kanban nav-link-icon" aria-hidden="true"></i>Projects</span></a></li>
+    <li><a href="team.php" class="<?= is_active(
+        $pageKey,
+        "team.php"
+    ) ?>"><span class="nav-link-label"><i class="bi bi-people nav-link-icon" aria-hidden="true"></i>Team</span></a></li>
 
     <li class="megamenu-2">
-      <a href="#" class="<?= is_active($pageKey, ['service-details.php', 'project-details.php', 'quote.php', 'terms.php', 'privacy.php', '404.php', 'starter-page.php']) ?>"><span class="nav-link-label"><i class="bi bi-compass nav-link-icon" aria-hidden="true"></i>Explore</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <a href="#" class="<?= is_active($pageKey, [
+          "service-details.php",
+          "project-details.php",
+          "quote.php",
+          "terms.php",
+          "privacy.php",
+          "404.php",
+          "starter-page.php",
+      ]) ?>"><span class="nav-link-label"><i class="bi bi-compass nav-link-icon" aria-hidden="true"></i>Explore</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
 
       <ul class="mobile-megamenu">
         <li><a href="service-details.php">Service Details</a></li>
@@ -110,11 +133,15 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
                 <div class="product-list">
                   <a href="services.php" class="product-link">
                     <i class="bi bi-lightning-charge"></i>
-                    <div><span>Electrical Service</span><small><?= e(ELECTRICAL_LICENSE) ?> for repairs, fixtures, and diagnostics</small></div>
+                    <div><span>Electrical Service</span><small><?= e(
+                        ELECTRICAL_LICENSE
+                    ) ?> for repairs, fixtures, and diagnostics</small></div>
                   </a>
                   <a href="services.php" class="product-link">
                     <i class="bi bi-droplet"></i>
-                    <div><span>Plumbing Service</span><small><?= e(PLUMBING_LICENSE) ?> for leaks, fixtures, water heaters, and softeners</small></div>
+                    <div><span>Plumbing Service</span><small><?= e(
+                        PLUMBING_LICENSE
+                    ) ?> for leaks, fixtures, water heaters, and softeners</small></div>
                   </a>
                   <a href="quote.php" class="product-link">
                     <i class="bi bi-clipboard-check"></i>
@@ -136,7 +163,9 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
                   </a>
                   <a href="contact.php" class="product-link">
                     <i class="bi bi-telephone"></i>
-                    <div><span>Talk Through Scope</span><small><?= e(BUSINESS_PHONE_DISPLAY) ?> for a practical next step</small></div>
+                    <div><span>Talk Through Scope</span><small><?= e(
+                        BUSINESS_PHONE_DISPLAY
+                    ) ?> for a practical next step</small></div>
                   </a>
                 </div>
               </div>
@@ -187,7 +216,9 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
                   </a>
                   <a href="about.php" class="product-link">
                     <i class="bi bi-geo-alt"></i>
-                    <div><span>Local Area</span><small><?= e(BUSINESS_AREA) ?></small></div>
+                    <div><span>Local Area</span><small><?= e(
+                        BUSINESS_AREA
+                    ) ?></small></div>
                   </a>
                 </div>
               </div>
@@ -228,7 +259,10 @@ $pageKey = $pageKey ?? basename($_SERVER['SCRIPT_NAME']);
       </div>
     </li>
 
-    <li><a href="contact.php" class="<?= is_active($pageKey, 'contact.php') ?>"><span class="nav-link-label"><i class="bi bi-envelope nav-link-icon" aria-hidden="true"></i>Contact</span></a></li>
+    <li><a href="contact.php" class="<?= is_active(
+        $pageKey,
+        "contact.php"
+    ) ?>"><span class="nav-link-label"><i class="bi bi-envelope nav-link-icon" aria-hidden="true"></i>Contact</span></a></li>
     <li class="dropdown extended-dropdown-2 theme-dropdown">
       <a href="#" class="theme-toggle"><span class="nav-link-label"><i class="bi bi-circle-half nav-link-icon" aria-hidden="true"></i>Theme</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>

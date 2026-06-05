@@ -34,19 +34,17 @@ This file is for future Codex chats. Read it first before changing the site.
 
 ## Location And SEO Rules
 
-- Do not market the business broadly as working in Georgetown. It is OK to identify Sun City `78633` as Sun City, Georgetown, TX / Williamson County when needed for accurate ZIP or map context.
-- Do not use `78626`.
+- Market the business broadly as working in Georgetown, TX `78626` and target specifically Sun City `78633` and Berry Creek `78628`.
 - Primary SEO focus is **Sun City, TX 78633**.
-- Secondary service-area focus is **Berry Creek Estates 78628**.
+- Secondary service-area focus is **Berry Creek, TX 78628**.
 - Mark lives in Georgetown, but the site should describe client-location service work only.
-- Avoid broad phrases like "Central Texas", "nearby communities", or "Georgetown property owners".
 - Contact/location copy should say service area or client-location appointments, not workplace.
 - Current schema is generated in `includes/config.php` and rendered in `includes/header.php`.
 - JSON-LD includes:
   - `HomeAndConstructionBusiness`, `Electrician`, and `Plumber`
   - Sun City `PostalAddress` with ZIP `78633`
-  - Berry Creek Estates `PostalAddress` with ZIP `78628`
-  - `areaServed` for Sun City and Berry Creek Estates
+  - Berry Creek `PostalAddress` with ZIP `78628`
+  - `areaServed` for Sun City and Berry Creek
   - `OfferCatalog` for electrical, plumbing, handyman/home repair, water softener, and maintenance/punch lists
 - Visible page content and JSON-LD must stay aligned.
 - Mark does not do full remodeling, heater / AC / HVAC, or roofing work.
@@ -75,7 +73,5 @@ After pushing:
 ```bash
 gh run list --branch main --limit 5
 gh run watch <deploy-run-id> --exit-status
-curl -fsSL https://webtestkit.com/mark/ | rg -n "Sun City|78633|Berry Creek Estates|78628|78626|areaServed"
+curl -fsSL https://webtestkit.com/mark/ | rg -n "Sun City|78633|Berry Creek|78628|Georgetown|78626|areaServed"
 ```
-
-The current expected live result has Sun City 78633 and Berry Creek Estates 78628, with no 78626 matches. Georgetown may appear only as accurate ZIP/map context for Sun City 78633.
