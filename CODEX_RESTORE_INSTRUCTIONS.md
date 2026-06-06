@@ -1,5 +1,3 @@
-Use this as a FULL FILE replacement for CODEX_RESTORE_INSTRUCTIONS.md.
-
 Codex Tooling Restore Instructions
 
 Use this file if a future Codex Desktop chat does not have the same local repo access, shell behavior, GitHub access, deployment workflow access, or browser/computer-control behavior that worked previously.
