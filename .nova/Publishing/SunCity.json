@@ -1,0 +1,13 @@
+{
+  "identifier" : "2B8569EC-19A6-4D61-A9EF-B257D5292AD4",
+  "ignoredFilePatterns" : [
+    ".github\/Icon\r",
+    "scripts\/Icon\r",
+    "CODEX_RESTORE_INSTRUCTIONS copy.md"
+  ],
+  "localPath" : ".",
+  "remotePath" : "\/SunCityHomeRepair\/www",
+  "remoteURL" : "https:\/\/suncityhomerepair.com",
+  "server" : "SunCity",
+  "usesPublishing" : true
+}

@@ -1,13 +1,14 @@
-# Mark's Services Project Handoff
+# Sun City Home Repair Project Handoff
 
-This file is for future Codex chats. Read it first before changing the site.
+Read this before changing the site.
 
 ## Current Site
 
 - Repo: `/Users/dky/Projects/MarksServices`
 - Branch: `main`
 - Remote: `https://github.com/DanielKYantis/MarksServices.git`
-- Live test site: `https://webtestkit.com/mark/`
+- Production domain: `https://SunCityHomeRepair.com`
+- Live test site: `https://SunCityHomeRepair.com`
 - Deploy target: GitHub Actions workflow `Deploy to IONOS` runs on pushes to `main`.
 - CI: GitHub Actions PHP lint workflow runs on pushes to `main`.
 - Local check: run `composer lint` before committing.
@@ -18,11 +19,11 @@ This file is for future Codex chats. Read it first before changing the site.
 - Deploy workflow builds a deploy directory with root `*.php`, `assets/`, `forms/`, and `includes/`.
 - Root Markdown files are not deployed to the web root.
 - Deploy workflow creates compressed backups and keeps the latest 10 archives in a hidden sibling directory on IONOS.
-- Backup change commit: `1bb47cc keep deploy backups`.
+- Known backup change commit: `1bb47cc keep deploy backups`.
 
-## Completed Changes
+## Completed Changes From Existing Project
 
-- Quote endpoint was renamed from `forms/get-a-quote.php` to `forms/quote.php`.
+- Quote endpoint renamed from `forms/get-a-quote.php` to `forms/quote.php`.
 - `AGENTS.md` and `CLAUDE.md` were removed.
 - Atlas-inspired navigation was integrated:
   - `Services` uses the extended dropdown style.
@@ -32,24 +33,15 @@ This file is for future Codex chats. Read it first before changing the site.
   - Commit: `bdeea06 Update service area SEO structure`.
   - Live site was verified after deploy.
 
-## Location And SEO Rules
+## Source-of-Truth Rules
 
-- Market the business broadly as working in Georgetown, TX `78626` and target specifically Sun City `78633` and Berry Creek `78628`.
-- Primary SEO focus is **Sun City, TX 78633**.
-- Secondary service-area focus is **Berry Creek, TX 78628**.
-- Mark lives in Georgetown, but the site should describe client-location service work only.
-- Contact/location copy should say service area or client-location appointments, not workplace.
-- Current schema is generated in `includes/config.php` and rendered in `includes/header.php`.
-- JSON-LD includes:
-  - `HomeAndConstructionBusiness`, `Electrician`, and `Plumber`
-  - Sun City `PostalAddress` with ZIP `78633`
-  - Berry Creek `PostalAddress` with ZIP `78628`
-  - `areaServed` for Sun City and Berry Creek
-  - `OfferCatalog` for electrical, plumbing, handyman/home repair, water softener, and maintenance/punch lists
-- Visible page content and JSON-LD must stay aligned.
-- Mark does not do full remodeling, heater / AC / HVAC, or roofing work.
+- Do not treat ChatGPT Project Sources as the editable website repo.
+- Current PHP/CSS/JS files should be read from Git/Codex/local repo when making code changes.
+- Project Sources should contain stable instructions, business facts, rules, URLs, TODO lists, and handoff notes.
 
-## Current Important Files
+## Current Important Files In Repo
+
+Read from the repo before changing them:
 
 - Shared config/schema helpers: `includes/config.php`
 - Shared head/canonical/OG/schema output: `includes/header.php`
@@ -58,20 +50,59 @@ This file is for future Codex chats. Read it first before changing the site.
 - Page metadata: `includes/pages.php`
 - Homepage location/SEO content: `index.php`
 - Contact service-area/map copy: `contact.php`
+- Quote form endpoint: `forms/quote.php`
+- Composer/lint config: `composer.json`
+- GitHub workflows: `.github/workflows/`
 
-## Verification Pattern
+## Location And SEO Rules
 
-Before pushing meaningful changes:
+Target service areas:
+
+- Sun City, Georgetown, TX `78633`
+- Berry Creek, Georgetown, TX `78628`
+- Georgetown, Williamson County, TX `78626` and `78627`
+
+Primary SEO focus:
+
+- Sun City, TX 78633
+
+Secondary SEO focus:
+
+- Berry Creek, TX 78628
+- Georgetown, TX 78626 and 78627
+
+## Schema Rules
+
+- Schema is generated in `includes/config.php` and rendered in `includes/header.php`.
+- JSON-LD should include appropriate local-service types:
+  - `HomeAndConstructionBusiness`
+  - `Electrician`
+  - `Plumber`
+  - `Service`
+  - `OfferCatalog`
+- `areaServed` / service-area references should include:
+  - Sun City `78633`
+  - Berry Creek `78628`
+  - Georgetown `78626`
+  - Georgetown `78627`
+- Visible page content and JSON-LD must stay aligned.
+- Do not add service schema for excluded services.
+
+## Manual Verification
 
 ```bash
 composer lint
 git diff --check
+php -l index.php
+php -l contact.php
+php -l includes/config.php
+php -l includes/header.php
 ```
 
-After pushing:
+After deploy:
 
 ```bash
-gh run list --branch main --limit 5
-gh run watch <deploy-run-id> --exit-status
-curl -fsSL https://webtestkit.com/mark/ | rg -n "Sun City|78633|Berry Creek|78628|Georgetown|78626|areaServed"
+curl -fsSL https://SunCityHomeRepair.com | rg -n "Sun City|78633|Berry Creek|78628|Georgetown|78626|78627|areaServed"
 ```
+
+Use Google Rich Results Test / Schema Markup Validator after schema changes.

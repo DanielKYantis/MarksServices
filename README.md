@@ -1,6 +1,6 @@
 # Mark's Services
 
-PHP 8.4 website for Mark's Services, serving Sun City 78633 and Berry Creek Estates 78628, Texas.
+PHP website for Sun City Home Repair, serving Sun City 78633, Berry Creek 78628, Georgetown 78626, Georgetown 78627, Texas.
 
 ## Local development
 

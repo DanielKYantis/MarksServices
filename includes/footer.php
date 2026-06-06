@@ -1,6 +1,5 @@
 <?php
-declare(strict_types=1);
-?>
+declare(strict_types=1) ?>
 <footer id="footer" class="footer dark-background position-relative" data-section="footer">
   <div class="container footer-top">
     <div class="row gy-4">
@@ -9,12 +8,16 @@ declare(strict_types=1);
           <span class="sitename"><?= e(SITE_NAME) ?></span>
         </a>
         <p>
-          Local home services for Sun City and Berry Creek Estates: handyman repairs, maintenance, and licensed electrical and plumbing.
+          Local home services for Sun City and Berry Creek: handyman repairs, maintenance, and licensed electrical and plumbing.
           Clean work, clear scope, reliable scheduling.
         </p>
         <div class="mt-3">
-          <p class="mb-1"><strong>Electrical:</strong> <?= e(ELECTRICAL_LICENSE) ?></p>
-          <p class="mb-0"><strong>Plumbing (RMP/Master):</strong> <?= e(PLUMBING_LICENSE) ?></p>
+          <p class="mb-1"><strong>Electrical:</strong> <?= e(
+              ELECTRICAL_LICENSE
+          ) ?></p>
+          <p class="mb-0"><strong>Plumbing (RMP/Master):</strong> <?= e(
+              PLUMBING_LICENSE
+          ) ?></p>
         </div>
       </div>
 
@@ -40,18 +43,24 @@ declare(strict_types=1);
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
         <h4>Contact</h4>
-        <p>Mark's Services</p>
+        <p>Sun City Home Repair</p>
         <p><?= e(BUSINESS_AREA_DETAIL) ?></p>
         <p class="mb-2">Client-location appointments only</p>
-        <p class="mt-3 mb-1"><strong>Phone:</strong> <span><a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><?= e(BUSINESS_PHONE_DISPLAY) ?></a></span></p>
-        <p class="mb-0"><strong>Email:</strong> <span><a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><?= e(BUSINESS_EMAIL) ?></a></span></p>
-        <div class="mt-3 small"><strong>Serving:</strong> Sun City 78633 • Berry Creek Estates 78628</div>
+        <p class="mt-3 mb-1"><strong>Phone:</strong> <span><a href="tel:<?= e(
+            BUSINESS_PHONE_TEL
+        ) ?>"><?= e(BUSINESS_PHONE_DISPLAY) ?></a></span></p>
+        <p class="mb-0"><strong>Email:</strong> <span><a href="mailto:<?= e(
+            BUSINESS_EMAIL
+        ) ?>"><?= e(BUSINESS_EMAIL) ?></a></span></p>
+        <div class="mt-3 small"><strong>Serving:</strong> Sun City 78633 • Berry Creek 78628</div>
       </div>
     </div>
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename"><?= e(SITE_NAME) ?></strong> <span>All Rights Reserved</span></p>
+    <p>© <span>Copyright</span> <strong class="px-1 sitename"><?= e(
+        SITE_NAME
+    ) ?></strong> <span>All Rights Reserved</span></p>
   </div>
 </footer>
 

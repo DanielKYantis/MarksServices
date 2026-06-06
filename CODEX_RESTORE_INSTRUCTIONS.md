@@ -1,38 +1,48 @@
-# Codex Tooling Restore Instructions
+Use this as a FULL FILE replacement for CODEX_RESTORE_INSTRUCTIONS.md.
 
-Use this file if a future Codex chat does not have the same access or behavior that worked in this session.
+Codex Tooling Restore Instructions
 
-## Goal
+Use this file if a future Codex Desktop chat does not have the same local repo access, shell behavior, GitHub access, deployment workflow access, or browser/computer-control behavior that worked previously.
+
+This file is a restore/runbook document only. Do not store secrets here. Keep API keys, SSH keys, GitHub tokens, hosting credentials, FTP/SFTP credentials, and IONOS credentials in the appropriate app, keychain, local environment, or GitHub secrets.
+
+Goal
 
 Restore a Codex Desktop session that can:
 
-- Read and edit the local Mark's Services repo.
-- Run shell commands without repeated approval prompts.
-- Use GitHub CLI to inspect Actions, commit, and push.
-- Trigger the GitHub-to-IONOS deployment workflow.
-- Verify the live test site at `https://webtestkit.com/mark/`.
-- Use browser or computer-control tooling for visual checks.
+- Read and edit the local Sun City Home Repair repo.
+- Run shell commands from the repo root.
+- Use Git and GitHub CLI to inspect status, commits, branches, Actions, and deployment runs.
+- Commit and push approved changes to GitHub.
+- Trigger the GitHub-to-IONOS deployment workflow by pushing to main.
+- Verify the live website at https://SunCityHomeRepair.com.
+- Use browser, screenshot, or computer-control tooling for visual checks when needed.
 
-Do not store secrets in this file. Keep API keys, SSH keys, GitHub tokens, and IONOS credentials in the appropriate app/keychain/GitHub secrets only.
+Current Project Identity
 
-## Known Working Environment
+- Business/site name: Sun City Home Repair
+- Production site: https://SunCityHomeRepair.com
+- Primary SEO focus: Sun City, Georgetown, TX 78633
+- Secondary service area: Berry Creek / Berry Creek Estates, Georgetown, TX 78628
+- Supporting local context: Georgetown, Williamson County, TX
+- Business model: client-location home repair and handyman services only
+- No work is done at a home office.
 
-- App used: Codex Desktop on macOS.
-- Workspace path: `/Users/dky/Projects/MarksServices`
-- Shell: `zsh`
-- Repo remote: `https://github.com/DanielKYantis/MarksServices.git`
-- Primary branch: `main`
-- Live test site: `https://webtestkit.com/mark/`
-- Deployment: GitHub Actions workflow `Deploy to IONOS`, triggered by pushes to `main`.
-- GitHub CLI auth account: `DanielKYantis`
-- GitHub CLI version seen working: `gh 2.91.0`
-- PHP CLI seen working locally: PHP `8.5.5`
-- Composer seen working locally: Composer `2.9.7`
-- Deploy workflow uses PHP `8.4` in GitHub Actions.
+Known Working Environment
 
-Useful local binaries from the working session:
+Update these paths if the local repo folder or GitHub repo name changes.
 
-```bash
+- App: Codex Desktop on macOS
+- Workspace path: /Users/dky/Projects/MarksServices
+- Shell: zsh
+- Primary branch: main
+- Production site: https://SunCityHomeRepair.com
+- Deployment: GitHub Actions workflow Deploy to IONOS, triggered by pushes to main
+- GitHub CLI auth account: DanielKYantis
+- Deploy workflow uses PHP 8.4 in GitHub Actions
+
+Useful local binaries from prior working sessions:
+
 /opt/homebrew/bin/php
 /opt/homebrew/bin/composer
 /opt/homebrew/bin/gh
@@ -42,205 +52,406 @@ Useful local binaries from the working session:
 /Applications/Codex.app/Contents/Resources/rg
 /usr/bin/curl
 /usr/sbin/lsof
-```
 
-## Codex Session Settings To Request
+Codex Session Settings To Request
 
-When starting a future chat, ask for these capabilities/settings:
+When starting a future Codex chat, request these capabilities/settings:
 
-- Workspace: `/Users/dky/Projects/MarksServices`
-- Shell: `zsh`
-- Filesystem access: full access to the workspace, ideally `danger-full-access` if available.
-- Network access: enabled.
-- Approval mode: allow command execution without per-command approval when possible.
-- Enabled plugins/connectors:
+- Workspace: /Users/dky/Projects/MarksServices
+- Shell: zsh
+- Filesystem access: full access to the workspace
+- Network access: enabled
+- Approval mode: allow command execution without repeated per-command approval when possible
+- Enabled plugins/connectors when available:
   - GitHub
   - Computer Use
-  - Browser Use, if available
-  - Build Web Apps, if available
-- Ask Codex to read these two files first:
-  - `PROJECT_HANDOFF.md`
-  - `CODEX_RESTORE_INSTRUCTIONS.md`
+  - Browser Use
+  - Build Web Apps
 
-Suggested first message for a new chat:
+Ask Codex to read these files first:
 
-```text
-We are working in /Users/dky/Projects/MarksServices. Please read PROJECT_HANDOFF.md and CODEX_RESTORE_INSTRUCTIONS.md first. I want you to use the same workflow as the prior session: edit locally, run checks, commit/push to main when I approve, watch GitHub Actions, and verify https://webtestkit.com/mark/.
-```
+- PROJECT_HANDOFF.md
+- CODEX_RESTORE_INSTRUCTIONS.md
+- GIT_RULES.md
+- WEBSITE_DATA.md
+- SERVICE_TAXONOMY_FROM_CALENDAR.md
 
-## Verify Local Access
+Suggested first message for a new Codex chat:
+
+We are working in /Users/dky/Projects/MarksServices on Sun City Home Repair. Please read PROJECT_HANDOFF.md, CODEX_RESTORE_INSTRUCTIONS.md, GIT_RULES.md, WEBSITE_DATA.md, and SERVICE_TAXONOMY_FROM_CALENDAR.md first. Use the established workflow: inspect current files, edit locally, run checks, show diffs, commit/push to main only when approved, watch GitHub Actions, and verify https://SunCityHomeRepair.com.
+
+Verify Local Access
 
 Run these from the repo root:
 
-```bash
 cd /Users/dky/Projects/MarksServices
 pwd
 git status -sb
 git remote -v
 git branch --show-current
 composer lint
-```
 
 Expected:
 
-- Current directory is `/Users/dky/Projects/MarksServices`.
-- Branch is `main`.
-- Remote points to `DanielKYantis/MarksServices`.
-- `composer lint` reports no PHP syntax errors.
+- Current directory is the local repo root.
+- Branch is main, unless intentionally working on another branch.
+- Remote points to the active Sun City Home Repair repo.
+- composer lint reports no PHP syntax errors.
 
-## Verify GitHub Access
+If the repo has been renamed locally, update this file and PROJECT_HANDOFF.md with the current path.
+
+Verify GitHub Access
 
 Run:
 
-```bash
 gh --version
 gh auth status
 gh run list --branch main --limit 5
-```
 
 Expected:
 
-- `gh auth status` shows logged in to `github.com` as `DanielKYantis`.
-- Token scopes include `repo`.
-- `gh run list` can see CI and `Deploy to IONOS` runs.
+- gh auth status shows logged in to github.com as the correct GitHub account.
+- Token scopes include repo access.
+- gh run list can see CI and Deploy to IONOS runs.
 
 If GitHub auth is missing:
 
-```bash
 gh auth login
 gh auth status
-```
 
-Use the account that owns or can push to `DanielKYantis/MarksServices`.
+Use the account that owns or can push to the active Sun City Home Repair repository.
 
-## Verify Deployment
+Verify Deployment Workflow
 
-The deploy workflow is `.github/workflows/deploy-ionos.yml`.
+The deploy workflow is expected at:
+
+.github/workflows/deploy-ionos.yml
 
 Important facts:
 
-- Pushes to `main` deploy to IONOS.
-- The deploy job creates a `deploy/` folder containing root `*.php`, `assets/`, `forms/`, and `includes/`.
-- Root Markdown files are not deployed to the web root.
-- Deploy backups are saved on IONOS and rotated to keep the latest 10 archives.
+- Pushes to main deploy to IONOS.
+- The deploy job should create a deploy directory containing the public website files.
+- Root Markdown files should not be deployed to the web root.
+- Deploy backups should be saved on IONOS and rotated according to the workflow rule.
 
 After pushing a commit:
 
-```bash
 gh run list --branch main --limit 5 --json databaseId,headSha,displayTitle,status,conclusion,workflowName,createdAt,url
 gh run watch <deploy-run-id> --exit-status
-```
 
-Also check CI:
+Also check CI when available:
 
-```bash
 gh run view <ci-run-id> --json status,conclusion,url,jobs
-```
 
-## Verify The Live Site
+Verify The Live Site
 
 Basic homepage check:
 
-```bash
-curl -fsSL https://webtestkit.com/mark/ | rg -n "Sun City|78633|Berry Creek Estates|78628|78626|areaServed|application/ld\\+json|canonical"
-```
+curl -fsSL https://SunCityHomeRepair.com/ | rg -n "Sun City|78633|Berry Creek|78628|Home Repair|Handyman|areaServed|application/ld\\+json|canonical"
 
 Expected:
 
-- Sun City 78633 and Berry Creek Estates 78628 appear.
-- `areaServed` appears in JSON-LD.
-- `78626` should not appear.
-- `Georgetown` should appear only when needed as accurate ZIP/map context for Sun City 78633.
+- Sun City appears.
+- 78633 appears where appropriate.
+- Berry Creek or Berry Creek Estates appears where appropriate.
+- 78628 appears where appropriate.
+- Sun City Home Repair appears.
+- areaServed appears in JSON-LD.
+- Canonical URL points to https://SunCityHomeRepair.com/.
 
-Contact page check:
+Contact page check, if a contact page exists:
 
-```bash
-curl -fsSL https://webtestkit.com/mark/contact.php | rg -n "Service Area|Sun City|78633|Berry Creek Estates|78628|Client-location|78626|maps\\?q="
-```
+curl -fsSL https://SunCityHomeRepair.com/contact.php | rg -n "Service Area|Sun City|78633|Berry Creek|78628|Client-location|appointment|maps\\?q=|areaServed"
 
 Expected:
 
-- Service Area appears.
-- Sun City 78633 and Berry Creek Estates 78628 appear.
-- Client-location language appears.
-- 78626 does not appear.
+- Service-area language appears.
+- Client-location appointment language appears.
+- Sun City 78633 appears where appropriate.
+- Berry Creek / Berry Creek Estates 78628 appears where appropriate.
+- No home-office workplace language appears.
 
-## Current Project Rules
+Current Project Rules
 
-- Do not market the business broadly as working in Georgetown. It is OK to identify Sun City `78633` as Sun City, Georgetown, TX / Williamson County when needed for accurate ZIP or map context.
-- Do not use `78626`.
-- Primary SEO focus is Sun City, TX `78633`.
-- Secondary service-area focus is Berry Creek Estates `78628`.
-- Mark lives in Georgetown, but the site should describe work at the client location.
-- Mark does not do full remodeling, heater / AC / HVAC, or roofing work.
-- Avoid broad service-area language:
-  - Do not use "Central Texas".
-  - Do not use "nearby communities".
-  - Do not use "Georgetown property owners".
-- Contact/location copy should say service area or client-location appointments, not workplace.
+- Primary website goal: create and maintain https://SunCityHomeRepair.com.
+- SEO and structured data are primary goals.
+- Main service-area target is Sun City, Georgetown, TX 78633.
+- Secondary service-area target is Berry Creek / Berry Creek Estates, Georgetown, TX 78628.
+- Georgetown and Williamson County may be used only when accurate context is needed.
+- Do not describe the business as operating from a home office.
+- Do not invite customers to a business address.
+- Use client-location, service-area, or appointment-based wording.
 - Visible page content and JSON-LD schema must stay aligned.
+- Keep claims practical and accurate for handyman/home repair work.
+- Use careful wording for plumbing, electrical, gas, water heater, EV charger, and permit-sensitive work:
+  - “Minor repairs and fixture installations”
+  - “Licensed trades coordinated when required”
+  - “Where permitted”
+  - “As allowed by local code and licensing requirements”
 
-## Current Important Files
+Approved Service Categories
 
-- `PROJECT_HANDOFF.md`: project state and prior work.
-- `CODEX_RESTORE_INSTRUCTIONS.md`: this restore guide.
-- `includes/config.php`: business constants and JSON-LD schema helpers.
-- `includes/header.php`: canonical, Open Graph, Twitter card, and JSON-LD output.
-- `includes/nav.php`: shared navigation and Atlas-style dropdown/megamenu.
-- `includes/footer.php`: shared footer and service-area copy.
-- `includes/pages.php`: page title, description, keyword metadata.
-- `index.php`: homepage content.
-- `contact.php`: contact/service-area/map copy.
-- `.github/workflows/deploy-ionos.yml`: deploy and backup workflow.
+Use the calendar-derived taxonomy as the primary service source, filtered through the current service-boundary rules.
 
-## Current Important Commits
+Primary website categories:
 
-- `71ebbd4`: quote forms and site placeholder fixes.
-- `1bb47cc`: deploy backups, keep 10.
-- `c84aebb`: Atlas-style navigation menus.
-- `bdeea06`: Berry Creek/Sun City SEO structure.
+- Handyman services in Sun City Georgetown
+- Faucet, sink, toilet, and drain repairs
+- Water heater, water softener, and filter services
+- Light, fan, switch, and outlet services
+- Door, lock, and hardware services
+- Trim, cabinet, and small carpentry repairs
+- Drywall, paint touch-up, and wall repair
+- Grab bars, towel bars, and home safety installs
+- Minor exterior maintenance and repair
+- Home sale punch lists and inspection repairs
 
-## Standard Work Pattern
+Permitted service examples:
+
+- Faucet repair and replacement
+- Kitchen faucet installation
+- Bathroom faucet installation
+- Sink repair and installation
+- Garbage disposal replacement
+- Dishwasher installation assistance
+- Ice maker water line assistance
+- Toilet repair
+- Toilet fill valve and tank kit replacement
+- Toilet wax ring replacement
+- Bidet installation and leak repair
+- Minor plumbing leak repair
+- Water heater flushing
+- Water heater replacement coordination where licensing/permit rules require
+- Water softener installation and troubleshooting
+- Whole-house water filter installation
+- Reverse osmosis filter installation
+- Light fixture installation
+- LED light replacement
+- Pendant light installation
+- Wall sconce installation
+- Ceiling fan installation
+- Dimmer switch installation
+- Light switch replacement
+- Outlet replacement
+- GFCI outlet replacement
+- Doorbell installation and repair
+- Smoke detector installation
+- Smart lock installation
+- EV charger coordination where licensing/permit rules require
+- Storm door installation
+- Sliding door repair
+- Door hardware replacement
+- Cabinet door repair
+- Garage door opener installation
+- Baseboard and shoe molding installation
+- Trim replacement
+- Interior millwork repair
+- Cabinet repair
+- Vanity installation
+- Closet build-outs
+- Shelf installation and repair
+- Small custom wood repairs
+- Drywall patching
+- Sheetrock repair
+- Wall texture repair
+- Paint touch-ups
+- Water-damage wall repair
+- Grab bar installation
+- Bathroom safety hardware
+- Towel bar installation
+- Curtain rod installation
+- Mirror hanging
+- Blind installation
+- TV mounting
+- High-reach light and smoke detector replacement
+- Gutter repair
+- Downspout repair
+- Fascia repair
+- Siding repair
+- Exterior rot repair
+- Mailbox repair
+- Bird entry prevention
+- Squirrel damage repair
+- Exterior caulking and sealing
+- Dryer vent assistance
+- Home inspection repairs
+- Home sale punch-list repairs
+
+Excluded Or Restricted Services
+
+Do not market or create primary service pages for:
+
+- Decks
+- Fencing or fence construction
+- Full painting contractor services
+- Roofing
+- HVAC
+- Air conditioning units
+- Furnaces
+- Ductwork
+- Full remodeling
+- Large construction projects
+
+Use caution with:
+
+- Gas work
+- Major electrical work
+- Breaker/panel work
+- EV charger installation
+- Water heater replacement
+- Structural repairs
+- Permit-required work
+- Licensed plumbing or electrical work
+
+Use phrasing such as:
+
+Minor repairs and fixture installations; licensed trades coordinated when required.
+
+Recommended Website Landing Pages
+
+Use these as SEO landing-page targets unless the current site structure requires different slugs:
+
+/services/handyman-services-sun-city-georgetown/
+/services/water-softener-installation-georgetown-tx/
+/services/water-heater-installation-georgetown-tx/
+/services/faucet-sink-toilet-repair-georgetown-tx/
+/services/garbage-disposal-installation-georgetown-tx/
+/services/light-fan-switch-installation-georgetown-tx/
+/services/grab-bar-installation-sun-city-georgetown/
+/services/drywall-paint-repair-georgetown-tx/
+/services/door-lock-hardware-repair-georgetown-tx/
+/services/cabinet-trim-carpentry-georgetown-tx/
+/services/home-inspection-repairs-georgetown-tx/
+/services/home-sale-punch-list-georgetown-tx/
+
+Preferred homepage H1:
+
+Handyman Services in Sun City Georgetown, TX
+
+Preferred short service intro:
+
+Sun City Home Repair provides reliable handyman repairs and small home improvement services for homeowners in Sun City Georgetown and nearby Berry Creek. Services include plumbing fixture repairs, water heater and softener work, light electrical fixture installs, grab bars, doors, locks, drywall, paint touch-ups, trim, cabinets, and home inspection punch lists.
+
+Structured Data Rules
+
+Recommended structured-data types:
+
+- LocalBusiness
+- HomeAndConstructionBusiness
+- Service
+- OfferCatalog
+- FAQPage
+- BreadcrumbList
+
+Recommended serviceType values:
+
+- Handyman Services
+- Plumbing Fixture Repair
+- Water Heater Service
+- Water Softener Service
+- Water Filter Installation
+- Light Fixture Installation
+- Ceiling Fan Installation
+- Grab Bar Installation
+- Drywall Repair
+- Door Hardware Repair
+- Cabinet Repair
+- Trim Carpentry
+- Home Inspection Repairs
+- Home Sale Punch List Repairs
+
+Recommended areaServed values:
+
+- Sun City, Georgetown, TX
+- Georgetown, TX 78633
+- Berry Creek, Georgetown, TX 78628
+- Williamson County, TX
+
+Rules:
+
+- Visible service copy and JSON-LD services must match.
+- Do not list excluded services in schema.
+- Do not imply customers visit a home office.
+- Do not publish a home address unless intentionally approved.
+- Do not invent license numbers, certifications, testimonials, reviews, or service guarantees.
+
+Do Not Publish From Calendar Data
+
+Do not publish or infer:
+
+- Customer names
+- Phone numbers
+- Addresses
+- Door codes
+- Private notes
+- Prices unless intentionally standardized
+- Anything implying licensed plumbing, electrical, HVAC, or gas work unless properly verified for that scope
+
+Calendar-derived services may be used only as normalized, anonymous service categories.
+
+Current Important Files
+
+- PROJECT_HANDOFF.md: current project state and prior work.
+- CODEX_RESTORE_INSTRUCTIONS.md: this restore guide.
+- GIT_RULES.md: commit, branch, push, and deploy rules.
+- WEBSITE_DATA.md: business facts, service area, service boundaries, and SEO data.
+- SERVICE_TAXONOMY_FROM_CALENDAR.md: normalized service taxonomy from calendar entries.
+- SERVICE_PAGE_PLAN.md: SEO landing-page plan.
+- SEO_KEYWORD_MATRIX.md: service and location keyword plan.
+- SCHEMA_IMPLEMENTATION_PLAN.md: structured-data plan.
+- includes/config.php: business constants and JSON-LD schema helpers.
+- includes/header.php: canonical, Open Graph, Twitter card, and JSON-LD output.
+- includes/nav.php: shared navigation.
+- includes/footer.php: shared footer and service-area copy.
+- includes/pages.php: page title, description, keyword metadata.
+- index.php: homepage content.
+- contact.php: contact/service-area/map copy.
+- .github/workflows/deploy-ionos.yml: deploy and backup workflow.
+
+Standard Work Pattern
 
 For content/code changes:
 
-1. Inspect current files with `rg`, `sed`, and `git status -sb`.
-2. Edit with `apply_patch`.
-3. Run:
+1. Inspect current files with rg, sed, and git status -sb.
+2. Confirm current project name/domain references before editing.
+3. Edit with apply_patch or the safest available file-editing method.
+4. Run:
 
-```bash
 composer lint
 git diff --check
-```
 
-4. If the change affects frontend behavior or layout, run a browser/visual check.
-5. Commit with a concise message.
-6. Push to `main` only when approved or when the user clearly asks to send it to GitHub.
-7. Watch deploy and CI.
-8. Verify the live test site with `curl` and, when needed, browser inspection.
+5. If the change affects frontend behavior or layout, run a browser/visual check.
+6. Show the relevant diff summary.
+7. Commit with a concise message only when requested or approved.
+8. Push to main only when approved or when the user clearly asks to deploy.
+9. Watch deploy and CI.
+10. Verify the live site with curl and, when needed, browser inspection.
 
-## Browser/Visual Checks
+Browser/Visual Checks
 
-In the prior working session:
+In prior working sessions:
 
 - Computer Use could inspect Chrome Dev visually.
 - Headless Chrome Dev could be driven through the Chrome DevTools Protocol.
 - Chrome Dev executable path:
 
-```bash
 /Applications/Google Chrome Dev.app/Contents/MacOS/Google Chrome Dev
-```
 
 There was no standard Google Chrome app at:
 
-```bash
 /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-```
 
 If a Playwright wrapper fails because it expects standard Chrome, use Chrome Dev or Computer Use instead.
 
-## Notes About Documentation Files
+Documentation Files
 
-`PROJECT_HANDOFF.md` and `CODEX_RESTORE_INSTRUCTIONS.md` are root Markdown files. The deploy workflow does not copy root Markdown files into the live site, so keeping these files in the repo should not expose them at `webtestkit.com/mark/`.
+Root Markdown files such as these are for project operation and should not be deployed publicly:
 
-If these docs are committed and pushed, GitHub Actions will still run and the deploy workflow will still create one backup archive, even though the live web files do not change.
+- PROJECT_HANDOFF.md
+- CODEX_RESTORE_INSTRUCTIONS.md
+- GIT_RULES.md
+- WEBSITE_DATA.md
+
+The deploy workflow should exclude root Markdown files from the live web root. Confirm this in .github/workflows/deploy-ionos.yml if deployment behavior changes.
+
+If these docs are committed and pushed, GitHub Actions may still run and the deploy workflow may still create a backup archive, even if live web files do not change.
