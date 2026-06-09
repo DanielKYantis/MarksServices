@@ -85,6 +85,10 @@ jobs:
           : "${IONOS_REMOTE_PATH:?Missing IONOS_REMOTE_PATH}"
 
           PORT="${IONOS_SSH_PORT:-22}"
+          IONOS_REMOTE_PATH_ESCAPED="$(printf '%q' "$IONOS_REMOTE_PATH")"
+          SSH_CMD=(ssh -i ~/.ssh/ionos_deploy_key -p "$PORT" -o IdentitiesOnly=yes)
+
+          "${SSH_CMD[@]}" "$IONOS_SSH_USER@$IONOS_SSH_HOST" "mkdir -p $IONOS_REMOTE_PATH_ESCAPED"
 
           rsync -az --delete \
             -e "ssh -i ~/.ssh/ionos_deploy_key -p $PORT -o IdentitiesOnly=yes" \
