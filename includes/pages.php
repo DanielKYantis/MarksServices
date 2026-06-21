@@ -118,6 +118,84 @@ return [
             "78628"
         ),
     ],
+    "handyman-services-sun-city-georgetown.php" => [
+        "title" =>
+            "Handyman Services Sun City Georgetown | Mark's Services",
+        "description" =>
+            "Handyman repairs, small installations, maintenance, doors, drywall, trim, and punch-list help for Sun City 78633 and Berry Creek 78628 homes.",
+        "keywords" =>
+            "handyman services Sun City Georgetown, handyman 78633, Berry Creek handyman, Georgetown home repair",
+        "body_class" => "service-landing-page handyman-service-page",
+        "label" => "Handyman Services",
+        "service_name" => "Handyman and Home Repair Services",
+        "service_description" =>
+            "Handyman repairs, small installations, maintenance, doors, drywall, trim, and punch-list help for homeowners in Sun City, Berry Creek, and Georgetown.",
+    ],
+    "plumbing-fixture-repair-georgetown-tx.php" => [
+        "title" =>
+            "Plumbing Fixture Repair Georgetown TX | Mark's Services",
+        "description" =>
+            "Faucet, sink, toilet, drain, disposal, bidet, hose-bib, and minor-leak service for Sun City 78633 and Berry Creek 78628 homeowners.",
+        "keywords" =>
+            "plumbing fixture repair Georgetown TX, faucet repair Sun City, toilet repair 78633, Berry Creek plumbing repairs",
+        "body_class" => "service-landing-page plumbing-fixture-page",
+        "label" => "Plumbing Fixture Repair",
+        "service_name" => "Plumbing Fixture Repair",
+        "service_description" =>
+            "Faucet, sink, toilet, drain, disposal, bidet, hose-bib, and minor-leak service for Georgetown-area homeowners, with licensed plumbing scope through the verified Responsible Master Plumber.",
+    ],
+    "water-softener-filter-service-georgetown-tx.php" => [
+        "title" =>
+            "Water Softener & Filter Service Georgetown | Mark's Services",
+        "description" =>
+            "Water softener, whole-house filter, reverse-osmosis, water-flow, and water-test assistance for Sun City and Berry Creek homeowners.",
+        "keywords" =>
+            "water softener service Georgetown TX, water filter Sun City, reverse osmosis Berry Creek, water softener 78633",
+        "body_class" => "service-landing-page water-system-page",
+        "label" => "Water Softener & Filter Service",
+        "service_name" => "Water Softener and Water Filter Service",
+        "service_description" =>
+            "Water softener, whole-house filter, reverse-osmosis, water-flow, and water-test assistance for homeowners in Sun City, Berry Creek, and Georgetown.",
+    ],
+    "light-fan-switch-outlet-services-georgetown-tx.php" => [
+        "title" =>
+            "Light, Fan & Outlet Services Georgetown | Mark's Services",
+        "description" =>
+            "Light fixtures, ceiling fans, switches, dimmers, outlets, GFCIs, doorbells, and smoke detectors for Sun City and Berry Creek homes.",
+        "keywords" =>
+            "light fixture installation Georgetown TX, ceiling fan Sun City, outlet replacement 78633, Berry Creek electrician",
+        "body_class" => "service-landing-page electrical-device-page",
+        "label" => "Light, Fan & Outlet Services",
+        "service_name" => "Light, Fan, Switch and Outlet Services",
+        "service_description" =>
+            "Light fixture, ceiling fan, switch, dimmer, outlet, GFCI, doorbell, and smoke-detector services for Georgetown-area homeowners through the verified Electrical Contractor.",
+    ],
+    "grab-bar-installation-sun-city-georgetown.php" => [
+        "title" =>
+            "Grab Bar Installation Sun City Georgetown | Mark's Services",
+        "description" =>
+            "Grab bars, shower grab bars, towel bars, and bathroom safety hardware installed for Sun City 78633 and Berry Creek 78628 homeowners.",
+        "keywords" =>
+            "grab bar installation Sun City Georgetown, shower grab bars 78633, bathroom safety hardware Georgetown",
+        "body_class" => "service-landing-page grab-bar-page",
+        "label" => "Grab Bar Installation",
+        "service_name" => "Grab Bar Installation",
+        "service_description" =>
+            "Grab bars, shower grab bars, towel bars, and bathroom safety hardware installation for Sun City, Berry Creek, and Georgetown homeowners.",
+    ],
+    "home-inspection-punch-list-repairs-georgetown-tx.php" => [
+        "title" =>
+            "Home Inspection & Punch-List Repairs Georgetown | Mark's Services",
+        "description" =>
+            "Home inspection repairs, maintenance lists, sale punch lists, and coordinated small repairs for Sun City and Berry Creek homeowners.",
+        "keywords" =>
+            "home inspection repairs Georgetown TX, home sale punch list Sun City, Berry Creek handyman punch list",
+        "body_class" => "service-landing-page punch-list-page",
+        "label" => "Inspection & Punch-List Repairs",
+        "service_name" => "Home Inspection and Punch-List Repairs",
+        "service_description" =>
+            "Home inspection repairs, maintenance lists, home-sale punch lists, and coordinated small repair visits for Sun City, Berry Creek, and Georgetown homeowners.",
+    ],
     "starter-page.php" => [
         "title" => "Starter Page - Mark's Services",
         "description" => "",
