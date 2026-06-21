@@ -1,29 +1,30 @@
-# Website Data - Sun City Home Repair
+# Website Data - Mark's Services
 
 ## Business
 
-- Name: Sun City Home Repair / Sun City Home Repair LLC
-- Website: https://SunCityHomeRepair.com
-- Test site: https://SunCityHomeRepair.com
+- Public name: Mark's Services
+- Legal entity: verify before publishing or adding `legalName` schema
+- Website: https://www.marksservices.com
+- Test site: https://www.marksservices.com
 - Business type: local home-service provider
 - Work model: client-location service only
 - Public copy rule: do not describe a walk-in office, storefront, showroom, or home-office workplace
 
 ## Known Contact / Identity Items To Verify Before Publishing
 
-- Business phone: verify current public number before publishing
-- Business email: verify final public inbox before publishing
+- Business phone currently published on MarksServices.com: 512-549-0322
+- Business email currently published on MarksServices.com: office@marksservices.com
 - Google Business Profile category: choose fewest accurate categories
 - Public address: do not show if profile/site is service-area only
 - Public business hours: verify before publishing
 
 ## People / License Context To Verify
 
-- Mark Walbert — remodeling, carpentry, handyman, and home-service professional
-- Jim Bradford — Responsible Master Plumber, M-38601
-- Larry Kizer — Electrical Contractor, TECL 20547
+- Mark Walbert — Handyman & Home Repair Expert with 25+ years of contractor and home-repair experience, including 20 years previously licensed in electrical and plumbing; those licenses are expired. Verified by the user and approved for public copy only when the expired status is explicit.
+- James Pote (Jim) Bradford — Responsible Master Plumber, M-38601; verified by the user and approved for public copy
+- Larry Kizer — Electrical Contractor, TECL 20547; verified by the user and approved for public copy
 
-Do not publish license claims until checked against official sources and approved.
+Do not publish license claims until checked and approved. These references are approved: James Pote (Jim) Bradford, Responsible Master Plumber M-38601; and Larry Kizer, Electrical Contractor TECL 20547.
 
 ## Service Areas
 

@@ -20,7 +20,7 @@ Service-specific nested or contextual types where appropriate:
 
 - Schema must describe visible page content.
 - Do not include fake reviews, aggregateRating, awards, certifications, or unsupported credentials.
-- Do not publish a storefront address if Sun City Home Repair is operating as service-area only.
+- Do not publish a storefront address if Mark's Services is operating as service-area only.
 - Use `areaServed` for Sun City, Berry Creek, and Georgetown ZIP targets.
 - Use service pages for specific service schema.
 - Use `FAQPage` only if the page visibly displays the same questions/answers.

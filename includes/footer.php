@@ -12,12 +12,12 @@ declare(strict_types=1) ?>
           Clean work, clear scope, reliable scheduling.
         </p>
         <div class="mt-3">
-          <p class="mb-1"><strong>Electrical:</strong> <?= e(
-              ELECTRICAL_LICENSE
-          ) ?></p>
-          <p class="mb-0"><strong>Plumbing (RMP/Master):</strong> <?= e(
-              PLUMBING_LICENSE
-          ) ?></p>
+          <p class="mb-1"><strong>Electrical Contractor:</strong><br><?= e(
+              ELECTRICAL_LICENSE_HOLDER
+          ) ?>, <?= e(ELECTRICAL_LICENSE) ?></p>
+          <p class="mb-0"><strong>Responsible Master Plumber:</strong><br><?= e(
+              PLUMBING_LICENSE_HOLDER
+          ) ?>, <?= e(PLUMBING_LICENSE) ?></p>
         </div>
       </div>
 
@@ -25,6 +25,8 @@ declare(strict_types=1) ?>
         <h4>Site</h4>
         <ul>
           <li><a href="services.php">Services</a></li>
+          <li><a href="sun-city-georgetown-tx.php">Sun City 78633</a></li>
+          <li><a href="berry-creek-georgetown-tx.php">Berry Creek 78628</a></li>
           <li><a href="projects.php">Projects</a></li>
           <li><a href="team.php">Team</a></li>
           <li><a href="about.php">About</a></li>
@@ -43,7 +45,7 @@ declare(strict_types=1) ?>
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
         <h4>Contact</h4>
-        <p>Sun City Home Repair</p>
+        <p>Mark's Services</p>
         <p><?= e(BUSINESS_AREA_DETAIL) ?></p>
         <p class="mb-2">Client-location appointments only</p>
         <p class="mt-3 mb-1"><strong>Phone:</strong> <span><a href="tel:<?= e(

@@ -8,18 +8,18 @@ Goal
 
 Restore a Codex Desktop session that can:
 
-- Read and edit the local Sun City Home Repair repo.
+- Read and edit the local Mark's Services repo.
 - Run shell commands from the repo root.
 - Use Git and GitHub CLI to inspect status, commits, branches, Actions, and deployment runs.
 - Commit and push approved changes to GitHub.
-- Trigger the GitHub-to-IONOS deployment workflow by pushing to main.
-- Verify the live website at https://SunCityHomeRepair.com.
+- Maintain the GitHub-to-IONOS migration workflow without treating it as the current Wix production deployment.
+- Verify the live website at https://www.marksservices.com.
 - Use browser, screenshot, or computer-control tooling for visual checks when needed.
 
 Current Project Identity
 
-- Business/site name: Sun City Home Repair
-- Production site: https://SunCityHomeRepair.com
+- Business/site name: Mark's Services
+- Production site: https://www.marksservices.com
 - Primary SEO focus: Sun City, Georgetown, TX 78633
 - Secondary service area: Berry Creek / Berry Creek Estates, Georgetown, TX 78628
 - Supporting local context: Georgetown, Williamson County, TX
@@ -31,11 +31,12 @@ Known Working Environment
 Update these paths if the local repo folder or GitHub repo name changes.
 
 - App: Codex Desktop on macOS
-- Workspace path: /Users/dky/Projects/MarksServices
+- Workspace path: /Users/dky/Projects/SunCityHomeRepair
 - Shell: zsh
 - Primary branch: main
-- Production site: https://SunCityHomeRepair.com
-- Deployment: GitHub Actions workflow Deploy to IONOS, triggered by pushes to main
+- Production site: https://www.marksservices.com
+- Current production platform: Wix
+- Migration deployment: GitHub Actions workflow Deploy to IONOS, triggered by pushes to main
 - GitHub CLI auth account: DanielKYantis
 - Deploy workflow uses PHP 8.4 in GitHub Actions
 
@@ -55,7 +56,7 @@ Codex Session Settings To Request
 
 When starting a future Codex chat, request these capabilities/settings:
 
-- Workspace: /Users/dky/Projects/MarksServices
+- Workspace: /Users/dky/Projects/SunCityHomeRepair
 - Shell: zsh
 - Filesystem access: full access to the workspace
 - Network access: enabled
@@ -76,13 +77,13 @@ Ask Codex to read these files first:
 
 Suggested first message for a new Codex chat:
 
-We are working in /Users/dky/Projects/MarksServices on Sun City Home Repair. Please read PROJECT_HANDOFF.md, CODEX_RESTORE_INSTRUCTIONS.md, GIT_RULES.md, WEBSITE_DATA.md, and SERVICE_TAXONOMY_FROM_CALENDAR.md first. Use the established workflow: inspect current files, edit locally, run checks, show diffs, commit/push to main only when approved, watch GitHub Actions, and verify https://SunCityHomeRepair.com.
+We are working in /Users/dky/Projects/SunCityHomeRepair on the Mark's Services Wix SEO and future IONOS migration. Please read PROJECT_HANDOFF.md, CODEX_RESTORE_INSTRUCTIONS.md, GIT_RULES.md, WEBSITE_DATA.md, and SERVICE_TAXONOMY_FROM_CALENDAR.md first. Treat https://www.marksservices.com as Wix production and this repository as migration code until an approved cutover.
 
 Verify Local Access
 
 Run these from the repo root:
 
-cd /Users/dky/Projects/MarksServices
+cd /Users/dky/Projects/SunCityHomeRepair
 pwd
 git status -sb
 git remote -v
@@ -93,7 +94,7 @@ Expected:
 
 - Current directory is the local repo root.
 - Branch is main, unless intentionally working on another branch.
-- Remote points to the active Sun City Home Repair repo.
+- Remote points to the active Mark's Services repo.
 - composer lint reports no PHP syntax errors.
 
 If the repo has been renamed locally, update this file and PROJECT_HANDOFF.md with the current path.
@@ -117,17 +118,17 @@ If GitHub auth is missing:
 gh auth login
 gh auth status
 
-Use the account that owns or can push to the active Sun City Home Repair repository.
+Use the account that owns or can push to the active Mark's Services repository.
 
 Verify Deployment Workflow
 
-The deploy workflow is expected at:
+The migration deploy workflow is expected at:
 
 .github/workflows/deploy-ionos.yml
 
 Important facts:
 
-- Pushes to main deploy to IONOS.
+- Pushes to main deploy the migration code to IONOS, not the current Wix production site.
 - The deploy job should create a deploy directory containing the public website files.
 - Root Markdown files should not be deployed to the web root.
 - Deploy backups should be saved on IONOS and rotated according to the workflow rule.
@@ -145,7 +146,7 @@ Verify The Live Site
 
 Basic homepage check:
 
-curl -fsSL https://SunCityHomeRepair.com/ | rg -n "Sun City|78633|Berry Creek|78628|Home Repair|Handyman|areaServed|application/ld\\+json|canonical"
+curl -fsSL https://www.marksservices.com/ | rg -n "Sun City|78633|Berry Creek|78628|Home Repair|Handyman|areaServed|application/ld\\+json|canonical"
 
 Expected:
 
@@ -153,13 +154,13 @@ Expected:
 - 78633 appears where appropriate.
 - Berry Creek or Berry Creek Estates appears where appropriate.
 - 78628 appears where appropriate.
-- Sun City Home Repair appears.
+- Mark's Services appears.
 - areaServed appears in JSON-LD.
-- Canonical URL points to https://SunCityHomeRepair.com/.
+- Canonical URL points to https://www.marksservices.com/.
 
 Contact page check, if a contact page exists:
 
-curl -fsSL https://SunCityHomeRepair.com/contact.php | rg -n "Service Area|Sun City|78633|Berry Creek|78628|Client-location|appointment|maps\\?q=|areaServed"
+curl -fsSL https://www.marksservices.com/contact.php | rg -n "Service Area|Sun City|78633|Berry Creek|78628|Client-location|appointment|maps\\?q=|areaServed"
 
 Expected:
 
@@ -171,7 +172,7 @@ Expected:
 
 Current Project Rules
 
-- Primary website goal: create and maintain https://SunCityHomeRepair.com.
+- Primary website goal: create and maintain https://www.marksservices.com.
 - SEO and structured data are primary goals.
 - Main service-area target is Sun City, Georgetown, TX 78633.
 - Secondary service-area target is Berry Creek / Berry Creek Estates, Georgetown, TX 78628.
@@ -328,7 +329,7 @@ Handyman Services in Sun City Georgetown, TX
 
 Preferred short service intro:
 
-Sun City Home Repair provides reliable handyman repairs and small home improvement services for homeowners in Sun City Georgetown and nearby Berry Creek. Services include plumbing fixture repairs, water heater and softener work, light electrical fixture installs, grab bars, doors, locks, drywall, paint touch-ups, trim, cabinets, and home inspection punch lists.
+Mark's Services provides reliable handyman repairs and small home improvement services for homeowners in Sun City Georgetown and nearby Berry Creek. Services include plumbing fixture repairs, water heater and softener work, light electrical fixture installs, grab bars, doors, locks, drywall, paint touch-ups, trim, cabinets, and home inspection punch lists.
 
 Structured Data Rules
 

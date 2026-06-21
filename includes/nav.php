@@ -86,9 +86,13 @@ $pageKey = $pageKey ?? basename($_SERVER["SCRIPT_NAME"]);
           "privacy.php",
           "404.php",
           "starter-page.php",
+          "sun-city-georgetown-tx.php",
+          "berry-creek-georgetown-tx.php",
       ]) ?>"><span class="nav-link-label"><i class="bi bi-compass nav-link-icon" aria-hidden="true"></i>Explore</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
 
       <ul class="mobile-megamenu">
+        <li><a href="sun-city-georgetown-tx.php">Sun City Georgetown</a></li>
+        <li><a href="berry-creek-georgetown-tx.php">Berry Creek Georgetown</a></li>
         <li><a href="service-details.php">Service Details</a></li>
         <li><a href="project-details.php">Project Details</a></li>
         <li><a href="quote.php">Quote Form</a></li>
@@ -176,7 +180,7 @@ $pageKey = $pageKey ?? basename($_SERVER["SCRIPT_NAME"]);
                 <div class="banner-icon"><i class="bi bi-shield-check"></i></div>
                 <div class="banner-info">
                   <h5>Licensed electrical and plumbing support</h5>
-                  <p>Clear scope, practical scheduling, and one local point of contact for Sun City and Berry Creek Estates work.</p>
+                  <p>Clear scope, practical scheduling, and one local point of contact for Sun City and Berry Creek work.</p>
                   <a href="quote.php" class="cta-btn">Start a quote <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
@@ -214,11 +218,13 @@ $pageKey = $pageKey ?? basename($_SERVER["SCRIPT_NAME"]);
                     <i class="bi bi-calendar-check"></i>
                     <div><span>Schedule a Visit</span><small>Service-area appointments only, no walk-ins</small></div>
                   </a>
-                  <a href="about.php" class="product-link">
+                  <a href="sun-city-georgetown-tx.php" class="product-link">
                     <i class="bi bi-geo-alt"></i>
-                    <div><span>Local Area</span><small><?= e(
-                        BUSINESS_AREA
-                    ) ?></small></div>
+                    <div><span>Sun City Georgetown</span><small>Home repair and maintenance in 78633</small></div>
+                  </a>
+                  <a href="berry-creek-georgetown-tx.php" class="product-link">
+                    <i class="bi bi-geo-alt"></i>
+                    <div><span>Berry Creek Georgetown</span><small>Home repair and maintenance in 78628</small></div>
                   </a>
                 </div>
               </div>

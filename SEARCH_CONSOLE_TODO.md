@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Set up and monitor Search Console for SunCityHomeRepair.com.
+Set up and monitor Search Console for marksservices.com.
 
 ## Tasks
 
-- Add domain property for `SunCityHomeRepair.com`.
+- Add or verify the domain property for `marksservices.com`.
 - Verify ownership via DNS or approved method.
 - Submit sitemap after `sitemap.xml` exists.
 - Check indexing status.

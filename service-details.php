@@ -33,7 +33,7 @@ require __DIR__ . '/includes/header.php';
                   <i class="bi bi-building"></i>
                 </div>
                 <h3>Home Service Work</h3>
-                <p>Electrical, plumbing, handyman, home repair, and maintenance support for Sun City and Berry Creek Estates properties.</p>
+                <p>Electrical, plumbing, handyman, home repair, and maintenance support for Sun City and Berry Creek properties.</p>
                 <div class="service-stats">
                   <div class="stat-item">
                     <span class="stat-number">2</span>

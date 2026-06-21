@@ -120,7 +120,7 @@ Rules:
   https://support.google.com/analytics/answer/9304153
 
 Rules:
-- Treat Sun City Home Repair as service-area business unless the user explicitly approves a public storefront/address setup.
+- Treat Mark's Services as service-area business unless the user explicitly approves a public storefront/address setup.
 - Use precise service areas, not a radius.
 - Use the real-world business name only; do not stuff service/location terms into the GBP name.
 
@@ -164,9 +164,9 @@ Rules:
 ## Current Site Sources
 
 - Test site  
-  https://SunCityHomeRepair.com
+  https://www.marksservices.com
 
 - Production site  
-  https://SunCityHomeRepair.com
+  https://www.marksservices.com
 
 Use `CURRENT_TEST_SITE_AUDIT.md` before rewrite/migration work.

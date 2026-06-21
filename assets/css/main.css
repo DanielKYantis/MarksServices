@@ -209,7 +209,7 @@ h6 {
   margin-right: 8px;
 }
 
-.header .logo h1 {
+.header .logo .sitename {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
@@ -218,6 +218,21 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.service-area-card {
+  background-color: var(--surface-color);
+  color: var(--default-color);
+}
+
+.service-area-card h3 {
+  color: var(--heading-color);
+}
+
+.team-identity-logo {
+  object-fit: contain !important;
+  padding: 16px;
+  background-color: var(--surface-color);
 }
 
 .scrolled .header .topbar {

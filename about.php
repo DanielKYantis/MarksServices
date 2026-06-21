@@ -27,9 +27,10 @@ require __DIR__ . '/includes/header.php';
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <div class="about-content" data-aos="fade-right" data-aos-delay="200">
-              <h2>Local Home Services for Sun City and Berry Creek Estates</h2>
+              <h2>Local Home Services for Sun City and Berry Creek</h2>
               <p class="lead">Mark's Services handles practical repair, maintenance, electrical, plumbing, and handyman work for homeowners and small properties.</p>
               <p>Every project starts with a clear scope and a real conversation about timing, access, materials, and the result you need. The goal is straightforward work done cleanly and communicated plainly.</p>
+              <p>Mark Walbert brings 25+ years of contractor and home-repair experience, including 20 years previously licensed in electrical and plumbing. Those licenses are expired. Current regulated electrical and plumbing work is tied to Larry Kizer, Electrical Contractor TECL 20547, and James Pote (Jim) Bradford, Responsible Master Plumber M-38601.</p>
 
               <div class="achievement-boxes row g-4 mt-4">
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">

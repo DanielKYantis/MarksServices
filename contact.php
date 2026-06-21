@@ -27,7 +27,7 @@ require __DIR__ . "/includes/header.php";
           <div class="contact-info-panel">
             <div class="contact-info-header">
               <h3>Contact Information</h3>
-              <p>Call, email, or send a message to discuss electrical, plumbing, handyman, home repair, water softener, or maintenance work at client locations in Sun City and Berry Creek Estates.</p>
+              <p>Call, email, or send a message to discuss electrical, plumbing, handyman, home repair, water softener, or maintenance work at client locations in Sun City and Berry Creek.</p>
             </div>
 
             <div class="contact-info-cards">

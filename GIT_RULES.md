@@ -1,9 +1,9 @@
-# Git Rules - Sun City Home Repair
+# Git Rules - Mark's Services
 
 ## Branch / History
 
 - Main branch: `main`
-- Remote: `https://github.com/DanielKYantis/MarksServices.git`
+- Remote: `https://github.com/DanielKYantis/SunCityHomeRepair.git`
 - Do not force-push `main`.
 - Do not rewrite published history.
 - Work from a clean tree.
@@ -42,7 +42,7 @@ git commit -m "Improve quote form validation"
 
 ## Push / Deploy
 
-Pushes to `main` trigger deployment to IONOS through GitHub Actions.
+Pushes to `main` trigger deployment of the migration codebase to IONOS through GitHub Actions. They do not update the current Wix production site while MarksServices.com DNS remains on Wix.
 
 ```bash
 git push origin main
@@ -53,7 +53,7 @@ gh run watch <deploy-run-id> --exit-status
 ## Post-Deploy Verification
 
 ```bash
-curl -fsSL https://SunCityHomeRepair.com | rg -n "Sun City|78633|Berry Creek|78628|Georgetown|78626|78627|areaServed"
+curl -fsSL https://www.marksservices.com | rg -n "Sun City|78633|Berry Creek|78628|Georgetown|78626|78627|areaServed"
 ```
 
 Also verify:

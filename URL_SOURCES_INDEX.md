@@ -2,8 +2,8 @@
 
 | Category | Source | URL | Use | Priority |
 |---|---|---|---|---|
-| Test site | Current test site | https://SunCityHomeRepair.com | Audit current template/content | High |
-| Production | Sun City Home Repair domain | https://SunCityHomeRepair.com | Final public site | High |
+| Test site | Current test site | https://www.marksservices.com | Audit current template/content | High |
+| Production | Mark's Services domain | https://www.marksservices.com | Final public site | High |
 | Sun City | Del Webb Sun City Texas | https://www.delwebb.com/homes/texas/austin/georgetown/sun-city-texas-16369 | Location/community context | High |
 | Sun City HOA | Del Webb HOA page | https://www.delwebb.com/homes/texas/austin/georgetown/sun-city-texas-16369/hoa | HOA manager/location context | High |
 | Sun City CA | Sun City Texas Community Association | https://www.sctexas.org/ | Community context and official pages | High |

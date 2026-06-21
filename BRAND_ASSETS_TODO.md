@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Collect or create approved brand assets for Sun City Home Repair.
+Collect or create approved brand assets for Mark's Services.
 
 ## Needed Assets
 
@@ -32,7 +32,7 @@ Collect or create approved brand assets for Sun City Home Repair.
 
 ## Open Decisions
 
-- Final legal/public name: Sun City Home Repair vs Sun City Home Repair LLC
+- Verify the legal entity separately from the approved public brand, Mark's Services
 - Tagline
 - Phone/email placement
 - Logo colors

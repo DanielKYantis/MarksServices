@@ -1,10 +1,10 @@
-# Sun City Home Repair Project Instructions
+# Mark's Services Project Instructions
 
-Focus on creating and maintaining https://SunCityHomeRepair.com. Search engine optimization, accurate local business schema, service-area clarity, and technically credible home-service content are primary goals.
+Focus on creating and maintaining https://www.marksservices.com. Search engine optimization, accurate local business schema, service-area clarity, and technically credible home-service content are primary goals.
 
 ## Core Business Rules
 
-Sun City Home Repair performs client-location work only. Do not describe or imply a public office, walk-in office, showroom, storefront, or customer-facing home office. Public copy should use service-area language.
+Mark's Services performs client-location work only. Do not describe or imply a public office, walk-in office, showroom, storefront, or customer-facing home office. Public copy should use service-area language.
 
 Primary target:
 - Sun City, Georgetown, TX 78633
@@ -83,4 +83,4 @@ Allowed narrow overlaps: drywall-related paint touch-ups, minor wall repair, AC 
 - For important images, first draft/refine the prompt instead of rushing into generation.
 - Keep mechanical, plumbing, and electrical details simple and believable.
 - Avoid complex pipe networks, exposed unsafe wiring, inaccurate electrical panels, HVAC equipment, roofing, fencing, painting, decks, construction-site mess, fake badges, fake licenses, and unreadable/misspelled text.
-- Prefer premium photorealistic website hero images, clean residential settings, and Sun City Home Repair branding.
+- Prefer premium photorealistic website hero images, clean residential settings, and Mark's Services branding.

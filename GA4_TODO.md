@@ -7,7 +7,7 @@ Set up Google Analytics 4 for website measurement without disrupting page perfor
 ## Tasks
 
 - Create/confirm GA4 property.
-- Create web data stream for `https://SunCityHomeRepair.com`.
+- Create web data stream for `https://www.marksservices.com`.
 - Install measurement tag once, ideally through shared header/config.
 - Exclude test/staging if appropriate.
 - Track key events:

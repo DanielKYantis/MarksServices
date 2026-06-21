@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Create or clean up Sun City Home Repair Google Business Profile as a service-area business.
+Create or clean up Mark's Services Google Business Profile as a service-area business.
 
 ## Rules
 

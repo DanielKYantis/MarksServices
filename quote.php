@@ -32,7 +32,7 @@ require __DIR__ . '/includes/header.php';
                   <div class="quote-info">
                     <div class="quote-content">
                       <h3>Ready to Schedule Your Project?</h3>
-                      <p>Tell us what you need done and Mark's Services will follow up with a clear next step for your Sun City or Berry Creek Estates project.</p>
+                      <p>Tell us what you need done and Mark's Services will follow up with a clear next step for your Sun City or Berry Creek project.</p>
 
                       <div class="contact-items">
                         <div class="contact-item" data-aos="fade-right" data-aos-delay="200">

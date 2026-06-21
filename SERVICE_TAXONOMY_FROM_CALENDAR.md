@@ -198,7 +198,7 @@ Handyman Services in Sun City Georgetown, TX
 
 ## Homepage Short Service Intro
 
-Sun City Home Repair provides reliable handyman repairs and small home improvement services for homeowners in Sun City Georgetown and nearby Georgetown, Texas. Services include plumbing fixture repairs, water heater and softener work, light electrical fixture installs, grab bars, doors, locks, drywall, paint touch-ups, trim, cabinets, and home inspection punch lists.
+Mark's Services provides reliable handyman repairs and small home improvement services for homeowners in Sun City Georgetown and nearby Georgetown, Texas. Services include plumbing fixture repairs, water heater and softener work, light electrical fixture installs, grab bars, doors, locks, drywall, paint touch-ups, trim, cabinets, and home inspection punch lists.
 
 ## Schema ServiceType Values
 

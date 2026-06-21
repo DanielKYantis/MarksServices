@@ -82,3 +82,18 @@ h6 {
     transform: rotate(360deg);
   }
 }
+/* Service-area page cards */
+.service-area-card {
+  background-color: var(--surface-color);
+  color: var(--default-color);
+
+  h3 {
+    color: var(--heading-color);
+  }
+}
+
+.team-identity-logo {
+  object-fit: contain !important;
+  padding: 16px;
+  background-color: var(--surface-color);
+}

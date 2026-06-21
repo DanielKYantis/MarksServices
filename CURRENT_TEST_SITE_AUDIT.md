@@ -1,10 +1,10 @@
-# Current Test Site Audit - https://SunCityHomeRepair.com
+# Archived Migration Prototype Audit
 
-Observed date: 2026-06-06
+Observed date: 2026-06-06. This file describes the PHP migration prototype, not the current Wix production site at https://www.marksservices.com.
 
 ## High-Level Finding
 
-The current test site still appears to contain substantial stock construction-template content. It should be treated as a visual/layout starting point, not as approved Sun City Home Repair content.
+The current test site still appears to contain substantial stock construction-template content. It should be treated as a visual/layout starting point, not as approved Mark's Services content.
 
 ## Must Replace Immediately
 
@@ -16,7 +16,7 @@ Current issues:
 - Navigation includes generic template pages and dropdown examples.
 
 Required:
-- Replace with Sun City Home Repair branding.
+- Replace with Mark's Services branding.
 - Use verified phone/email only.
 - Remove generic dropdown examples.
 - Navigation should support SEO pages and quote/contact path.
@@ -125,7 +125,7 @@ Required:
 ### Team Section
 
 Current issues:
-- Stock names and roles unrelated to Sun City Home Repair.
+- Stock names and roles unrelated to Mark's Services.
 
 Required:
 - Replace with verified people:
@@ -174,7 +174,7 @@ Current issues:
 - Fake phone/email.
 
 Required:
-- Sun City Home Repair branding.
+- Mark's Services branding.
 - Service-area statement, not public storefront.
 - Verified phone/email only.
 - Links to Services, Service Areas, About, Contact, Privacy, Terms.

@@ -30,12 +30,12 @@ require __DIR__ . '/includes/header.php';
             <div class="team-card featured">
               <div class="team-header">
                 <div class="team-image">
-                  <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="">
-                  <div class="experience-badge">15+ Years</div>
+                  <img src="assets/img/favicon/logo_master_enhanced.png" class="img-fluid team-identity-logo" alt="Mark's Services logo">
+                  <div class="experience-badge">Verified</div>
                 </div>
                 <div class="team-info">
-                  <h4>Electrical Service Lead</h4>
-                  <span class="position"><?= e(ELECTRICAL_LICENSE) ?></span>
+                  <h4><?= e(ELECTRICAL_LICENSE_HOLDER) ?></h4>
+                  <span class="position">Electrical Contractor <?= e(ELECTRICAL_LICENSE) ?></span>
                   <div class="contact-info">
                     <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i> <?= e(BUSINESS_EMAIL) ?></a>
                     <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i> <?= e(BUSINESS_PHONE_DISPLAY) ?></a>
@@ -47,11 +47,11 @@ require __DIR__ . '/includes/header.php';
                 <div class="credentials">
                   <div class="cred-item">
                     <i class="bi bi-award"></i>
-                    <span>Licensed Electrical</span>
+                    <span>Electrical Contractor</span>
                   </div>
                   <div class="cred-item">
                     <i class="bi bi-shield-check"></i>
-                    <span>OSHA 30</span>
+                    <span><?= e(ELECTRICAL_LICENSE) ?></span>
                   </div>
                 </div>
                 <div class="social-links">
@@ -67,12 +67,12 @@ require __DIR__ . '/includes/header.php';
             <div class="team-card featured">
               <div class="team-header">
                 <div class="team-image">
-                  <img src="assets/img/construction/team-2.webp" class="img-fluid" alt="">
-                  <div class="experience-badge">12+ Years</div>
+                  <img src="assets/img/favicon/logo_master_enhanced.png" class="img-fluid team-identity-logo" alt="Mark's Services logo">
+                  <div class="experience-badge">Verified</div>
                 </div>
                 <div class="team-info">
-                  <h4>Plumbing Service Lead</h4>
-                  <span class="position"><?= e(PLUMBING_LICENSE) ?></span>
+                  <h4><?= e(PLUMBING_LICENSE_HOLDER) ?></h4>
+                  <span class="position">Responsible Master Plumber <?= e(PLUMBING_LICENSE) ?></span>
                   <div class="contact-info">
                     <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i> <?= e(BUSINESS_EMAIL) ?></a>
                     <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i> <?= e(BUSINESS_PHONE_DISPLAY) ?></a>
@@ -84,11 +84,11 @@ require __DIR__ . '/includes/header.php';
                 <div class="credentials">
                   <div class="cred-item">
                     <i class="bi bi-person-badge"></i>
-                    <span>Licensed Plumbing</span>
+                    <span>Responsible Master Plumber</span>
                   </div>
                   <div class="cred-item">
                     <i class="bi bi-tools"></i>
-                    <span>Repair Planning</span>
+                    <span><?= e(PLUMBING_LICENSE) ?></span>
                   </div>
                 </div>
                 <div class="social-links">
@@ -103,11 +103,11 @@ require __DIR__ . '/includes/header.php';
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-card compact">
               <div class="member-photo">
-                <img src="assets/img/construction/team-3.webp" class="img-fluid" alt="">
+                <img src="assets/img/favicon/logo_master_enhanced.png" class="img-fluid team-identity-logo" alt="Mark's Services logo">
                 <div class="hover-overlay">
                   <div class="overlay-content">
-                    <h5>Home Repair</h5>
-                    <span>Carpentry &amp; finish work</span>
+                    <h5><?= e(HANDYMAN_EXPERT) ?></h5>
+                    <span>Handyman &amp; Home Repair Expert</span>
                     <div class="quick-contact">
                       <a href="mailto:<?= e(BUSINESS_EMAIL) ?>"><i class="bi bi-envelope"></i></a>
                       <a href="tel:<?= e(BUSINESS_PHONE_TEL) ?>"><i class="bi bi-telephone"></i></a>
@@ -117,11 +117,11 @@ require __DIR__ . '/includes/header.php';
                 </div>
               </div>
               <div class="member-summary">
-                <h5>Home Repair</h5>
-                <span>Carpentry &amp; finish work</span>
+                <h5><?= e(HANDYMAN_EXPERT) ?></h5>
+                <span>Handyman &amp; Home Repair Expert • <?= e(HANDYMAN_EXPERIENCE) ?> • Prior electrical/plumbing licenses expired</span>
                 <div class="skills">
-                  <span class="skill-tag">Trim</span>
-                  <span class="skill-tag">Repairs</span>
+                  <span class="skill-tag">Handyman</span>
+                  <span class="skill-tag">Home Repair</span>
                 </div>
               </div>
             </div>

@@ -1,21 +1,23 @@
-# Sun City Home Repair Project Handoff
+# Mark's Services Project Handoff
 
 Read this before changing the site.
 
 ## Current Site
 
-- Repo: `/Users/dky/Projects/MarksServices`
+- Repo: `/Users/dky/Projects/SunCityHomeRepair`
 - Branch: `main`
-- Remote: `https://github.com/DanielKYantis/MarksServices.git`
-- Production domain: `https://SunCityHomeRepair.com`
-- Live test site: `https://SunCityHomeRepair.com`
-- Deploy target: GitHub Actions workflow `Deploy to IONOS` runs on pushes to `main`.
+- Remote: `https://github.com/DanielKYantis/SunCityHomeRepair.git`
+- Production domain: `https://www.marksservices.com`
+- Current platform: Wix
+- Migration codebase: this PHP repository, intended for a future controlled-hosting move while retaining MarksServices.com
+- Public migration test site: none currently
+- Deploy target: GitHub Actions workflow `Deploy to IONOS` runs on pushes to `main`, but it is not the live MarksServices.com site while DNS remains on Wix.
 - CI: GitHub Actions PHP lint workflow runs on pushes to `main`.
 - Local check: run `composer lint` before committing.
 
 ## Deployment And Backups
 
-- Pushes to `main` deploy the PHP site to IONOS.
+- Pushes to `main` deploy the PHP migration site to IONOS; they do not update the current Wix production site.
 - Deploy workflow builds a deploy directory with root `*.php`, `assets/`, `forms/`, and `includes/`.
 - Root Markdown files are not deployed to the web root.
 - Deploy workflow creates compressed backups and keeps the latest 10 archives in a hidden sibling directory on IONOS.
@@ -29,14 +31,14 @@ Read this before changing the site.
   - `Services` uses the extended dropdown style.
   - `Explore` uses the megamenu style.
   - Commit: `c84aebb Integrate Atlas-style navigation menus`.
-- Service-area SEO update was completed and deployed:
+- Service-area SEO update was completed in the PHP migration codebase:
   - Commit: `bdeea06 Update service area SEO structure`.
   - Live site was verified after deploy.
 
 ## Source-of-Truth Rules
 
 - Do not treat ChatGPT Project Sources as the editable website repo.
-- Current PHP/CSS/JS files should be read from Git/Codex/local repo when making code changes.
+- Current Wix production content must be inspected in Wix or on MarksServices.com. PHP/CSS/JS migration files should be read from Git/Codex/local repo.
 - Project Sources should contain stable instructions, business facts, rules, URLs, TODO lists, and handoff notes.
 
 ## Current Important Files In Repo
@@ -102,7 +104,7 @@ php -l includes/header.php
 After deploy:
 
 ```bash
-curl -fsSL https://SunCityHomeRepair.com | rg -n "Sun City|78633|Berry Creek|78628|Georgetown|78626|78627|areaServed"
+curl -fsSL https://www.marksservices.com | rg -n "Sun City|78633|Berry Creek|78628|Georgetown|78626|78627|areaServed"
 ```
 
 Use Google Rich Results Test / Schema Markup Validator after schema changes.

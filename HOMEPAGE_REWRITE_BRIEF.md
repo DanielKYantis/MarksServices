@@ -2,7 +2,7 @@
 
 ## Goal
 
-Replace the construction-template homepage with Sun City Home Repair local home-service content.
+Replace the construction-template homepage with Mark's Services local home-service content.
 
 ## Primary Audience
 
@@ -27,7 +27,7 @@ Subheadline direction:
 CTA:
 
 - Request a Quote
-- Contact Sun City Home Repair
+- Contact Mark's Services
 
 ## Homepage Sections
 
@@ -35,7 +35,7 @@ CTA:
 2. Trust/service-area intro
 3. Core service cards
 4. Sun City / Berry Creek / Georgetown area section
-5. Why homeowners call Sun City Home Repair
+5. Why homeowners call Mark's Services
 6. Quote/contact CTA
 7. Optional FAQ if visible and useful
 

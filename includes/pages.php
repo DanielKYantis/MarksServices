@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 return [
     "404.php" => [
-        "title" => "404 - Sun City Home Repair",
+        "title" => "404 - Mark's Services",
         "description" => "",
         "keywords" => "",
         "body_class" => "page-404",
@@ -11,35 +11,35 @@ return [
     ],
     "about.php" => [
         "title" =>
-            "About Sun City Home Repair | Sun City & Berry Creek Home Services",
+            "About Mark's Services | Sun City & Berry Creek Home Services",
         "description" =>
-            "Learn about Sun City Home Repair, a client-location home services team for Sun City 78633 and Berry Creek 78628 homeowners.",
+            "Learn about Mark's Services, providing client-location home repairs for Sun City 78633, Berry Creek 78628, and Georgetown homeowners.",
         "keywords" =>
-            "Sun City Home Repair Sun City, Sun City home services, Berry Creek handyman, licensed electrical Sun City, licensed plumbing Sun City",
+            "Mark's Services Georgetown, Sun City home services, Berry Creek handyman, licensed electrical Sun City, licensed plumbing Sun City",
         "body_class" => "about-page",
         "label" => "About",
     ],
     "contact.php" => [
         "title" =>
-            "Contact Sun City Home Repair | Sun City 78633 & Berry Creek 78628",
+            "Contact Mark's Services | Sun City 78633 & Berry Creek 78628",
         "description" =>
-            "Contact Sun City Home Repair for electrical, plumbing, handyman, home repair, water softener, maintenance, and punch-list work in Sun City 78633 and Berry Creek 78628.",
+            "Contact Mark's Services for handyman, plumbing fixture, electrical device, maintenance, and punch-list work in Sun City 78633 and Berry Creek 78628.",
         "keywords" =>
-            "contact Sun City Home Repair, Sun City electrician, Sun City plumber, Sun City handyman, Berry Creek repairs, home services 78633",
+            "contact Mark's Services, Sun City electrician, Sun City plumber, Sun City handyman, Berry Creek repairs, home services 78633",
         "body_class" => "contact-page",
         "label" => "Contact",
     ],
     "index.php" => [
-        "title" => "Sun City 78633 Home Services | Sun City Home Repair",
+        "title" => "Sun City Georgetown Handyman Services | Mark's Services",
         "description" =>
-            "Licensed electrical, plumbing, handyman, home repair, water softener installation, maintenance, and punch-list service at client locations in Sun City 78633 and Berry Creek 78628.",
+            "Handyman repairs, plumbing fixtures, electrical devices, home maintenance, and punch-list service for Sun City 78633 and Berry Creek 78628 homeowners.",
         "keywords" =>
-            "Sun City electrician, Sun City plumber, Sun City handyman, Sun City home repair, plumbing near me Sun City TX, electrician near me Sun City TX, handyman near me Sun City TX, water softener install Sun City, Berry Creek electrician, Berry Creek plumber, Sun City Home Repair",
+            "Sun City electrician, Sun City plumber, Sun City handyman, Sun City home repair, plumbing near me Sun City TX, electrician near me Sun City TX, handyman near me Sun City TX, water softener install Sun City, Berry Creek electrician, Berry Creek plumber, Mark's Services",
         "body_class" => "index-page",
         "label" => "Home",
     ],
     "privacy.php" => [
-        "title" => "Privacy - Sun City Home Repair",
+        "title" => "Privacy - Mark's Services",
         "description" => "",
         "keywords" => "",
         "body_class" => "privacy-page",
@@ -90,24 +90,52 @@ return [
         "body_class" => "services-page",
         "label" => "Services",
     ],
+    "sun-city-georgetown-tx.php" => [
+        "title" =>
+            "Sun City Georgetown Handyman Services | Mark's Services",
+        "description" =>
+            "Practical handyman repairs and home maintenance for Sun City, Georgetown, Williamson County, TX 78633 homeowners. Client-location service.",
+        "keywords" =>
+            "Sun City Georgetown handyman, Sun City TX home repair, handyman 78633, home maintenance Sun City Georgetown",
+        "body_class" => "service-area-page sun-city-page",
+        "label" => "Sun City Georgetown",
+        "service_area" => service_area_place_schema(
+            "Sun City, Georgetown, Williamson County, TX 78633",
+            "78633"
+        ),
+    ],
+    "berry-creek-georgetown-tx.php" => [
+        "title" =>
+            "Berry Creek Georgetown Home Repair | Mark's Services",
+        "description" =>
+            "Handyman repairs and home maintenance for Berry Creek, Georgetown, Williamson County, TX 78628 homeowners. Client-location service.",
+        "keywords" =>
+            "Berry Creek Georgetown handyman, Berry Creek TX home repair, handyman 78628, home maintenance Berry Creek Georgetown",
+        "body_class" => "service-area-page berry-creek-page",
+        "label" => "Berry Creek Georgetown",
+        "service_area" => service_area_place_schema(
+            "Berry Creek, Georgetown, Williamson County, TX 78628",
+            "78628"
+        ),
+    ],
     "starter-page.php" => [
-        "title" => "Starter Page - Sun City Home Repair",
+        "title" => "Starter Page - Mark's Services",
         "description" => "",
         "keywords" => "",
         "body_class" => "starter-page-page",
         "label" => "Starter Page",
     ],
     "team.php" => [
-        "title" => "Team | Sun City Home Repair Sun City & Berry Creek",
+        "title" => "Team | Mark's Services Sun City & Berry Creek",
         "description" =>
-            "Meet the Sun City Home Repair team supporting Sun City and Berry Creek client-location electrical, plumbing, handyman, and repair work.",
+            "Meet the Mark's Services team supporting Sun City and Berry Creek client-location electrical, plumbing, handyman, and repair work.",
         "keywords" =>
-            "Sun City Home Repair team, Sun City contractor, Sun City licensed electrician, Sun City licensed plumber",
+            "Mark's Services team, Sun City contractor, Sun City licensed electrician, Sun City licensed plumber",
         "body_class" => "team-page",
         "label" => "Team",
     ],
     "terms.php" => [
-        "title" => "Terms - Sun City Home Repair",
+        "title" => "Terms - Mark's Services",
         "description" => "",
         "keywords" => "",
         "body_class" => "terms-page",
